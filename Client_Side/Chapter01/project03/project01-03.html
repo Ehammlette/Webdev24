@@ -156,9 +156,11 @@
           </fieldset>
         </fieldset>
         <fieldset id="submitbutton">
-          <input id='submitMsg' onclick="document.getElementById('submitMsg').innerHTML='Thank you for your order.';" type="submit" value="Submit" />
+          <input type="submit" value="Submit" 
+          onclick="document.getElementById('submitMsg').innerHTML='Thank you for your order.';"/>
         </fieldset>
      </form>
+     <p id="submitMsg"></p>
    </article>
 </body>
 </html>
