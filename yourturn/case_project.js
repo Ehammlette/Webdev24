@@ -11,5 +11,5 @@ showMeg = 1;
 
 window.onload= myfunction()
 {
-    showMeg
+    showMeg=2;
 }
