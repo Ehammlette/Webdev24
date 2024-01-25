@@ -21,4 +21,6 @@ document.getElementById("photoRights").checked=false;
 document.getElementById("photoDist").value=0;
 }
 
+System.out.print();
+
 
