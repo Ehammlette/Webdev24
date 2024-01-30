@@ -7,7 +7,7 @@ function showUser()
     console.log(user);
 
     {
-        var name ="Prestona";
+        var name ="Preston";
     }
     console.log("In show user, name is " + name);
 }
@@ -22,4 +22,13 @@ let x =10;
 x = 10*2+6-2/25
 
 console.log(x);
+
+let y =15;
+console.log(y); //15
+
+console.log(y++); //15
+console.log (y); //16
+
+console.log(++y); //17
+console.log(y); //17
 
