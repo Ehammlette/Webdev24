@@ -5,6 +5,11 @@ function showUser()
     let user ="Reynolds"; //local scope - local variable
     console.log("In showUser - local scope");
     console.log(user);
+
+    {
+        var name ="Prestona";
+    }
+    console.log("In show user, name is " + name);
 }
 
 console.log("Global scope")
