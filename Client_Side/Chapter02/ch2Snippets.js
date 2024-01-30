@@ -18,3 +18,8 @@ showUser();
 
 console.log("Welcome to \"JavaScript Programming\"" + "\n" + "\tYou will enjoy this! ");
 
+let x =10;
+x = 10*2+6-2/25
+
+console.log(x);
+
