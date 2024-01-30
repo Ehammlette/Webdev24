@@ -9,6 +9,7 @@ function showUser()
 
 console.log("Global scope")
 console.log(user); // print global variable
-
 showUser();
+
+console.log("Welcome to \"JavaScript Programming\"" + "\n" + "\tYou will enjoy this! ");
 
