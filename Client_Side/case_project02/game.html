@@ -28,17 +28,15 @@
     </nav>
 
     <main>
-        <fieldset id="submitbutton">
-            <input type="submit" value="Submit" 
-            onclick="document.getElementById('submitMsg').innerHTML='Thank you for your order.';"/>
-          </fieldset>
-        <fieldset id="">
+<div id="submitMsg"></div>
+        <fieldset id="combinartion lock">
             <input type="number" min="0" max="9" id="comboNum1" />
             <input type="number" min="0" max="9" id="comboNum2" />
             <input type="number" min="0" max="9" id="comboNum3" />
-            <input type="number" min="0" max="9" id="comboNum4" />
+            <input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;" 
+            onclick="document.getElementById('answerMsg').innerHTML=answerStatement" />
         </fieldset>
-        <div id="submitMsg"></div>
+        <div id="answerMsg"></div>
 
     </main>
 
