@@ -15,8 +15,10 @@ window.addEventListener("load",startGame1)
 
 function startGame1()
 {
-    if(i=0)
+    if ("comboNum1"==7)
     {
-
-    }    
+        correct_answer=true;
+    }
+    else;
 }
+console.log(correct_answer)
