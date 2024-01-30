@@ -12,7 +12,6 @@
     <title>Webpage of Mysteries</title>
 </head>
 
-<script src="case_project.js"></script>
 
 <body>
 
@@ -28,15 +27,37 @@
     </nav>
 
     <main>
-        <fieldset id="combinartion lock">
-            <input type="number" min="0" max="9" id="comboNum1" placeholder=0 />
+
+        <!--                           Combination lock as a form 
+        <form id="combination_lock">
+            <input type="number" min="0" max="9" id="comboNum1" placeholder=0  />
             <input type="number" min="0" max="9" id="comboNum2" placeholder=0 />
             <input type="number" min="0" max="9" id="comboNum3" placeholder=0 />
-            
+            <script src="case_project.js"></script>
+
             <input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;" 
-            onclick="document.getElementById('answerMsg').innerHTML=answerStatement" id="submit" />
+            onclick="document.getElementById('answerMsg').innerHTML=answerStatement" id="test_button" />
+        </form>
+        -->
+
+        <!-- Combination lock  -->
+        <fieldset id="combination_lock">
+            <input type="number" min="0" max="9" id="comboNum1" placeholder=0  />
+            <input type="number" min="0" max="9" id="comboNum2" placeholder=0 />
+            <input type="number" min="0" max="9" id="comboNum3" placeholder=0 />
+            <script src="case_project.js"></script>
+
+            <input type="submit" value="&nbsp;&nbsp;&nbsp;&nbsp;" 
+            onclick="document.getElementById('answerMsg').innerHTML=answerStatement" id="test_button" />
         </fieldset>
-        <div id="answerMsg"></div>
+        <div style="text-align:center;" id="answerMsg" ></div>
+        <br>
+
+        <label for="fname">Username:</label><br>
+        <input type="text" id="username" name="username" ><br>
+        <label for="lname">Password:</label><br>
+        <input type="text" id="password" name="password" ><br><br>
+        <input type="submit" value="login">
 
     </main>
 
