@@ -19,17 +19,15 @@ let f_answerStatement= "You are incorrect";
 let answerStatement= "Null";
 
 // start game function on start of game
-window.addEventListener("load",startGame1)
+//window.addEventListener("load",startGame1)
 
+//set values
 //see if puzzle is solved
-function startGame1()
+let comboChoice = document.getElementById('comboNum1')+document.getElementById('comboNum1')+document.getElementById('comboNum1');
+/*function startGame1()
 {
-    //store variables
-    var comNum1 = document.getElementById("comboNum1");
-    var comNum2 =document.getElementById("comboNum2");
-    var comNum3 =document.getElementById("comboNum3");   
-
-    if(comNum1==1 && comNum2==1 && comNum3==1)
+    
+    if(comboChoice==111)
     {
         correct_answer=true;
         //console.log(correct_answer); test in console
@@ -41,5 +39,5 @@ function startGame1()
     answerStatement = f_answerStatement;
     }
 
-}
+}*/
 
