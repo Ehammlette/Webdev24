@@ -7,7 +7,16 @@
 
     Filename: project.js
 */
-function startGame()
+
+let correct_answer=false;
+
+// start game function on start of game
+window.addEventListener("load",startGame1)
+
+function startGame1()
 {
-    
+    if(i=0)
+    {
+
+    }    
 }
