@@ -7,8 +7,16 @@
     Filename: project.js
 */
 
-//let comboNum1 =6; test code
-let correct_answer=false;
+let correct_answer=true;
+
+//statement if answer is correct
+let t_answerStatement= "You answered correctly";
+
+//statement if answer is false
+let f_answerStatement= "You are incorrect";
+
+//statement
+let answerStatement= "Null";
 
 // start game function on start of game
 window.addEventListener("load",startGame1)
@@ -16,14 +24,22 @@ window.addEventListener("load",startGame1)
 //see if puzzle is solved
 function startGame1()
 {
-    //"comboNum1"
-    if (comboNum1==7)
+    //store variables
+    var comNum1 = document.getElementById("comboNum1");
+    var comNum2 =document.getElementById("comboNum2");
+    var comNum3 =document.getElementById("comboNum3");   
+
+    if(comNum1==1 && comNum2==1 && comNum3==1)
     {
         correct_answer=true;
         //console.log(correct_answer); test in console
+        answerStatement = t_answerStatement;
     }
     else
+    {
     //console.log(correct_answer); test in console
+    answerStatement = f_answerStatement;
+    }
+
 }
 
-startGame1();
