@@ -7,9 +7,7 @@
 
     Filename: project.js
 */
-showMeg = 1;
-
-window.onload= myfunction()
+function startGame()
 {
-    showMeg=2;
+    
 }
