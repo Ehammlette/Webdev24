@@ -1,44 +1,92 @@
-body 
-{
-    background-color: #ccc;
+/*
+#f887ff lightest
+#de004e
+#860029
+#321450
+#29132e darkest
+
+
+*/
+
+
+body {
+    background:#d7d7d7;
+    font-family: 'Tahoma';
+    
+
 }
 
-header
-{
-    width: 25%;
-    float:left;
-}
 
-nav 
-{
-    width:70%;
-    float:right;
-    margin: 5em 3em 0 0;
+header {
+    
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgb(0 0 0 / 20%);
 }
+header h1 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #000000;
+    
+  }
 
-nav ul
-{
-    list-style-type:none;
+nav {
+    list-style-type: none;
     margin: 0;
-    text-align:right;
+    padding: 0;
+    overflow: hidden;
+    background-color: #292929;
 }
 
-nav li
-{
-    display: inline-block;
-    font-size: 1.75em;
+nav ul {
+float: left;
 }
 
-nav li a 
+nav li 
 {
+    float: left;
+}
+
+
+nav li a {
     display: block;
-    color: #fff;
+    color: #d7d7d7;
     text-align: center;
-    padding: 0.5em 1em;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-main 
+nav li a:hover 
 {
-    clear: left;
+    background-color: #000000;
+}
+
+
+.content_warning
+{
+    font-family:'roboto';
+color: #d82020;
+height: 20 px;
+}
+
+.disclaimer
+{
+    font-family: 'roboto';
+    height: 20 px;
+}
+
+.contentOfWarning
+{
+    font-family:'Franklin Gothic medium';
+}
+
+.main_text{
+    clear:left;
+    color:#000000;
+    font-family:'Tahoma';
+}
+
+footer
+{
+ font-family: 'sans-serif', serif, 'Calibri', 'Trebuchet MS';
 }
