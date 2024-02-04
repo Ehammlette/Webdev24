@@ -9,10 +9,10 @@
       Filename: project02-02.js
  */
 
+//verify if form is filled as a function and will display thank you or will tell you to fill the fields
 function verifyForm()
 {
-      window.alert("testfunction")
-      /*let name= document.getElementById("name").value;
+      let name= document.getElementById("name").value;
       let email= document.getElementById("email").value;
       let phone= document.getElementById("phone").value;
 
@@ -23,7 +23,8 @@ function verifyForm()
       else
       {
             window.alert("Please fill in all fields");
-      }*/
+      }
 }
 
-document.getElementById('submit').addEventListener('click', verifyForm());
+//listens to submit button to be clicked then, once done so, it will run function verifyForm()
+document.getElementById("submit").addEventListener("click", verifyForm);
