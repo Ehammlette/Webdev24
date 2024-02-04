@@ -17,9 +17,12 @@ function verifyForm()
 
       if (name && email && phone)
       {
-            window.alert("Thank you!")
+            window.alert("Thank you!");
       }
       else
-      window.alert("Please fill in all fields");
+      {
+            window.alert("Please fill in all fields");
+      }
 }
- 
+
+document.getElementById("submit").addEventListener("click", verifyForm);
