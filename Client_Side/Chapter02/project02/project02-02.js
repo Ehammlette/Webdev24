@@ -11,7 +11,8 @@
 
 function verifyForm()
 {
-      let name= document.getElementById("name").value;
+      window.alert("testfunction")
+      /*let name= document.getElementById("name").value;
       let email= document.getElementById("email").value;
       let phone= document.getElementById("phone").value;
 
@@ -22,7 +23,7 @@ function verifyForm()
       else
       {
             window.alert("Please fill in all fields");
-      }
+      }*/
 }
 
-document.getElementById("submit").addEventListener("click", verifyForm);
+document.getElementById('submit').addEventListener('click', verifyForm());
