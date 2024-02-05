@@ -71,7 +71,25 @@ nav li a:hover
 div h2
 {
     font-family: 'Tahoma';
-    color:green;
+}
+
+div 
+{
+
+    clear:left;
+    color:#000000;
+    font-family:'Tahoma';
+    
+}
+
+.home_info
+{
+    width: 75%;
+}
+
+bold
+{
+    font-weight: bold;
 }
 
 .content_warning
@@ -98,11 +116,6 @@ height: 20 px;
     font-family:'Franklin Gothic medium';
 }
 
-.main_text{
-    clear:left;
-    color:#000000;
-    font-family:'Tahoma';
-}
 
 footer
 {
