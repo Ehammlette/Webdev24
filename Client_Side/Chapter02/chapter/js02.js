@@ -28,4 +28,9 @@ document.getElementById("photoRights").checked=false;
 document.getElementById("photoDist").value=0;
 }
 
+function getEstimate()
+{
+      
+}
+
 System.out.print();
