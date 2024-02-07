@@ -113,7 +113,15 @@ height: 20 px;
 }
 
 
-footer
-{
- font-family: 'sans-serif', serif, 'Calibri', 'Trebuchet MS';
+/* Style rules for footer content */
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
 }
