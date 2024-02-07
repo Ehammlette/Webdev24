@@ -93,3 +93,21 @@ text-decoration: none;
 font-weight: bold;
 font-style: italic;
 }
+
+/* Style rules for footer content */
+
+footer{
+    text-align: center;
+    font-size: 0.85em;
+    background-color:  #1d396d;
+    color: #e3eaf8;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 0;
+    padding-left: 0%;
+}
+
+footer a{
+    font: #e3eaf8;
+    text-decoration: none;
+}
