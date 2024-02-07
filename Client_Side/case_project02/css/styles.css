@@ -4,12 +4,6 @@ Date: 2/7/2024
 File name: styles.css
 */
 
-body, header, nav, main, footer, h1, div, img {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-
 
 body {
     background:#d7d7d7;
