@@ -3,3 +3,58 @@ Author: Nora Hammons
 Date: 2/7/2024
 File name: styles.css
 */
+
+/*css reset*/
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body{
+    background-color: #e3eaf8;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rule for header */
+
+header h1{
+    text-align: center;
+    font-size: 3em;
+    font-family: Georgia, Times, serif;
+    padding: 3%;
+    color: #101a2d;
+}
+
+/* Style rules for navigation area */
+
+nav{
+    background-color: #1d396d;
+}
+
+nav ul{
+    list-style-type: none;
+    margin:0;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav li a{
+    color: #e3eaf8;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    text-decoration: none;
+}
