@@ -13,7 +13,7 @@
 //declare global constants for the application
 const EMP_COST = 100; //const photographers per hour
 const BOOK_COST = 350; //const of memory book
-const RREPRO_COST = 1250; // cost of reproduction rights
+const REPRO_COST = 1250; // cost of reproduction rights
 const TRAVEL_COST = 2; // cost of travel per mile
 
 //set the form's default values
@@ -56,5 +56,3 @@ function getEstimate() {
 
       document.getElementById("estimate").innerHTML = "$" + totalCost;
 }
-
-System.out.print(estimate);
