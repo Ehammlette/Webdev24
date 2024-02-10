@@ -7,39 +7,29 @@
     Filename: project.js
 */
 
-let correct_answer=true;
 
-//statement if answer is correct
-let t_answerStatement= "You answered correctly";
+window.addEventListener("load", setupForm);
 
-//statement if answer is false
-let f_answerStatement= "You are incorrect";
-
-//statement
-let answerStatement= "Null";
-
-// start game function on start of game
-window.addEventListener("load",startGame1)
-
-//set values
-let answer=1;
-//see if puzzle is solved
-
-
-function startGame1()
+function setupForm()
 {
-    
-    if("combination_lock"===1)
-    {
-        correct_answer=true;
-        //console.log(correct_answer); test in console
-        answerStatement = t_answerStatement;
-    }
-    else
-    {
-    //console.log(correct_answer); test in console
-    answerStatement = f_answerStatement;
-    }
+    document.getElementById("start_number").value=10;
+    document.getElementById("range_input").value=50;
+
+    getEstimate();
+
+    //add event handlers for each input control
+    document.getElementById("start_number").onchange = getEstimate;
+    document.getElementById("range_input").onchange = getEstimate
 
 }
 
+function getEstimate()
+{
+    let total=0;
+    let number_input=document.getElementById("start_number").value;
+    let slider_range=document.getElementById("range_input").value;
+
+    totalCost+= number_input* slider_range;
+
+    document.getElementById("estimate").innerHTML = "$" + totalCost;
+}
