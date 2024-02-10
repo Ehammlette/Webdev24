@@ -6,31 +6,31 @@ File name: styles.css
 
 
 body {
-    background:#d7d7d7;
+    background: #d7d7d7;
     font-family: 'Tahoma';
 }
 
-header
-{
+/*header section*/
+header {
     text-align: left;
 
 }
 
-header img
-{
+header img {
     height: "220";
-    width:"220";
+    width: "220";
     border-radius: 50%;
-    float:center;
+    float: center;
     margin-inline: 10px;
 }
 
 header h1 {
     display: inline-block;
     color: #000000;
-    
-  }
 
+}
+
+/*navigation section*/
 nav {
     list-style-type: none;
     margin: 0;
@@ -40,12 +40,11 @@ nav {
 }
 
 nav ul {
-    clear:left;
-float: left;
+    clear: left;
+    float: left;
 }
 
-nav li 
-{
+nav li {
     float: left;
 }
 
@@ -58,58 +57,51 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover 
-{
+nav li a:hover {
     background-color: #000000;
 }
 
-
-div h2
-{
+/*main section*/
+div h2 {
     font-family: 'Tahoma';
 }
 
-div 
-{
+div {
 
-    clear:left;
-    color:#000000;
-    font-family:'Tahoma';
-    
+    clear: left;
+    color: #000000;
+    font-family: 'Tahoma';
+
 }
 
-.home_info
-{
+.home_info {
     width: 75%;
 }
 
-bold
-{
+bold {
     font-weight: bold;
 }
 
-.content_warning
-{
+/*Content warning section*/
+.content_warning {
     text-align: center;
-    font-family:'roboto';
-color: #d82020;
-height: 20 px;
+    font-family: 'roboto';
+    color: #d82020;
+    height: 20 px;
 }
 
-.disclaimer
-{
+.disclaimer {
     text-align: center;
     font-family: 'roboto';
     height: 20 px;
 }
 
-.contentOfWarning
-{
-    margin:auto;
-    width:500px;
-    height:50%;
+.contentOfWarning {
+    margin: auto;
+    width: 500px;
+    height: 50%;
     text-align: center;
-    font-family:'Franklin Gothic medium';
+    font-family: 'Franklin Gothic medium';
 }
 
 
