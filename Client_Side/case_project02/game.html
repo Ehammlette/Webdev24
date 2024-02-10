@@ -11,13 +11,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extraterrestrial Network Analysis Bureau Webpage</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script defer src="case_project.js"></script>
+    <script src="case_project.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <a href="index.html"><img height="120" width="120" src="image/symbol copy.jpg" alt="Logo for Extraterrestrial Network Analysis Bureau &copy;" ></img></a>
+        <a href="index.html"><img height="120" width="120" src="image/symbol copy.jpg"
+                alt="Logo for Extraterrestrial Network Analysis Bureau &copy;"></img></a>
         <h1>Extraterrestrial Network Analysis Bureau</h1>
     </header>
     <nav>
@@ -30,7 +31,28 @@
     </nav>
 
     <main>
+        <h2>Game</h2>
+        <p>Time to play the game.</p>
+        <br>
+        <!--Form-->
+        <form>
+
+            <label for="start_number">
+                <p>Start number</p>
+            </label>
+            <input type="number" min="1" max="100" id="start_number" />
+
+            <label for="slider">
+                <p>Ranger slider</p>
+            </label>
+            <input type="range" min="1" max="100" class="slider" id="range_input">
+
+        </form>
+
     </main>
+    <aside>
+        <p>Total Estimate: <span id="estimate"></span></p>
+     </aside>
 
     <footer>
         <p>&copy; Copyright 1995-2024. All Rights Reserved</p>
