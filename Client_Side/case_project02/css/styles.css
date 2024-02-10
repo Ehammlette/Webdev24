@@ -15,7 +15,6 @@ header {
     text-align: left;
 
 }
-
 header img {
     height: "220";
     width: "220";
@@ -23,7 +22,6 @@ header img {
     float: center;
     margin-inline: 10px;
 }
-
 header h1 {
     display: inline-block;
     color: #000000;
@@ -38,17 +36,13 @@ nav {
     overflow: hidden;
     background-color: #292929;
 }
-
 nav ul {
     clear: left;
     float: left;
 }
-
 nav li {
     float: left;
 }
-
-
 nav li a {
     display: block;
     color: #d7d7d7;
@@ -56,7 +50,6 @@ nav li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 nav li a:hover {
     background-color: #000000;
 }
@@ -65,7 +58,6 @@ nav li a:hover {
 div h2 {
     font-family: 'Tahoma';
 }
-
 div {
 
     clear: left;
@@ -73,11 +65,9 @@ div {
     font-family: 'Tahoma';
 
 }
-
 .home_info {
     width: 75%;
 }
-
 bold {
     font-weight: bold;
 }
@@ -89,13 +79,11 @@ bold {
     color: #d82020;
     height: 20 px;
 }
-
 .disclaimer {
     text-align: center;
     font-family: 'roboto';
     height: 20 px;
 }
-
 .contentOfWarning {
     margin: auto;
     width: 500px;
@@ -104,7 +92,6 @@ bold {
     font-family: 'Franklin Gothic medium';
 }
 
-
 /* Style rules for footer content */
 footer p {
     font-size: 0.75em;
@@ -112,7 +99,6 @@ footer p {
     color: #292929;
     padding: 0 1em;
 }
-
 footer p a {
     color: #292929;
     text-decoration: none;
