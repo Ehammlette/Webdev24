@@ -67,3 +67,10 @@ nav li a:hover
 {
     background-color: #E4E6C3;
 }
+
+img
+{
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+}
