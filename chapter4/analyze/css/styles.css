@@ -47,7 +47,12 @@ nav li {
     display: inline-block;
     font-size: 1.5em; font-family: Verdana, Arial, sans-serif; font-weight: bold;
 } 
-nav li a { display: block; color: #e3eaf8; padding: 0.5em 2em; }
+nav li a { 
+    display: block; 
+    color: #e3eaf8;
+    padding: 0.5em 2em;
+    text-decoration: none;
+ }
 
 /*main*/
 main p {
@@ -56,6 +61,15 @@ main p {
 main h3 {
     padding-top: 2%;
     font-size: 2em;
+}
+
+/*anchor*/
+p a
+{
+    color:#47476b;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
 }
 
 /*footer*/
