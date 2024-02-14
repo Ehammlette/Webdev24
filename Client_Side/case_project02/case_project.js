@@ -6,7 +6,6 @@
 
     Filename: project.js
 */
-
 let totalCost=0;
 
 window.addEventListener("load", setupForm);
@@ -26,6 +25,7 @@ function setupForm()
 
 function getEstimate()
 {
+    totalCost=0;
     let number_input=document.getElementById("start_number").value;
     let slider_range=document.getElementById("range_input").value;
 
