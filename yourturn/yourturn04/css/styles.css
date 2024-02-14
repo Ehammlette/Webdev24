@@ -12,18 +12,17 @@ body
 
 /*header*/
 header{
-    font: 100;
+    font: 100px;
     float:center;
     text-align: center;
     margin:0;
     text-shadow: 1px 0px 10px  line;
-    block-size: 100px;
+    block-size: auto;
     
 }
 
 header h1
 {
-text-align: center;
 color: #F05D23;
 }
 
@@ -37,25 +36,20 @@ al
 }
 
 /*nav*/
-nav {
-    
+
+nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0px;
+    padding: 0;
     overflow: hidden;
     background-color: #C5D86D;
 }
 
-nav ul {
-    clear:left;
-float: left;
-}
-
 nav li 
 {
+    display: inline;
     float: left;
 }
-
 
 nav li a {
     display: block;
@@ -117,6 +111,7 @@ img
     height: auto;
     width: 100%;
     max-width: 500px;
+    float:center;
 }
 
 /*footer*/
