@@ -3,11 +3,16 @@ Author: Nora Hammons
 Date: 2/14/2024
 File name: styles.css
 */
-
 body, header, nav, main, footer, h1, div, img {
     margin: 0;
     padding: 0;
     border: 0;
+}
+
+#css1, #css2, #css3 {
+    width: 31%;
+    float: left;
+    padding: 0 1%;
 }
 
 body {
@@ -17,12 +22,13 @@ body {
 
 /*main*/
 main {
+    overflow: auto;
     padding: 2%;
     font-family: Geneva, Arial, sans-serif;
 }
 /*header*/
 header h1 {
-    content:center;
+    text-align: center;
     font-size: 3em;
     font-family: Georgia, Times, serif;
     padding: 3%;
@@ -31,10 +37,14 @@ header h1 {
 /*navigation*/
 nav {
     background-color: #47476b;
+
 } 
-nav ul { margin: 0;} 
+nav ul { 
+    margin: 0;
+} 
+
 nav li {
-    display: block;
+    display: inline-block;
     font-size: 1.5em; font-family: Verdana, Arial, sans-serif; font-weight: bold;
 } 
 nav li a { display: block; color: #e3eaf8; padding: 0.5em 2em; }
@@ -46,12 +56,6 @@ main p {
 main h3 {
     padding-top: 2%;
     font-size: 2em;
-}
-
-#css1, #css2, #css3 {
-    width: 40%;
-    float: left;
-    padding: 0 1%;
 }
 
 /*footer*/
