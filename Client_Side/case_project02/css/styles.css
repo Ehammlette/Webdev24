@@ -39,6 +39,14 @@ nav {
 nav ul {
     clear: left;
     float: left;
+    /*    
+    clear:left;
+    float:left;
+    position: fixed;
+    top: 0;
+    width: 36%;
+    background-image: linear-gradient(to right, hsl(71, 58%, 64%,100),hsl(71, 58%, 64%,0));
+    */
 }
 nav li {
     float: left;
