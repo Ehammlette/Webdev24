@@ -25,11 +25,11 @@ function setupForm()
 
 function getEstimate()
 {
-    let total=0;
+    let totalCost=0;
     let number_input=document.getElementById("start_number").value;
     let slider_range=document.getElementById("range_input").value;
 
     totalCost+= number_input* slider_range;
 
-    document.getElementById("estimate").innerHTML = "$" + totalCost;
+    document.getElementById("estimate").innerHTML = totalCost;
 }
