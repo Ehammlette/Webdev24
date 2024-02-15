@@ -15,7 +15,7 @@ window.addEventListener("load", setupForm);
 function setupForm()
 {
     document.getElementById("correct_answer").innerHTML=Math.floor(Math.random() * 100) + 1;
-    document.getElementById("number1").value=10;
+    document.getElementById("number1").value=9;
     document.getElementById("number2").value=10;
     document.getElementById("range_input").value=50;
 
@@ -40,7 +40,7 @@ function getEstimate()
     document.getElementById("range_of_input").innerHTML=document.getElementById("range_input").value;
 
     //get estimation
-    totalCost+= number_input1* slider_range;
+    totalCost+= parseInt(number_input1)+ parseInt(slider_range)*parseInt(number_input2);
 
     //type total into span estimate
     document.getElementById("estimate").innerHTML = totalCost;
