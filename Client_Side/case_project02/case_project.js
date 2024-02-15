@@ -14,7 +14,7 @@ window.addEventListener("load", setupForm);
 
 function setupForm()
 {
-    document.getElementById("correct_answer").innerHTML=Math.floor(Math.random() * 100) + 1;
+    document.getElementById("correct_answer").innerHTML=Math.floor(Math.random() * 1000) + 1;
     document.getElementById("number1").value=9;
     document.getElementById("number2").value=10;
     document.getElementById("range_input").value=50;
