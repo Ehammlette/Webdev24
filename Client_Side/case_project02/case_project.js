@@ -14,14 +14,17 @@ window.addEventListener("load", setupForm);
 
 function setupForm()
 {
-    document.getElementById("display").innerHTML=generateAnswer;
-    document.getElementById("start_number").value=10;
+    document.getElementById("correct_answer").innerHTML=Math.floor(Math.random() * 100) + 1;
+    document.getElementById("number1").value=10;
+    document.getElementById("number2").value=10;
     document.getElementById("range_input").value=50;
+
 
     getEstimate();
 
     //add event handlers for each input control
-    document.getElementById("start_number").onchange = getEstimate;
+    document.getElementById("number1").onchange = getEstimate;
+    document.getElementById("number2").onchange = getEstimate;
     document.getElementById("range_input").onchange = getEstimate;
 
 }
@@ -29,20 +32,21 @@ function setupForm()
 function getEstimate()
 {
     totalCost=0;
-    let number_input=document.getElementById("start_number").value;
+    let number_input1=document.getElementById("number1").value;
+    let number_input2=document.getElementById("number2").value;
     let slider_range=document.getElementById("range_input").value;
 
-    totalCost+= number_input* slider_range;
+    //displays the range input
+    document.getElementById("range_of_input").innerHTML=document.getElementById("range_input").value;
 
+    //get estimation
+    totalCost+= number_input1* slider_range;
+
+    //type total into span estimate
     document.getElementById("estimate").innerHTML = totalCost;
-}
-
-function generateAnswer()
-{
-    return Math.random() * (MAX_NUMBER - MIN_NUMBER) + MIN_NUMBER;
 }
 
 function checkAnswer()
 {
-
+return 0;
 }

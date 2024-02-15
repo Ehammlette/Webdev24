@@ -33,15 +33,7 @@
     <main>
         <h2>Game</h2>
         <p>Time to play the game.</p>
-        <br>
 
-        <p>Total Estimate:</p>
-        <div class="result">
-            <span id="estimate"></span>
-        </div>
-        <br>
-
-        <!--Form-->
         <form>
 
             <!--<label>
@@ -50,17 +42,34 @@
             <input type="">-->
 
 
-            <label for="start_number">
-                <p>Start number</p>
+            <label for="number1">
+                <p>First Number</p>
             </label>
-            <input type="number" min="1" max="100" id="start_number" />
+            <input type="number" min="1" max="10" id="number1" class="number_select" />
+
+            <input type="number" min="1" max="50" id="number2" class="number_select" />
+
 
             <label for="slider">
-                <p>Ranger slider</p>
+                <p>Ranger slider: </p>
             </label>
+            <span id="range_of_input"></span>
             <input type="range" min="1" max="100" class="slider" id="range_input">
 
+            <div class="result">
+                <span id="estimate"></span>
+            </div>
         </form>
+        
+        
+        <br>
+
+        <div class="display">
+                <span id="correct_answer"></span>
+            <p>Total Estimate:</p>
+        </div>
+
+        <!--Form-->
 
     </main>
 
