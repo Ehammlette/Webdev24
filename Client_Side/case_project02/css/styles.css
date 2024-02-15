@@ -92,7 +92,7 @@ form
 .result
 {
     position:inherit;
-    float:right;
+    text-align: center;
     margin-top: 50px;
     clear:both;
     color: #d82020;
