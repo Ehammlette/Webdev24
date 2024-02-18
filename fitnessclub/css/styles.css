@@ -21,6 +21,21 @@ img{
     display: block;
 }
 
+/* Style rules for mobile viewport */
+
+/* Style rule for header */
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    height: 190px;
+}
+
+header img{
+    margin: 0 auto;
+}
+
 /* Style rule for header */
 header {
     width: 25%;
@@ -29,9 +44,8 @@ header {
 
 /* Style rules for navigation area */
 nav {
-    width:70%;
-    float: right;
-    margin: 5em 3em 0 0;
+padding: 1%;
+margin-bottom: 1%;
 }
 
 nav ul {
