@@ -1,11 +1,18 @@
 /*
 Author: Nora Hammons
-Date: 2/7/2024
+Date: 2/19/2024
 File name: styles.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul {
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img {
     margin: 0;
     padding: 0;
     border: 0;
@@ -16,30 +23,24 @@ body {
     background-color: #000;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
 }
 
-/* Style rules for mobile viewport */
+/*Style rules for mobile viewport*/
 
 /* Style rule for header */
-header{
+header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: #000;
-    height: 190px;
+    height: 190px
 }
 
-header img{
-    margin:0 auto;
-}
-
-/* Style rule for header */
-header {
-    width: 25%;
-    float: left;
+header img {
+    margin: 0 auto;
 }
 
 /* Style rules for navigation area */
@@ -50,13 +51,15 @@ margin-bottom: 1%;
 
 nav ul {
     list-style-type: none;
-    text-align: center;
+    margin: 0;
+    text-align: right;
 }
 
 nav li {
+    display: inline-block;
     font-size: 1.5em;
     font-family: Verdana, Arial, sans-serif;
-    border-top: 1px solid #fff;
+    font-weight: bold;
 }
 
 nav li a {
@@ -81,14 +84,16 @@ main {
     font-weight: bold;
 }
 
-#weights, #cardio, #training {
+#weights,
+#cardio,
+#training {
     width: 29%;
     float: left;
     margin: 0 2%;
 }
 
 #exercises {
-    clear:left;
+    clear: left;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     background-color: #f2f2f2;
@@ -134,4 +139,3 @@ footer p a {
     color: #fff;
     text-decoration: none;
 }
-
