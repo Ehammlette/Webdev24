@@ -117,12 +117,14 @@ main {
 #weights,
 #cardio,
 #training {
-    width: 29%;
-    float: left;
     margin: 0 2%;
 }
 
-#exercises {
+.round {
+    border-radius: 8px;
+}
+
+/*#exercises {
     clear: left;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
@@ -136,7 +138,7 @@ main {
 
 #exercises dd {
     padding: 0.5% 1% 2% 0;
-}
+}*/
 
 .external-link {
     color: #666600;
