@@ -55,10 +55,9 @@ nav ul {
 }
 
 nav li {
-    display: inline-block;
     font-size: 1.5em;
     font-family: Verdana, Arial, sans-serif;
-    font-weight: bold;
+    border-top: 1px solid #fff;
 }
 
 nav li a {
