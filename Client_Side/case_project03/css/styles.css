@@ -5,7 +5,6 @@ File name: styles.css
 */
 
 body,
-header,
 nav,
 main,
 footer,
@@ -24,7 +23,7 @@ body {
 
 /*header section*/
 header {
-    text-align: left;
+    text-align: center;
 
 }
 header img {
