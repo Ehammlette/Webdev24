@@ -21,6 +21,11 @@ img {
     display: block;
 }
 
+/* Style rules for mobile viewport */
+
+/* Style rules for hiding the tablet desktop class */
+
+
 /* Style rules for header content */
 header h1 {
     text-align: center;
@@ -38,9 +43,11 @@ nav {
 
 nav ul {
     text-align: center;
+    list-style: none;
 }
 
 nav li {
+    display:inline;
     font-size: 1em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
