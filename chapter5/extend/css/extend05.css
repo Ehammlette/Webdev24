@@ -1,7 +1,7 @@
 /* 
 Style sheet created by: 
-Student's Name 
-Today's Date 
+Nora Hammons
+2/22/2024
 */
 body {
     background-color: #dde3fd;
@@ -22,12 +22,35 @@ body {
 }
 
 /* sticky */
+.sticky
+{
+    position:-webkit-sticky;
+    position:sticky;
+    top: 0px;
+}
 
 
 /* relative */
+.relative
+{
+position:relative;
+top: 90px;
+left:30px;
+}
 
 
 /* fixed */
-
+.fixed
+{
+position:fixed;
+top: 90px;
+right:10px;
+}
 
 /* absolute */
+.absolute
+{
+position:absolute;
+right:0px;
+bottom:0px;
+}
