@@ -8,45 +8,46 @@
 */
 const MIN_NUMBER=1;
 const MAX_NUMBER= 1000;
-let totalCost=0;
+let frequency=0;
+const element = document.getElementById("check_button");
 
 window.addEventListener("load", setupForm);
+element.addEventListener("click",checkAnswer);
 
 function setupForm()
 {
-    document.getElementById("correct_answer").innerHTML=Math.floor(Math.random() * 1000) + 1;
-    document.getElementById("number1").value=9;
-    document.getElementById("number2").value=10;
+    document.getElementById("looking_for_frequency").innerHTML=Math.floor(Math.random() * 10)+ "." +Math.floor(Math.random() * 100);
+    document.getElementById("number1").value=10;
     document.getElementById("range_input").value=50;
 
 
-    getEstimate();
+    getCurrentFrequency();
 
     //add event handlers for each input control
-    document.getElementById("number1").onchange = getEstimate;
-    document.getElementById("number2").onchange = getEstimate;
-    document.getElementById("range_input").onchange = getEstimate;
+    document.getElementById("number1").onchange = getCurrentFrequency;
+    document.getElementById("range_input").onchange = getCurrentFrequency;
 
 }
 
-function getEstimate()
+function getCurrentFrequency()
 {
-    totalCost=0;
-    let number_input1=document.getElementById("number1").value;
-    let number_input2=document.getElementById("number2").value;
+    frequency=0;
+    let channel=document.getElementById("number1").value;
     let slider_range=document.getElementById("range_input").value;
 
     //displays the range input
     document.getElementById("range_of_input").innerHTML=document.getElementById("range_input").value;
 
-    //get estimation
-    totalCost+= parseInt(number_input1)+ parseInt(slider_range)*parseInt(number_input2);
+    //get get frequency
+    totalCost= channel + "." +slider_range;
+    
 
-    //type total into span estimate
-    document.getElementById("estimate").innerHTML = totalCost;
+    //type total into span currentFrequency
+    document.getElementById("currentFrequency").innerHTML = totalCost;
 }
 
 function checkAnswer()
 {
+    document.getElementById("test").innerHTML = "Hello World";
 return 0;
 }
