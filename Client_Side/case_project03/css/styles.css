@@ -93,56 +93,49 @@ div {
 bold {
     font-weight: bold;
 }
+
+/*Displays for looking at current frequency and what frequency is being looked for*/
+.main_display
+{
+    text-align: center;
+}
+
+.display_looking_for_frequency
+{
+    margin-right: 160px;
+    margin-left: 160px;
+    margin-top: auto;
+    border: 10px solid #333;
+}
+
+
+#looking_for_frequency
+{
+    font-size: 50px;
+}
+
 /*form/control box*/
+.control_pannel
+{
+text-align: center;
+}
+
 form
-{     
-    display:inline;
+{
+    text-align: center;     
     width: 400px;
     height: 300px;
-    display: block;
     border: 10px solid blue;
     overflow:auto;
 }
 
-.result
+.channel_slector
 {
-    position:inherit;
-    text-align: center;
-    margin-top: 50px;
-    clear:both;
-    color: #d82020;
-    
-}
 
-.number_select
-{
-    display:inline;
-    float: left;
-    width: 50px;
-    padding: 5px; 
-    
-}
-
-
-/*display box*/
-.display
-{
-    margin:10px;
-    display: inline-block;
-    margin-top: auto;
-    border: 10px solid green;
-}
-
-
-#correct_answer
-{
-    border: 5px solid red;
-    font-size: 50px;
 }
 
 /*slider element*/
 .slider {
-    
     -webkit-appearance: none;
     width: 50%;
     height: 15px;
