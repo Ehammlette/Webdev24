@@ -33,35 +33,44 @@
     <main>
         <h2>Game</h2>
         <p>Time to play the game.</p>
+        <p>Underneath the tuning frequency is your current frequency. The slider helps for precision frequency. </p>
 
-        <form>
+        <div class="main_display">
 
-            <label for="number1">
-                <p>Number + (Number * Slider)</p>
-            </label>
-            <input type="number" min="0" max="9" id="number1" class="number_select" />
-
-            <input type="number" min="1" max="10" id="number2" class="number_select" />
-
-
-            <label for="slider">
-                <p>Ranger slider: </p>
-            </label>
-            <span id="range_of_input"></span>
-            <input type="range" min="1" max="100" class="slider" id="range_input">
-
-            <div class="result">
-                <p>Total Estimate:</p>
-                <span id="estimate"></span>
+            <div class="display_looking_for_frequency">
+                <p>Tune to frequency:
+                    <span id="looking_for_frequency"></span>
+                </p>
             </div>
-        </form>
-        
-        
-        <br>
 
-        <div class="display">
-                <span id="correct_answer"></span>
+            <div class="displayCurrentFrequency">
+                <p>Current frequency:
+                    <span id="currentFrequency"></span>
+                </p>
+            </div>
+
         </div>
+
+        <div class="control_pannel">
+
+                <label for="number1">
+                    <p>channel:</p>
+                </label>
+                <input type="number" min="0" max="10" id="number1" class="channel_selector" />
+                <br>
+                <label for="slider">
+                    <p>Ranger slider: </p>
+                </label>
+                <span id="range_of_input"></span>
+                <input type="range" min="1" max="100" class="slider" id="range_input" />
+
+        </div>
+
+
+        <br>
+        <button id="check_button">Check result</button>
+
+        <p id="test"></p>
 
         <!--Form-->
 
