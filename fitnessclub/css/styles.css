@@ -124,6 +124,7 @@ main {
     border-radius: 8px;
 }
 
+
 /*#exercises {
     clear: left;
     border-top: 1px solid #000;
@@ -172,4 +173,38 @@ footer p {
 footer p a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Media query for tablet view port*/
+@media screen and (min-width:630px) /*Starting break point*/
+{
+/*Tablet viewport: show desktop and hide mobile*/
+.tablet-desktop{
+    display: block;
+}
+
+.mobile{
+    display: none;
+}
+
+header{
+    position: static;
+    padding:2%;
+}
+
+/* Tablet viewport: style rules for nav area */
+nav li {
+    border-top:none;
+    display: inline-block;
+    border-right: 1px solid #fff;
+}
+
+nav li:last-child {
+    border-right:none;
+}
+
+nav li a {
+    padding: 0.1em 0.75em;
+}
+
 }
