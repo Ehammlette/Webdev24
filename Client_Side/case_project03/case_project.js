@@ -16,7 +16,7 @@ element.addEventListener("click",checkAnswer);
 
 function setupForm()
 {
-    document.getElementById("looking_for_frequency").innerHTML=Math.floor(Math.random() * 10)+ "." +Math.floor(Math.random() * 100);
+    document.getElementById("looking_for_frequency").innerHTML=Math.floor(Math.random() * 10)+(Math.floor(Math.random() * 100))/100;
     document.getElementById("number1").value=10;
     document.getElementById("range_input").value=50;
 
