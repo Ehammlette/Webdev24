@@ -124,23 +124,6 @@ main {
     border-radius: 8px;
 }
 
-
-/*#exercises {
-    clear: left;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    background-color: #f2f2f2;
-    padding: 1% 2%;
-}
-
-#exercises dt {
-    font-weight: bold;
-}
-
-#exercises dd {
-    padding: 0.5% 1% 2% 0;
-}*/
-
 .external-link {
     color: #666600;
     font-weight: bold;
@@ -207,4 +190,35 @@ nav li a {
     padding: 0.1em 0.75em;
 }
 
+/*Tablet Viewport: Style rules for main content Area */
+main ul{
+    margin:0 0 4% 10%;
 }
+
+#exercises {
+    clear: left;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+}
+
+#exercises dt {
+    font-weight: bold;
+}
+
+#exercises dd {
+    padding: 0.5% 1% 2% 0;
+}
+
+.tel-num
+{
+    font-size: 1.25em;
+}
+
+.map{
+    width: 600px;
+    height: 450px;
+}
+
+}/* end of tablet veiwport*/
