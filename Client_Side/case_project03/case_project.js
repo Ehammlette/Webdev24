@@ -16,7 +16,7 @@ element.addEventListener("click",checkAnswer);
 
 function setupForm()
 {
-    document.getElementById("looking_for_frequency").innerHTML=Math.floor(Math.random() * 10)+(Math.floor(Math.random() * 100))/100;
+    document.getElementById("looking_for_frequency").innerHTML=;
     document.getElementById("number1").value=10;
     document.getElementById("range_input").value=50;
 
@@ -50,4 +50,10 @@ function checkAnswer()
 {
     document.getElementById("test").innerHTML = "Hello World";
 return 0;
+}
+
+//chooses a random number that is set to be a specific 4 digit integer
+function choose_num()
+{
+    Math.floor(Math.random() * 10)+ "." +(Math.floor(Math.random() * 100))/100
 }
