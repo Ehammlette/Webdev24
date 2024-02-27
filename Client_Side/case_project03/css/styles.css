@@ -21,6 +21,11 @@ body {
     font-family: 'Tahoma';
 }
 
+h2
+{
+margin-left: -10px;
+}
+
 /*header section*/
 header {
     background: #d7d7d7;
@@ -89,6 +94,7 @@ div {
 }
 .home_info {
     width: 75%;
+    margin-left: 25px;
 }
 bold {
     font-weight: bold;
@@ -181,6 +187,11 @@ form
     height: 50%;
     text-align: center;
     font-family: 'Franklin Gothic medium';
+}
+
+.redacted
+{
+    color:#d82020;
 }
 
 /* Style rules for footer content */
