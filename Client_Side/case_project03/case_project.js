@@ -8,9 +8,14 @@
 */
 let frequency = 0;
 let random_number=0;
+let correct_count=0;
 
 window.addEventListener("load", setupGame);
 document.getElementById("check_button").addEventListener("click", checkAnswer);
+document.getElementById("list_correct_answers").addEventListener("click", getCorrectAnswersList);
+document.getElementById("restart").addEventListener("click", restartGame)
+
+
 
 function setupGame() {
     random_number=choose_num();
@@ -80,14 +85,25 @@ function choose_num() {
 
 function checkAnswer() 
 {
-
+    
     if(random_number===frequency)
     {
-        document.getElementById("isAnswerQuestion").innerHTML="Correct";
         setupGame();
+        correct_count++;
+        document.getElementById("isAnswerQuestion").innerHTML="Correct";
     }
     else
     {
         document.getElementById("isAnswerQuestion").innerHTML="Incorrect";
     }
+}
+
+function getCorrectAnswersList()
+{
+    document.getElementById("listOfAnswer").innerHTML=correct_count;
+}
+
+function restartGame()
+{
+    location.reload();
 }
