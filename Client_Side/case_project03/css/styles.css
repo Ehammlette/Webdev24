@@ -120,19 +120,18 @@ bold {
     font-size: 50px;
 }
 
+#isAnswerQuestion
+{
+    text-align: right;
+    margin-right:200px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
 /*form/control box*/
 .control_panel
 {
 text-align: center;
-}
-
-form
-{
-    text-align: center;     
-    width: 400px;
-    height: 300px;
-    border: 10px solid blue;
-    overflow:auto;
 }
 
 .channel_selector
