@@ -7,13 +7,13 @@
     Filename: project.js
 */
 let frequency = 0;
-const element = document.getElementById("check_button");
+let random_number=choose_num();
 
-window.addEventListener("load", setupForm);
-element.addEventListener("click", checkAnswer);
+window.addEventListener("load", setupGame);
+document.getElementById("check_button").addEventListener("click", checkAnswer());
 
-function setupForm() {
-    document.getElementById("looking_for_frequency").innerHTML = choose_num();
+function setupGame() {
+    document.getElementById("looking_for_frequency").innerHTML = random_number;
     document.getElementById("number1").value = 10;
     document.getElementById("range_input").value = 50;
 
@@ -23,7 +23,7 @@ function setupForm() {
     //add event handlers for each input control
     document.getElementById("number1").onchange = getCurrentFrequency;
     document.getElementById("range_input").onchange = getCurrentFrequency;
-
+    
 }
 
 function getCurrentFrequency() {
@@ -35,15 +35,15 @@ function getCurrentFrequency() {
     document.getElementById("range_of_input").innerHTML = document.getElementById("range_input").value;
 
     //get get frequency + trouble if statement to fix bug + number bug fix
-    if (slider_range === 100) {
-        frequency = channel + 1;
+    if (slider_range == 100) {
+        frequency = Number(channel)+1;
     }
     else {
         if (slider_range < 10) {
-            frequency = channel + "." + (slider_range / 100).toPrecision(1);
+            frequency = Number(channel)  + Number((slider_range / 100).toPrecision(1));
         }
         else {
-            frequency = channel + "." + (slider_range / 100).toPrecision(2);
+            frequency = Number(channel) + Number((slider_range / 100).toPrecision(2));
         }
     }
 
@@ -52,16 +52,10 @@ function getCurrentFrequency() {
     document.getElementById("currentFrequency").innerHTML = frequency;
 }
 
-function checkAnswer() {
-    document.getElementById("test").innerHTML = "Hello World";
-    return 0;
-}
-
 //chooses a random number that is set to be a specific 4 digit integer
 function choose_num() {
     let chosen_num = Math.floor(Math.random() * 12);
-    //let chosen_freq=(Math.floor(Math.random() * 101));
-    let chosen_freq = 5;
+    let chosen_freq=(Math.floor(Math.random() * 101));
 
     if (chosen_freq == 0 && chosen_num != 11) {
         chosen_num = chosen_num + .00;
@@ -72,29 +66,21 @@ function choose_num() {
     else if (chosen_num === 11) {
         chosen_num = 11;
     }
-    else {
-        if (chosen_freq < 10)
-        {
-            chosen_num = chosen_num + (chosen_freq / 100).toPrecision(1);  
-        }
-        else 
-        {
-            chosen_num = chosen_num + (chosen_freq / 100).toPrecision(2);
-        }
-    }
-    /*
-    let chosen_num=0;
-    let chosen_channel= Math.floor(Math.random() * 10);
-    let chosen_freq= Math.floor(Math.random() * 100);
-
-    if (chosen_freq<100)
+    else if(chosen_freq < 10)
     {
-        chosen
+        chosen_num = chosen_num +Number((chosen_freq / 100).toPrecision(1));  
     }
-    else if (chosen_freq===100)
+    else
     {
-        chosen_num = chosen_channel +
+        chosen_num = chosen_num + Number((chosen_freq / 100).toPrecision(2));
     }
-    */
+    
     return chosen_num;
+}
+
+function checkAnswer() 
+{
+    
+    document.getElementById("test").innerHTML = random_number;
+    return 0;
 }
