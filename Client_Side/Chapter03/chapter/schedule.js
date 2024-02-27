@@ -4,8 +4,8 @@
 
       Tipton Turbines
       Baseball Schedule Data
-      Author: 
-      Date:   
+      Author: Nora Hammons
+      Date:   2/27/2024
 
       Filename: schedule.js
 */
