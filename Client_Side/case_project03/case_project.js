@@ -7,12 +7,13 @@
     Filename: project.js
 */
 let frequency = 0;
-let random_number=choose_num();
+let random_number=0;
 
 window.addEventListener("load", setupGame);
-document.getElementById("check_button").addEventListener("click", checkAnswer());
+document.getElementById("check_button").addEventListener("click", checkAnswer);
 
 function setupGame() {
+    random_number=choose_num();
     document.getElementById("looking_for_frequency").innerHTML = random_number;
     document.getElementById("number1").value = 10;
     document.getElementById("range_input").value = 50;
@@ -27,7 +28,6 @@ function setupGame() {
 }
 
 function getCurrentFrequency() {
-    let frequency = 0;
     let channel = document.getElementById("number1").value;
     let slider_range = document.getElementById("range_input").value;
 
@@ -55,7 +55,7 @@ function getCurrentFrequency() {
 //chooses a random number that is set to be a specific 4 digit integer
 function choose_num() {
     let chosen_num = Math.floor(Math.random() * 12);
-    let chosen_freq=(Math.floor(Math.random() * 101));
+    let chosen_freq=Math.floor(Math.random() * 101).toPrecision(2);
 
     if (chosen_freq == 0 && chosen_num != 11) {
         chosen_num = chosen_num + .00;
@@ -80,7 +80,14 @@ function choose_num() {
 
 function checkAnswer() 
 {
-    
-    document.getElementById("test").innerHTML = random_number;
-    return 0;
+
+    if(random_number===frequency)
+    {
+        document.getElementById("isAnswerQuestion").innerHTML="Correct";
+        setupGame();
+    }
+    else
+    {
+        document.getElementById("isAnswerQuestion").innerHTML="Incorrect";
+    }
 }
