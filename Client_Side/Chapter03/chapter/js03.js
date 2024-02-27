@@ -5,7 +5,7 @@
      Tipton Turbines
      Program to display games results in a web table
      Author: Nora Hammons
-     Date:   2/20/2024
+     Date:   2/27/2024
 
      Filename: js03.js
  */
@@ -23,7 +23,31 @@
             let gameInfo = "";
 
             //Open the paragraph
-            gameInfo += "<p>";
+            switch(gameResults[i])
+            {
+                case "W":
+                    gameInfo += "<p class='win'>";
+                    break;
+                case "L":
+                    gameInfo += "<p class='lose'>";
+                    break;
+                case "S":
+                    gameInfo += "<p class='suspended'>";
+                    break;
+                case "P":
+                    gameInfo += "<p class='postponed'>";
+                    break;
+            }
+
+            //Display the game location
+            if(gameLocations[i] === "h")
+            {
+                gameInfo += "vs. ";
+            }
+            else if (gameLocations[i] === "a")
+            {
+                gameInfo += "@ ";
+            }
 
             //Include the opponent
             gameInfo += gameOpponents[i] + "<br>";
@@ -31,6 +55,20 @@
             //Include result and score
             gameInfo += gameResults[i]+ ": (" + runsScored[i] + 
             " - " + runsAllowed[i] + ")";
+
+            //Display innings played for suspended, shortened, or extrainning games
+            if (gameInnings[i] < 5)
+            {
+                gameInfo += " [" + gameInnings[i] + "]***";
+            }
+            else if (gameInnings[i] < 9 )
+            {
+                gameInfo += " [" + gameInnings[i] +"]*";
+            }
+            else if (gameInnings[i] > 9)
+            {
+                gameInfo += " [" + gameInnings[i] + "]";
+            }
 
             //Close the paragraph
             gameInfo += "</p>";
