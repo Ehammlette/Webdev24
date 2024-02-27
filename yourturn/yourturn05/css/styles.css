@@ -23,31 +23,31 @@ body
     color:#261C15;
     background-color:#F7F7F2;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.10em;
 }
 
 /*header*/
-header{
-    font: 100px;
-    float:center;
-    text-align: center;
-    margin:0;
-    text-shadow: 1px 0px 10px  line;
-    block-size: auto;
-    
-}
 
-header h1
-{
-color: #F05D23;
-}
-
-al
+.alt
 {
     background-color: #261C15;
     border:10px #261C15;
     padding:10px;
     border-radius: 50%;
     color:#C5D86D;
+}
+
+/*Style rules for mobile viewport*/
+
+/* Style rule for header */
+header {
+    background-color:#F7F7F2;
+    color: #F05D23;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 145px;
+    text-align: center;
 }
 
 /*nav*/
@@ -79,7 +79,7 @@ nav li a:hover
     background-color: #E4E6C3;
 }
 
-/*main*/
+/* Show mobile class, hide tablet-desktop class */
 .tablet-desktop
 {
     color:#261C15;
@@ -87,6 +87,8 @@ nav li a:hover
     padding: 30px;
     border:15px;
 }
+
+/*main*/
 
 .list_projects
 {
@@ -124,7 +126,7 @@ padding: 15px;
 img
 {
     height: auto;
-    max-width: 500px;
+    max-width: 100%;
     text-align:center;
 }
 
