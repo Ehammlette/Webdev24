@@ -1,0 +1,151 @@
+/*
+Author: Nora Hammons
+Date: 2/7/2024
+File name: styles.css
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body
+{ 
+    color:#261C15;
+    background-color:#F7F7F2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.10em;
+}
+
+/*header*/
+
+.alt
+{
+    background-color: #261C15;
+    border:10px #261C15;
+    padding:10px;
+    border-radius: 50%;
+    color:#C5D86D;
+}
+
+/*Style rules for mobile viewport*/
+
+/* Style rule for header */
+header {
+    background-color:#F7F7F2;
+    color: #F05D23;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 145px;
+    text-align: center;
+}
+
+/*nav*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #C5D86D;
+}
+
+nav li 
+{
+    display: inline;
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #261C15;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover 
+{
+    background-color: #E4E6C3;
+}
+
+/* Show mobile class, hide tablet-desktop class */
+.tablet-desktop
+{
+    color:#261C15;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px;
+    border:15px;
+}
+
+/*main*/
+
+.list_projects
+{
+text-align: center;
+padding: 30px;
+border:30px;
+float:center;
+}
+
+#project
+{
+color:#F05D23;
+text-align: center;
+background-repeat: no-repeat;
+padding: 15px;
+font-size: 30px;
+}
+
+#project a:hover
+{
+color:#F05D23;
+text-align: center;
+border: 1px solid black;
+background-repeat: no-repeat;
+padding: 15px;
+}
+
+#project a
+{
+    color:#F05D23;
+    text-decoration: none;
+}
+
+/*image*/
+img
+{
+    height: auto;
+    max-width: 100%;
+    text-align:center;
+}
+
+/*footer*/
+footer
+{
+    color:#261C15;
+    font-size: 1em;
+    text-align: center;
+    padding: 0 1em;
+}
+
+footer a 
+{
+    color:#F05D23;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color:#C5D86D;
+}
