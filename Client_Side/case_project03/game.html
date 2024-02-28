@@ -2,7 +2,7 @@
 <!--
             Student Name: Nora(Ethan) Hammons
             File Name: template.html
-            Date: 1/23/2024
+            Date: 2/27/2024
         -->
 <html lang="en">
 
@@ -34,8 +34,10 @@
         <div class="home_info">
         <h2>Game</h2>
         <p >Time to play the game.</p>
-        <p>Underneath the tuning frequency is your current frequency. The slider helps for precision frequency. </p>
+        <p>The slider helps for precision frequency. Clear button clears the list of correct answers.</p>
+        <p>Underneath the tuning frequency is your current frequency. When the frequencies are the same click "Check Result"</p>
     </div>
+    <p id="isAnswerQuestion"></p>
         <div class="main_display">
 
             <div class="display_looking_for_frequency">
@@ -67,13 +69,14 @@
 
         </div>
 
-
         <br>
         <button id="check_button">Check result</button>
+        <button id="list_correct_answers">See correct answers</button>
+        <button id="clear">Clear</button>
+        <button id="restart">Restart</button>
+        <br>
+        <span id="listOfAnswer"></span>
 
-        <p id="test"></p>
-
-        <!--Form-->
 
     </main>
 
