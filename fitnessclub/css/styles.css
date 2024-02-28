@@ -5,14 +5,7 @@ File name: styles.css
 */
 
 /* CSS Reset */
-body,
-header,
-nav,
-main,
-footer,
-h1,
-div,
-img,ul {
+body,header,nav,main,footer,h1,div,img,ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -222,7 +215,7 @@ main ul{
     height: 450px;
 }
 
-}/* end of tablet veiwport*/
+}/* end of tablet viewport*/
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 769px)
@@ -246,4 +239,41 @@ main ul{
     nav ul{
         text-align: right;
     }
+
+    nav li{
+        border:none;
+    }
+
+    nav li a{
+        padding: 0.5em 1em;
+    }
+
+    /* Desktop Viewport: Style Rules for main content */
+    main {
+        clear: left;
+    }
+
+    main h1{
+        font-size: 1.8em;
+    }
+
+    #weights, #cardio, #training{
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #exercises{
+        clear: left;
+    }
+}/* End of viewport*/
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px){
+
+    #container{
+    width:1920px;
+    margin: 0 auto;
+}
+
 }
