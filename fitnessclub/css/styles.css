@@ -36,7 +36,7 @@ header {
     position: sticky;
     top: 0;
     background-color: #000;
-    height: 190px
+    height: 190px;
 }
 
 header img {
@@ -51,6 +51,7 @@ margin-bottom: 1%;
 
 nav ul {
     list-style-type: none;
+    margin:0;
     text-align:center;
 }
 
@@ -222,3 +223,27 @@ main ul{
 }
 
 }/* end of tablet veiwport*/
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px)
+{
+
+    /* Desktop Viewport: Style rule for header */
+    header {
+        width: 25%;
+        float:left;
+        padding-bottom:0;
+    }
+
+    /* Desktop Viewport: Style rule for nav area */
+    nav
+    {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
+
+    nav ul{
+        text-align: right;
+    }
+}
