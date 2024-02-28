@@ -9,18 +9,19 @@
 let frequency = 0;
 let random_number=0;
 let correct_count=0;
+let data = new Array();
 
 window.addEventListener("load", setupGame);
 document.getElementById("check_button").addEventListener("click", checkAnswer);
 document.getElementById("list_correct_answers").addEventListener("click", getCorrectAnswersList);
-document.getElementById("restart").addEventListener("click", restartGame)
-
+document.getElementById("restart").addEventListener("click", restartGame);
+document.getElementById("clear").addEventListener("click", clear_answer_list);
 
 
 function setupGame() {
     random_number=choose_num();
     document.getElementById("looking_for_frequency").innerHTML = random_number;
-    document.getElementById("number1").value = 10;
+    document.getElementById("number1").value = 5;
     document.getElementById("range_input").value = 50;
 
     //Call to find frequency
@@ -88,6 +89,7 @@ function checkAnswer()
     
     if(random_number===frequency)
     {
+        data[correct_count]=random_number;
         setupGame();
         correct_count++;
         document.getElementById("isAnswerQuestion").innerHTML="Correct";
@@ -98,9 +100,23 @@ function checkAnswer()
     }
 }
 
+
 function getCorrectAnswersList()
 {
-    document.getElementById("listOfAnswer").innerHTML=correct_count;
+    let htmlCode;
+
+    for(let i=0; i<data.length;i++)
+    {
+        htmlCode+='<p>'+data[i]+
+        '</p>';
+    }
+
+    document.getElementById("listOfAnswer").innerHTML=data[0];
+
+}
+function clear_answer_list()
+{
+    document.getElementById("listOfAnswer").innerHTML="";
 }
 
 function restartGame()
