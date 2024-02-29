@@ -153,7 +153,7 @@ footer p a {
 }
 
 /* Media query for tablet view port*/
-@media screen and (min-width:630px) /*Starting break point*/
+@media screen and (min-width:630px), print/*Starting break point*/
 {
 /*Tablet viewport: show desktop and hide mobile*/
 .tablet-desktop{
@@ -218,7 +218,7 @@ main ul{
 }/* end of tablet viewport*/
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 769px)
+@media screen and (min-width: 769px), print
 {
 
     /* Desktop Viewport: Style rule for header */
@@ -276,4 +276,12 @@ main ul{
     margin: 0 auto;
 }
 
+}
+
+/* Media Query for Print */
+@media print{
+    body{
+        background-color: #fff;
+        color:#000;
+    }
 }
