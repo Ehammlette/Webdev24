@@ -13,14 +13,14 @@ body, header, nav, main, footer, h1, div, article, h2 {
 
 /* Style rules for body */
 body {
-    background-color: linear-gradient(#ffe5dc,#a22c02);
+    background: linear-gradient(to left,#a22c02,#ffe5dc);
 }
 
 /* Style rules for mobile viewport */
-@media screen and (min-width:481px)
+@media screen and (min-width:481px),print
 {
     /*Tablet viewport: show desktop and hide mobile*/
-    .tablet-desktop{
+    article{
         width:43%;
         float:left;
         height:160px;
@@ -33,7 +33,7 @@ body {
 }
 
 /* Style rules for desktop viewport */
-@media screen and (min-width:900px)
+@media screen and (min-width:900px),print
 {
     article
     {
