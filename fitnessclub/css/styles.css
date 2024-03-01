@@ -40,12 +40,14 @@ header img {
 nav {
 padding: 1%;
 margin-bottom: 1%;
+
 }
 
 nav ul {
     list-style-type: none;
     margin:0;
     text-align:center;
+    
 }
 
 nav li {
@@ -226,7 +228,7 @@ main ul{
     header {
         width: 25%;
         float:left;
-        padding-bottom:0;
+        padding-bottom: 0;
     }
 
     /* Desktop Viewport: Style rule for nav area */
@@ -270,7 +272,7 @@ main ul{
 }/* End of viewport*/
 
 /* Media Query for Large Desktop Viewports */
-@media screen and (min-width: 1921px){
+@media screen and (min-width: 1921px), print{
 
     #container{
     width:1920px;
