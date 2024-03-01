@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Nora Hammons
+Date: 3/1/2024
+File Name: apply06.css
 */
 
 /* CSS Reset */
@@ -13,10 +13,41 @@ body, header, nav, main, footer, h1, div, article, h2 {
 
 /* Style rules for body */
 body {
-	background-color: #fe9972;
+    background-color: linear-gradient(#ffe5dc,#a22c02);
 }
 
 /* Style rules for mobile viewport */
+@media screen and (min-width:481px)
+{
+    /*Tablet viewport: show desktop and hide mobile*/
+    .tablet-desktop{
+        width:43%;
+        float:left;
+        height:160px;
+    }
+
+    /*footer*/
+    footer{
+        float:none;
+    }
+}
+
+/* Style rules for desktop viewport */
+@media screen and (min-width:900px)
+{
+    article
+    {
+        width:27%;
+        height:140px;
+    }
+
+    article:hover
+    {
+        background-color:#ffe5dc;
+        color:#a22c02;
+    }
+
+}
 
 /* Style rule for the header element */
 header {
