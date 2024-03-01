@@ -1,6 +1,6 @@
 /*
 Author: Nora Hammons
-Date: 2/19/2024
+Date: 3/1/2024
 File name: styles.css
 */
 
@@ -76,6 +76,7 @@ nav li a {
 
 /* Style rules for main content */
 main {
+    clear: left;
     background-color: #fff;
     padding: 2%;
     font-size: 1.15em;
@@ -150,6 +151,15 @@ footer p {
 footer p a {
     color: #fff;
     text-decoration: none;
+}
+
+/* Tablet viewport: Show tablet-desktop class, hide mobile class */
+.tablet-desktop{
+    display: block;
+}
+
+.mobile{
+    display:none;
 }
 
 /* Media query for tablet view port*/
