@@ -153,15 +153,6 @@ footer p a {
     text-decoration: none;
 }
 
-/* Tablet viewport: Show tablet-desktop class, hide mobile class */
-.tablet-desktop{
-    display: block;
-}
-
-.mobile{
-    display:none;
-}
-
 /* Media query for tablet view port*/
 @media screen and (min-width:630px), print/*Starting break point*/
 {
