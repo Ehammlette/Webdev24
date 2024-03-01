@@ -87,7 +87,7 @@ footer {
     clear: left;
 }
 
-/* Media Query for Tablet Viewports */
+/* Media Query for Tablet Viewport */
 @media screen and (min-width: 481px) {
     
     .columns {
