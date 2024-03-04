@@ -38,9 +38,8 @@ header img {
 
 /* Style rules for navigation area */
 nav {
-padding: 1%;
-margin-bottom: 1%;
-
+    padding: 1%;
+    margin-bottom: 1%;
 }
 
 nav ul {
@@ -226,7 +225,7 @@ main ul{
 
     /* Desktop Viewport: Style rule for header */
     header {
-        width: 25%;
+        width: 20%;
         float:left;
         padding-bottom: 0;
     }
@@ -249,6 +248,11 @@ main ul{
 
     nav li a{
         padding: 0.5em 1em;
+    }
+
+    nav li a:hover {
+        color:#000;
+        background-color: #fff;
     }
 
     /* Desktop Viewport: Style Rules for main content */
