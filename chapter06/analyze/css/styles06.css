@@ -82,7 +82,7 @@ footer {
     /* Tablet Viewport: Style rules for nav area */
     nav li {
         display: inline-block;
-        margin: 0.5%;
+        margin: 0.2%;
     }
     
     nav li a {
