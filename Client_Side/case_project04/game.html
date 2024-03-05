@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+            Student Name: Nora(Ethan) Hammons
+            File Name: template.html
+            Date: 2/27/2024
+        -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraterrestrial Network Analysis Bureau Webpage</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="case_project.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img height="120" width="120" src="image/symbol copy.jpg"
+                alt="Logo for Extraterrestrial Network Analysis Bureau &copy;"></img></a>
+        <h1>Extraterrestrial Network Analysis Bureau</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="game.html">Start</a></li>
+            <li><a href="leader_board.html">Leaderboard</a></li>
+            <li><a href="manual.html" target="_blank">Manual</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="home_info">
+        <h2>Game</h2>
+        <p >Time to play the game.</p>
+        <p>The slider helps for precision frequency. Clear button clears the list of correct answers.</p>
+        <p>Underneath the tuning frequency is your current frequency. When the frequencies are the same click "Check Result"</p>
+    </div>
+    <p id="isAnswerQuestion"></p>
+        <div class="main_display">
+
+            <div class="display_looking_for_frequency">
+                <p>Tune to frequency:
+                    <span id="looking_for_frequency"></span>
+                </p>
+            </div>
+
+            <div class="displayCurrentFrequency">
+                <p>Current frequency:
+                    <span id="currentFrequency"></span>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="control_panel">
+
+                <label for="number1">
+                    <p>channel:</p>
+                </label>
+                <input type="number" min="0" max="10" id="number1" class="channel_selector" />
+                <br>
+                <label for="slider">
+                    <p>Ranger slider: </p>
+                </label>
+                <span id="range_of_input"></span>
+                <input type="range" min="1" max="100" class="slider" id="range_input" />
+
+        </div>
+
+        <br>
+        <button id="check_button">Check result</button>
+        <button id="list_correct_answers">See correct answers</button>
+        <button id="clear">Clear</button>
+        <button id="restart">Restart</button>
+        <br>
+        <span id="listOfAnswer"></span>
+
+
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 1995-2024. All Rights Reserved</p>
+    </footer>
+</body>
+
+</html>
