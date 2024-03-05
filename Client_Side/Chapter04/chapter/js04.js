@@ -10,7 +10,7 @@
       Filename: js04.js
  */
 
-
+window.addEventListener("error", processErrors)
 /* global variables tracking status of each form section */
 acresComplete = true;
 let cropsComplete = true;
@@ -126,3 +126,9 @@ function createRecommendation() {
       messageHeadElement.innerHTML += "D";  
    }
 }
+
+function processErrors()
+{
+window.alert("Error occurred in code.")
+}
+
