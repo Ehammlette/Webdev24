@@ -26,27 +26,12 @@ body
     font-size: 1.10em;
 }
 
-/*header*/
-
-.alt
-{
-    background-color: #261C15;
-    border:10px #261C15;
-    padding:10px;
-    border-radius: 50%;
-    color:#C5D86D;
-}
 
 /*Style rules for mobile viewport*/
 
 /* Style rule for header */
 header {
-    background-color:#F7F7F2;
     color: #F05D23;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    height: 145px;
     text-align: center;
 }
 
@@ -54,16 +39,13 @@ header {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: #C5D86D;
 }
 
 nav li 
 {
-    display: inline;
-    float: left;
+    text-align: center;
 }
 
 nav li a {
@@ -79,13 +61,26 @@ nav li a:hover
     background-color: #E4E6C3;
 }
 
+/*image*/
+img
+{
+    max-width: 20%;
+    display: block;
+    border-radius: 50%;
+}
+
 /* Show mobile class, hide tablet-desktop class */
-.tablet-desktop
+.mobile
 {
     color:#261C15;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 30px;
     border:15px;
+}
+
+.tablet-desktop
+{
+    display:none;
 }
 
 /*main*/
@@ -122,14 +117,6 @@ padding: 15px;
     text-decoration: none;
 }
 
-/*image*/
-img
-{
-    height: auto;
-    max-width: 100%;
-    text-align:center;
-}
-
 /*footer*/
 footer
 {
@@ -158,6 +145,8 @@ footer a:hover
     {
         display:block;
     }
+
+    /* Tablet viewport*/
     
     /* Tablet Viewport: Style rules for nav area */
     nav li {
