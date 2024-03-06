@@ -41,6 +41,7 @@ nav ul {
     list-style-type: none;
     overflow: hidden;
     background-color: #C5D86D;
+    font-family: 'Gill Sans MT';
 }
 
 nav li 
@@ -64,8 +65,7 @@ nav li a:hover
 /*image*/
 img
 {
-    max-width: 20%;
-    display: block;
+    max-width: 60%;
     border-radius: 50%;
 }
 
@@ -74,7 +74,7 @@ img
 {
     color:#261C15;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 30px;
+    padding: 10px 30px;
     border:15px;
 }
 
@@ -144,9 +144,24 @@ footer a:hover
     .tablet-desktop
     {
         display:block;
+        color:#261C15;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 30px;
+        border:15px;
     }
 
-    /* Tablet viewport*/
+    /* Tablet viewport: hide mobile view*/
+    .mobile
+    {
+        display: none;
+    }
+
+    /*image*/
+    img
+    {
+    max-width: 45%;
+    border-radius: 50%;
+    }
     
     /* Tablet Viewport: Style rules for nav area */
     nav li {
