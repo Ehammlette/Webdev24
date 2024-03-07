@@ -10,12 +10,22 @@
       Filename: js04.js
  */
 
-window.addEventListener("error", processErrors)
+
+//Process error this way
+//window.addEventListener("error", processErrors)
+//or
+window.onerror = function (msg, url, line){
+   window.alert("Error: "+ msg +
+   "\nFile location"+ url+
+   "\nLine number: " + line);
+   return true;
+}
+
 /* global variables tracking status of each form section */
-acresComplete = true;
+let acresComplete = true;
 let cropsComplete = true;
 let monthsComplete = true;
-et fuelComplete = true;
+let fuelComplete = true;
 
 /* global variables referencing sidebar h2 and p elements */
 let messageHeadElement = document.getElementById("messageHead");
@@ -24,8 +34,8 @@ let messageElement = document.getElementById("message");
 /* global variables referencing fieldset elements */
 let acresFieldset = document.getElementsByTagName("fieldset")[0];
 let cropsFieldset = document.getElementsByTagName("fieldset")[1];
-let monthsFieldset  document.getElementsByTagName("fieldset")[2];
-let fuelFieldset = document.getElementsByTagName("fieldset)[3];
+let monthsFieldset = document.getElementsByTagName("fieldset")[2];
+let fuelFieldset = document.getElementsByTagName("fieldset")[3];
 
 /* global variables referencing text input elements */
 let monthsBox = document.forms[0].months;
@@ -67,7 +77,7 @@ function createEventListeners() {
 
 
 /* verify acres text box entry is a positive number */
-function verifyAcres) {
+function verifyAcres() {
    testFormCompleteness();      
 }
 
