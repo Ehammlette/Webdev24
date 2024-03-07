@@ -6,12 +6,19 @@
 
     Filename: project.js
 */
+window.onerror = function (msg, url, line){
+    window.alert("Error: "+ msg +
+    "\nFile location"+ url+
+    "\nLine number: " + line);
+    return true;
+ }
+
 let frequency = 0;
 let random_number=0;
 let correct_count=0;
 let data = new Array();
 
-window.addEventListener("load", setupGame);
+//window.addEventListener("load", setupGame);
 document.getElementById("check_button").addEventListener("click", checkAnswer);
 document.getElementById("list_correct_answers").addEventListener("click", getCorrectAnswersList);
 document.getElementById("restart").addEventListener("click", restartGame);
@@ -103,15 +110,15 @@ function checkAnswer()
 
 function getCorrectAnswersList()
 {
-    let htmlCode;
+    let htmlCode="";
 
-    for(let i=0; i<data.length;i++)
+    for(let i=0; i<data.length+1;i++)
     {
         htmlCode+='<p>'+data[i]+
         '</p>';
     }
 
-    document.getElementById("listOfAnswer").innerHTML=data[0];
+    document.getElementById("listOfAnswer").innerHTML=;
 
 }
 function clear_answer_list()
