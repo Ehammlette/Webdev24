@@ -17,7 +17,7 @@ window.onerror = function (msg, url, line){
 }
 
 // Array of Jane Austen Quotes
-const quotes = [
+let quotes = [
 "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
 "I hate to hear you talk about all women as if they were fine ladies instead of rational creatures. None of us want to be in calm waters all our lives.",
 "Silly things do cease to be silly if they are done by sensible people in an impudent way.",
@@ -30,7 +30,6 @@ const quotes = [
 "The person, be it gentlemen or lady, who has not pleasure in a good novel, must be intolerably stupid."
 ];
 
-
 // Run the quote generator every time the page loads
 window.addEventListener("load", quoteGenerator);
 
@@ -41,20 +40,18 @@ function quoteGenerator() {
    let quoteCount = quotes.length;
    
    // Generate a random integer to select a quote
-   let randomQuote = randomInt(0, quoteCount);
+   let randomQuote = randomInt(0,quoteCount);
    
    // Retrieve a randomly-selected quote
    let quote = quotes[randomQuote];
-   
-   let test_quote=quotes[1];
 
    // Display the random quote
-   document.getElementByTagName("blockquote")[0].innerHTML = test_quote;
+   document.getElementsByTagName("blockquote")[0].innerHTML = quote;
 }
 
 /*=================================================================*/
 // Function to return a randomly-selected integer between lowest and highest, inclusive
 function randomInt(lowest, highest) {
-   let size = highest - lowest + 1;
-   return Math.floor(lowest + size*Math.random());
+   let random_num=Number(Math.floor(Math.random() * (highest-lowest) )+ lowest);
+   return random_num;
 }
