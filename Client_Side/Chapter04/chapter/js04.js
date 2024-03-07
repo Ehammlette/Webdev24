@@ -139,6 +139,6 @@ function createRecommendation() {
 
 function processErrors()
 {
-window.alert("Error occurred in code.")
+window.alert("Error occurred in code.");
 }
 
