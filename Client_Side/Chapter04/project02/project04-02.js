@@ -11,7 +11,7 @@
 
 
 // Array of Jane Austen Quotes
-let quotes = [
+const quotes = [
 "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
 "I hate to hear you talk about all women as if they were fine ladies instead of rational creatures. None of us want to be in calm waters all our lives.",
 "Silly things do cease to be silly if they are done by sensible people in an impudent way.",
@@ -26,29 +26,33 @@ let quotes = [
 
 
 // Run the quote generator every time the page loads
-window.addEventListener("load", quoteGenerator);
+//window.addEventListener("load", quoteGenerator);
 
+// Error
+//window.addEventListener("error", processErrors)
 
 // Function to generate and display a random quote
 function quoteGenerator() {
    
    // Number of quotes in the array
-   quoteCount = quotes.length;
+   let quoteCount = quotes.length;
    
    // Generate a random integer to select a quote
-   randomQuote = randomInt(0, quoteCount);
+   //let randomQuote = randomInt(0, quoteCount);
    
    // Retrieve a randomly-selected quote
-   quote = quotes[randomQuotes];
+   //let quote = quotes[randomQuote];
    
-   
+   let test_quote=quotes[1];
+
    // Display the random quote
-   document.getElementByTagName("blockquote")[1].innerHTML = quote;
+   document.getElementByTagName("blockquote")[0].innerHTML = test_quote;
 }
 
-
-
-
+function processErrors()
+{
+window.alert("Error occurred in code.")
+}
 
 
 
