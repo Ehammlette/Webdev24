@@ -6,19 +6,13 @@
 
     Filename: project.js
 */
-window.onerror = function (msg, url, line){
-    window.alert("Error: "+ msg +
-    "\nFile location"+ url+
-    "\nLine number: " + line);
-    return true;
- }
 
 let frequency = 0;
 let random_number=0;
 let correct_count=0;
 let data = new Array();
 
-//window.addEventListener("load", setupGame);
+window.addEventListener("load", setupGame);
 document.getElementById("check_button").addEventListener("click", checkAnswer);
 document.getElementById("list_correct_answers").addEventListener("click", getCorrectAnswersList);
 document.getElementById("restart").addEventListener("click", restartGame);
@@ -26,6 +20,7 @@ document.getElementById("clear").addEventListener("click", clear_answer_list);
 
 
 function setupGame() {
+    //set up defaults
     random_number=choose_num();
     document.getElementById("looking_for_frequency").innerHTML = random_number;
     document.getElementById("number1").value = 5;
@@ -41,6 +36,7 @@ function setupGame() {
 }
 
 function getCurrentFrequency() {
+    //set two variables equal to the two input elements
     let channel = document.getElementById("number1").value;
     let slider_range = document.getElementById("range_input").value;
 
@@ -48,14 +44,14 @@ function getCurrentFrequency() {
     document.getElementById("range_of_input").innerHTML = document.getElementById("range_input").value;
 
     //get get frequency + trouble if statement to fix bug + number bug fix
-    if (slider_range == 100) {
+    if (slider_range == 100) {//if decimal is equal to 100
         frequency = Number(channel)+1;
     }
     else {
-        if (slider_range < 10) {
+        if (slider_range < 10) {//if decimal is less then ten
             frequency = Number(channel)  + Number((slider_range / 100).toPrecision(1));
         }
-        else {
+        else {//if decimal is greater then ten
             frequency = Number(channel) + Number((slider_range / 100).toPrecision(2));
         }
     }
@@ -94,14 +90,14 @@ function choose_num() {
 function checkAnswer() 
 {
     
-    if(random_number===frequency)
+    if(random_number===frequency)//if answer is correct
     {
         data[correct_count]=random_number;
         setupGame();
         correct_count++;
         document.getElementById("isAnswerQuestion").innerHTML="Correct";
     }
-    else
+    else//if answer is incorrect
     {
         document.getElementById("isAnswerQuestion").innerHTML="Incorrect";
     }
@@ -112,13 +108,21 @@ function getCorrectAnswersList()
 {
     let htmlCode="";
 
-    for(let i=0; i<data.length+1;i++)
+    if (data.length>0)//if there is something in the list
     {
-        htmlCode+='<p>'+data[i]+
-        '</p>';
+        for(let i=0; i<data.length;i++)
+        {
+                htmlCode+='<p>'+data[i]+
+                '</p>';
+        }
+    }
+    else//if there is nothing in the list
+    {
+        htmlCode+="You have nothing to list";
     }
 
-    document.getElementById("listOfAnswer").innerHTML=;
+    //put the displayed code into div element
+    document.getElementById("listOfAnswer").innerHTML=htmlCode;
 
 }
 function clear_answer_list()
