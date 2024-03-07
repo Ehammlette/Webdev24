@@ -3,9 +3,9 @@
       Project 04-03
 
       Application to count the number of characters in a review comment
-      Author: 
-      Date:   
-
+      Author: Nora Hammons
+      Date: 3/7/2024
+      
       Filename: project04-03.js
 */
 
