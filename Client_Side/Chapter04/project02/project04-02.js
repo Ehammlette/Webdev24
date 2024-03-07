@@ -3,8 +3,8 @@
       Project 04-02
 
       Application to display a random Jane Austen Quote
-      Author: 
-      Date:   
+      Author: Nora Hammons
+      Date: 3/7/2024
 
       Filename: project04-02.js
 */
