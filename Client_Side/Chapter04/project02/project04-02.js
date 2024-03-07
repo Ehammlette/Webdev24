@@ -9,6 +9,12 @@
       Filename: project04-02.js
 */
 
+window.onerror = function (msg, url, line){
+   window.alert("Error: "+ msg +
+   "\nFile location"+ url+
+   "\nLine number: " + line);
+   return true;
+}
 
 // Array of Jane Austen Quotes
 const quotes = [
@@ -26,10 +32,7 @@ const quotes = [
 
 
 // Run the quote generator every time the page loads
-//window.addEventListener("load", quoteGenerator);
-
-// Error
-//window.addEventListener("error", processErrors)
+window.addEventListener("load", quoteGenerator);
 
 // Function to generate and display a random quote
 function quoteGenerator() {
@@ -38,24 +41,16 @@ function quoteGenerator() {
    let quoteCount = quotes.length;
    
    // Generate a random integer to select a quote
-   //let randomQuote = randomInt(0, quoteCount);
+   let randomQuote = randomInt(0, quoteCount);
    
    // Retrieve a randomly-selected quote
-   //let quote = quotes[randomQuote];
+   let quote = quotes[randomQuote];
    
    let test_quote=quotes[1];
 
    // Display the random quote
    document.getElementByTagName("blockquote")[0].innerHTML = test_quote;
 }
-
-function processErrors()
-{
-window.alert("Error occurred in code.")
-}
-
-
-
 
 /*=================================================================*/
 // Function to return a randomly-selected integer between lowest and highest, inclusive
