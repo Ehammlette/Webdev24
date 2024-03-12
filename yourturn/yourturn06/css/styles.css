@@ -4,6 +4,12 @@ Date: 2/7/2024
 File name: styles.css
 */
 
+/*
+Palettes
+70s: #C5D86D,#261C15,#F7F7F2,#E4E6C3,#F05D23
+orange moss: #264653, #2A9D8F,#E9C46A,#F4A261,#E76F51
+*/
+
 /* CSS Reset */
 body,
 header,
@@ -12,16 +18,27 @@ main,
 footer,
 h1,
 div,
-img,ul {
+img,
+ul {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-body
-{ 
-    color:#261C15;
-    background-color:#F7F7F2;
+.pallet {
+    background-color: aqua;
+    display: block;
+    width: 80%;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+}
+
+body {
+    /*There are alternative color choices*/
+    /**/
+    color: #261C15;
+    background-color: #F7F7F2;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.10em;
 }
@@ -44,8 +61,7 @@ nav ul {
     font-family: 'Gill Sans MT';
 }
 
-nav li 
-{
+nav li {
     text-align: center;
 }
 
@@ -57,36 +73,36 @@ nav li a {
     text-decoration: none;
 }
 
-nav li a:hover 
-{
+nav li a:hover {
     background-color: #E4E6C3;
 }
 
+nav li:first-child {
+    display: none;
+}
+
 /*image*/
-img
-{
+img {
     max-width: 60%;
     border-radius: 50%;
 }
 
 /* Show mobile class, hide tablet-desktop class */
-.mobile
-{
-    color:#261C15;
+.mobile {
+    color: #261C15;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px 30px;
-    border:15px;
+    border: 15px;
 }
 
-.tablet-desktop
-{
-    display:none;
+.tablet-desktop {
+    display: none;
 }
 
 /*main*/
 
 /* Mobile: tek-link*/
-.tel-link{
+.tel-link {
     background-color: #404040;
     padding: 2%;
     margin: 0 auto;
@@ -102,92 +118,137 @@ img
     display: block;
 }
 
-.list_projects
-{
-text-align: center;
-padding: 30px;
-border:30px;
-float:center;
+.list_projects {
+    text-align: center;
+    padding: 30px;
+    border: 30px;
+    float: center;
 }
 
-#project
-{
-color:#F05D23;
-text-align: center;
-background-repeat: no-repeat;
-padding: 15px;
-font-size: 30px;
+#project {
+    color: #F05D23;
+    text-align: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    font-size: 30px;
 }
 
-#project a:hover
-{
-color:#F05D23;
-text-align: center;
-border: 1px solid black;
-background-repeat: no-repeat;
-padding: 15px;
+#project a:hover {
+    color: #F05D23;
+    text-align: center;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    padding: 15px;
 }
 
-#project a
-{
-    color:#F05D23;
+#project a {
+    color: #F05D23;
     text-decoration: none;
 }
 
 /*footer*/
-footer
-{
-    color:#261C15;
+footer {
+    color: #261C15;
     font-size: 1em;
     text-align: center;
     padding: 0 1em;
 }
 
-footer a 
-{
-    color:#F05D23;
+footer a {
+    color: #F05D23;
     text-decoration: none;
 }
 
-footer a:hover
-{
-    color:#C5D86D;
+footer a:hover {
+    color: #C5D86D;
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 481px), print {
+@media screen and (min-width: 481px),
+print {
 
     /* Tablet viewport: Style rule for showing tablet-desktop class*/
-    .tablet-desktop
-    {
-        display:block;
-        color:#261C15;
+    .tablet-desktop {
+        display: block;
+        color: #261C15;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding: 30px;
-        border:15px;
+        border: 15px;
     }
 
     /* Tablet viewport: hide mobile view*/
-    .mobile
-    {
+    .mobile {
         display: none;
     }
 
     /*image*/
-    img
-    {
-    max-width: 45%;
-    border-radius: 50%;
+    img {
+        max-width: 45%;
+        border-radius: 50%;
     }
-    
+
     /* Tablet Viewport: Style rules for nav area */
     nav li {
         display: inline-block;
         margin: 0.2%;
     }
-    
+
     nav li a {
-        padding: 0.1em 1em;
+        padding: 0.5em 1em;
     }
-    
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px),
+print {
+
+    /* Desktop Viewport: Style rule for header */
+    header {
+        display: none;
+    }
+
+    /* Desktop Viewport: Style rule for nav*/
+    nav {
+        float: right;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    nav li:first-child {
+        display: inline;
+    }
+
+    /* Tablet viewport: Style rule for showing tablet-desktop class*/
+    .tablet-desktop {
+        display: block;
+        color: #261C15;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 30px;
+        border: 15px;
+    }
+
+    /*image*/
+    img {
+        max-width: 29%;
+        margin: 20px;
+        border-radius: 50%;
+    }
+
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
 }
