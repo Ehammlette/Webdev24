@@ -78,10 +78,6 @@ nav li a:hover {
     background-color: #E4E6C3;
 }
 
-nav li:first-child {
-    display: none;
-}
-
 /*image*/
 img {
     max-width: 60%;
@@ -102,8 +98,8 @@ img {
     display: none;
 }
 
-.desktop{
-    display:none;
+.desktop {
+    display: none;
 }
 
 /*main*/
@@ -230,39 +226,39 @@ print {
 @media screen and (min-width: 769px),
 print {
 
-        /* Tablet viewport: Style rule for showing tablet-desktop class*/
-        .tablet-desktop {
-            display: block;
-            color: #261C15;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            padding: 30px;
-            border: 15px;
-        }
-
-    /* Desktop Viewport: Style rule for header */
-    header {
-        display: none;
+    /* Tablet viewport: Style rule for showing tablet-desktop class*/
+    .tablet-desktop {
+        display: block;
+        color: #261C15;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 30px;
+        border: 15px;
     }
 
-    /* Desktop Viewport: Style rule for nav*/
-    nav {
-        float: right;
-        width: 100%;
-        overflow: hidden;
+    .tel-num {
+        font-size: 1.25em;
     }
 
-    nav ul {
-        text-align: right;
+    .map {
+        width: 600px;
+        height: 450px;
     }
 
-    nav li a {
-        padding: 0.5em 1em;
+    /*footer*/
+    footer {
+        color: #261C15;
+        font-size: 1em;
+        text-align: center;
+        padding: 0 1em;
     }
 
-    nav li:first-child {
-        display: inline;
-        float:left;
-        font-size: 1.10em;
+    footer a {
+        color: #F05D23;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: #C5D86D;
     }
 
 }
