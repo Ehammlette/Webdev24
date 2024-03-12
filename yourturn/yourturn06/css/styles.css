@@ -85,6 +85,23 @@ img
 
 /*main*/
 
+/* Mobile: tek-link*/
+.tel-link{
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
 .list_projects
 {
 text-align: center;
