@@ -196,6 +196,11 @@ main ul{
     gap: 20px;
 }
 
+.pic-text{
+    font-size:1em;
+    padding:10px
+}
+
 #exercises {
     clear: left;
     border-top: 1px solid #000;
@@ -267,6 +272,20 @@ main ul{
 
     main h1{
         font-size: 1.8em;
+    }
+
+    .pic-text {
+        font-size:1.5em;
+        padding:20px;
+    }
+
+    .frame {
+        opacity:0.9;
+    }
+
+    .frame:hover{
+        opacity:1;
+        box-shadow: 8px 8px 10px #808080;
     }
 
     #weights, #cardio, #training{
