@@ -86,6 +86,22 @@ main {
     text-shadow: 5px 5px 8px #ccc;
 }
 
+article{
+    padding: 2%;
+}
+
+article h3{
+    text-align:center;
+}
+
+article img{
+    margin:auto 0;
+}
+
+article ul{
+    margin-left:10%;
+}
+
 .tel-link{
     background-color: #404040;
     padding: 2%;
