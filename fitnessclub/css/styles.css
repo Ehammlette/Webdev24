@@ -1,6 +1,6 @@
 /*
 Author: Nora Hammons
-Date: 3/1/2024
+Date: 3/18/2024
 File name: styles.css
 */
 
@@ -167,8 +167,7 @@ footer p a {
 }
 
 header{
-    position: static;
-    padding:2%;
+    padding-bottom:2%;
 }
 
 /* Tablet viewport: style rules for nav area */
@@ -189,6 +188,12 @@ nav li a {
 /*Tablet Viewport: Style rules for main content Area */
 main ul{
     margin:0 0 4% 10%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
 }
 
 #exercises {
