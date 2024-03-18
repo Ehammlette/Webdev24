@@ -79,13 +79,17 @@ nav li a:hover {
 }
 
 /*image*/
-img
-{
-    
+img {
+    max-width: 60%;
 }
+
+.round {
+    border-radius: 8px;
+}
+
 .header_img {
     max-width: 60%;
-    border-radius:50%;
+    border-radius: 50%;
 }
 
 /* Show mobile class, hide tablet-desktop class, hide desktop */
@@ -108,7 +112,7 @@ img
 
 /*main*/
 .round {
-    width:none;
+    width: none;
     border-radius: 8px;
 }
 
@@ -153,9 +157,13 @@ img
     float: center;
 }
 
-#project_game, #project_webtoon {
+#project_game,
+#project_webtoon {
     margin: 0 2%;
+    font-size: 1.30em;
 }
+
+
 
 /*
 .project_mobile
@@ -258,6 +266,21 @@ print {
         width: 600px;
         height: 450px;
     }
+
+    /*image*/
+    .header_img {
+        max-width: 30%;
+        border-radius: 50%;
+    }
+
+    /*Projects side by side*/
+    #project_game,
+    #project_webtoon {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
 
     /*footer*/
     footer {
