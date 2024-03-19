@@ -13,6 +13,9 @@ window.addEventListener("load",createLightbox);
 
 function createLightbox(){
    //Lightbox Container
+   let lightBox = document.getElementById("lightbox");
+
+   //parts of the lightbox
    let lbTitle=document.createElement("h1");
    let lbCounter= document.createElement("div");
    let lbPrev= document.createElement("div");
@@ -22,10 +25,10 @@ function createLightbox(){
 
    //Design the lightbox title
    lightBox.appendChild(lbTitle);
-   lbTitle.id= "lnTitle";
+   lbTitle.id= "lbTitle";
    
    //Design the lightbox slide counter
-   lightBox.appendChild(lnCounter);
+   lightBox.appendChild(lbCounter);
    lbCounter.id="lbCounter";
 
    //Design the lightbox previous slide button
@@ -43,6 +46,15 @@ function createLightbox(){
    //Design the lightbox images container
    lightBox.appendChild(lbImages);
    lbImages.id= "lbImages";
+
+   //Add images from the ImgFiles array to the container
+   for (let i=0; i<imgCount;i++) {
+      let image = document.createElement("img");
+      image.src = imgFiles[i];
+      image.alt = imgCaptions[i];
+      lbImages.appendChild(image);
+   }
+
 }
 
 
