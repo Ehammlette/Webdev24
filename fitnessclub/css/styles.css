@@ -133,6 +133,12 @@ article:nth-of-type(2){
     text-shadow: 5px 5px 8px #ccc;
 }
 
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin:2% auto;
+}
+
 #weights,
 #cardio,
 #training {
