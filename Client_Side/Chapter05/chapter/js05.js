@@ -5,7 +5,7 @@
 
       Application to generate a slide show
       Author: nora hammons
-      Date:   
+      Date:   3/19/2024
 
       Filename: js05.js
 */
@@ -19,6 +19,30 @@ function createLightbox(){
    let lbNext= document.createElement("div");
    let lbPlay= document.createElement("div");
    let lbImages= document.createElement("div");
+
+   //Design the lightbox title
+   lightBox.appendChild(lbTitle);
+   lbTitle.id= "lnTitle";
+   
+   //Design the lightbox slide counter
+   lightBox.appendChild(lnCounter);
+   lbCounter.id="lbCounter";
+
+   //Design the lightbox previous slide button
+   lightBox.appendChild(lbPrev);
+   lbPrev.id = "lbPrev";
+
+   //Design the lightbox next slide button
+   lightBox.appendChild(lbNext);
+   lbNext.id = "lbNext";
+
+   //Design the lightbox Play-Pause button
+   lightBox.appendChild(lbPlay);
+   lbPlay.id= "lbPlay";
+
+   //Design the lightbox images container
+   lightBox.appendChild(lbImages);
+   lbImages.id= "lbImages";
 }
 
 
