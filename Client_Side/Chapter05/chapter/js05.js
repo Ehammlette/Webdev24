@@ -26,10 +26,13 @@ function createLightbox(){
    //Design the lightbox title
    lightBox.appendChild(lbTitle);
    lbTitle.id= "lbTitle";
+   lbTitle.textContent = lightboxTitle; //setting the title of the lightbox
    
    //Design the lightbox slide counter
    lightBox.appendChild(lbCounter);
    lbCounter.id="lbCounter";
+   let currentImg= 1;
+   lbCounter.textContent = currentImg + " / " + imgCount;   //shows as : 1 / 12
 
    //Design the lightbox previous slide button
    lightBox.appendChild(lbPrev);
