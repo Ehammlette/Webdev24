@@ -43,7 +43,7 @@ function createLightbox(){
    lightBox.appendChild(lbNext);
    lbNext.id = "lbNext";
    lbNext.innerHTML= "&#9654;"; //symbol next button
-   lbNext.onclick = showNext;
+   lbNext.onclick = showNext; // call the next function 
 
    //Design the lightbox Play-Pause button
    lightBox.appendChild(lbPlay);
