@@ -276,7 +276,7 @@ print {
     /*Projects side by side*/
     #project_game,
     #project_webtoon {
-        width: 29%;
+        width: 50%;
         float: left;
         margin: 0 2%;
     }
