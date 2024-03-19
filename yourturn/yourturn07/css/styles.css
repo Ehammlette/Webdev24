@@ -1,0 +1,310 @@
+/*
+Author: Nora Hammons
+Date: 2/7/2024
+File name: styles.css
+*/
+
+/*
+Palettes
+70s: #C5D86D,#261C15,#F7F7F2,#E4E6C3,#F05D23
+orange moss: #264653, #2A9D8F,#E9C46A,#F4A261,#E76F51
+*/
+
+/* CSS Reset */
+body,
+header,
+nav,
+main,
+footer,
+h1,
+div,
+img,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.pallet {
+    background-color: aqua;
+    display: block;
+    width: 80%;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+}
+
+body {
+    /*There are alternative color choices*/
+    /**/
+    color: #261C15;
+    background-color: #F7F7F2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.10em;
+}
+
+
+/*Style rules for mobile viewport*/
+
+/* Style rule for header */
+header {
+    color: #F05D23;
+    text-align: center;
+}
+
+/*nav*/
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #C5D86D;
+    font-family: 'Gill Sans MT';
+}
+
+nav li {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+nav li a {
+    display: block;
+    color: #261C15;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #E4E6C3;
+}
+
+/*image*/
+img {
+    max-width: 60%;
+}
+
+.round {
+    border-radius: 8px;
+}
+
+.header_img {
+    max-width: 60%;
+    border-radius: 50%;
+}
+
+/* Show mobile class, hide tablet-desktop class, hide desktop */
+.mobile {
+    color: #261C15;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 30px;
+    border: 15px;
+    font-size: 1.2em;
+    line-height: 1.35em;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+/*main*/
+.round {
+    width: none;
+    border-radius: 8px;
+}
+
+/* Mobile: tek-link*/
+.tel-link {
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+/* Contact stuff */
+#contact {
+    text-align: center;
+}
+
+#contact .contact-email-link {
+    color: #666600;
+    text-decoration: none;
+}
+
+.map {
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+}
+
+/* Project stuff */
+.list_projects {
+    text-align: center;
+    padding: 30px;
+    border: 30px;
+    float: center;
+}
+
+#project_game,
+#project_webtoon {
+    margin: 0 2%;
+    font-size: 1.30em;
+}
+
+
+
+/*
+.project_mobile
+{
+    color: #F05D23;
+    text-align: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+    font-size: 30px;
+}
+
+#project a:hover {
+    color: #F05D23;
+    text-align: center;
+    border: 1px solid black;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+#project a {
+    color: #F05D23;
+    text-decoration: none;
+}
+*/
+
+/*footer*/
+footer {
+    color: #261C15;
+    font-size: 1em;
+    text-align: center;
+    padding: 0 1em;
+}
+
+footer a {
+    color: #F05D23;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #C5D86D;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 481px),
+print {
+
+    /* Tablet viewport: Style rule for showing tablet-desktop class*/
+    .tablet-desktop {
+        display: block;
+        color: #261C15;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 30px;
+        border: 15px;
+        font-size: 1.21em;
+        line-height: 1.35;
+    }
+
+    /* Tablet viewport: hide mobile view*/
+    .mobile {
+        display: none;
+    }
+
+    /*image*/
+    .header_img {
+        max-width: 45%;
+        border-radius: 50%;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.25em;
+        display: inline-block;
+        margin: 0.2%;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px),
+print {
+
+    /* Tablet viewport: Style rule for showing tablet-desktop class*/
+    .tablet-desktop {
+        display: block;
+        color: #261C15;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 30px;
+        border: 15px;
+    }
+
+    .tel-num {
+        font-size: 1.25em;
+    }
+
+    .map {
+        width: 600px;
+        height: 450px;
+    }
+
+    /*image*/
+    .header_img {
+        max-width: 30%;
+        border-radius: 50%;
+    }
+
+    /*Projects side by side*/
+    #project_game,
+    #project_webtoon {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+
+    /*footer*/
+    footer {
+        color: #261C15;
+        font-size: 1em;
+        text-align: center;
+        padding: 0 1em;
+    }
+
+    footer a {
+        color: #F05D23;
+        text-decoration: none;
+    }
+
+    footer a:hover {
+        color: #C5D86D;
+    }
+
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
