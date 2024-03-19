@@ -37,17 +37,17 @@ function createLightbox(){
    //Design the lightbox previous slide button
    lightBox.appendChild(lbPrev);
    lbPrev.id = "lbPrev";
-   lbPrev.innerHTML= "&#9664;";
+   lbPrev.innerHTML= "&#9664;"; //symbol previous button
 
    //Design the lightbox next slide button
    lightBox.appendChild(lbNext);
    lbNext.id = "lbNext";
-   lbNext.innerHTML= "&#9654;";
+   lbNext.innerHTML= "&#9654;"; //symbol next button
 
    //Design the lightbox Play-Pause button
    lightBox.appendChild(lbPlay);
    lbPlay.id= "lbPlay";
-   lbPlay.innerHTML= "&#9199;";
+   lbPlay.innerHTML= "&#9199;"; //symbol for play/pause button
 
    //Design the lightbox images container
    lightBox.appendChild(lbImages);
@@ -59,6 +59,19 @@ function createLightbox(){
       image.src = imgFiles[i];
       image.alt = imgCaptions[i];
       lbImages.appendChild(image);
+   }
+
+   //Function to move forward through the image list
+   function showNext() {
+      //append the first image to the images container; the first image becomes now the last
+      lbImages.appendChild(lbImages.firstElementChild);
+
+      //check if the current img number is less than the total number of images
+      //if true, increment currentImg by 1, otherwise, sent currentImg to 1
+      (currentImg < imgCount) ? currentImg++ : currentImg = 1;
+
+      //set the text content of the counter to current / imgCount
+      lbCounter.textContent = currentImg + " / " + imgCount;
    }
 
 }
