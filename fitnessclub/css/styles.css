@@ -21,6 +21,11 @@ img {
     display: block;
 }
 
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
 /*Style rules for mobile viewport*/
 
 /* Style rule for header */
@@ -137,6 +142,19 @@ article:nth-of-type(2){
     position: relative;
     max-width: 450px;
     margin:2% auto;
+}
+
+.pic-text{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 #weights,
