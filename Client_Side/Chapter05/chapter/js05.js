@@ -37,14 +37,17 @@ function createLightbox(){
    //Design the lightbox previous slide button
    lightBox.appendChild(lbPrev);
    lbPrev.id = "lbPrev";
+   lbPrev.innerHTML= "&#9664;";
 
    //Design the lightbox next slide button
    lightBox.appendChild(lbNext);
    lbNext.id = "lbNext";
+   lbNext.innerHTML= "&#9654;";
 
    //Design the lightbox Play-Pause button
    lightBox.appendChild(lbPlay);
    lbPlay.id= "lbPlay";
+   lbPlay.innerHTML= "&#9199;";
 
    //Design the lightbox images container
    lightBox.appendChild(lbImages);
