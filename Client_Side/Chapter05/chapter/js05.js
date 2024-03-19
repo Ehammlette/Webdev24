@@ -4,11 +4,24 @@
       Chapter Case
 
       Application to generate a slide show
-      Author: 
+      Author: nora hammons
       Date:   
 
       Filename: js05.js
 */
+window.addEventListener("load",createLightbox);
+
+function createLightbox(){
+   //Lightbox Container
+   let lbTitle=document.createElement("h1");
+   let lbCounter= document.createElement("div");
+   let lbPrev= document.createElement("div");
+   let lbNext= document.createElement("div");
+   let lbPlay= document.createElement("div");
+   let lbImages= document.createElement("div");
+}
+
+
 
 window.addEventListener("load", setupGallery);
 
