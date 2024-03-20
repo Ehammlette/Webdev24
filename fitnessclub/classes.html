@@ -2,54 +2,123 @@
 <!--
             Student Name: Nora(Ethan) Hammons
             File Name: contact.html
-            Date: 2/7/2024
+            Date: 3/20/2024
         -->
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forward Fitness Club</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
-        rel="stylesheet">
-    <link rel="shortcut icon" href="images/favicon.ico">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forward Fitness Club</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap"
+            rel="stylesheet">
+            <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
-</head>
+    </head>
+    <body>
+    
+        <div id="container">
+    
+            <header>
+                <a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo"></a>
+            </header>
 
-<body>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a> </li>
+                    <li><a href="about.html">About Us</a> </li>
+                    <li><a href="classes.html">Classes</a> </li>
+                    <li><a href="nutrition.html">Nutrition</a> </li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
 
-    <div id="container">
+            <!-- CLasses Hero Image-->
+            <div id="hero" class="tablet-desktop">
+                <img src="images/classes-hero-image.jpg" alt="group of fitness people">
+            </div>
 
-        <header>
-            <a href="index.html"><img src="images/forward-fitness-logo.png" alt="Forward Fitness Club logo"></a>
-        </header>
+            <main>
+                <div class="mobile">
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a> </li>
-                <li><a href="about.html">About Us</a> </li>
-                <li><a href="classes.html">Classes</a> </li>
-                <li><a href="nutrition.html">Nutrition</a> </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+                    <h3>Group Fitness Classes </h3>
+                    <p>Boot Camp: TR 5am &amp; 5pm</p>
+                    <p>Cardio: MWF 6am &amp; 6pm</p>
+                    <p>Kickboxing: MWF 8am &amp; 7:15pm</p>
+                    <p>Spinning: TR 6am &amp; 6pm</p>
+                    <p>Yoga: TR 6am &amp; 6pm</p>
+                    <p>Zumba: MWF 7am &amp; 6pm</p>
 
-        <main>
+                </div>
+                
+                <div class="tablet-desktop">
+                    <table><!--start table-->
+                        <caption>Group Fitness Class Schedule</caption>
+                        <tr><!--First Row-->
+                            <th>Class</th>
+                            <th>Days</th>
+                            <th>Times</th>
+                            <th>Instructor</th>
+                            <th>Room</th>
+                        </tr>
+                        <tr><!--Second Row-->
+                            <td>Cardio</td>
+                            <td>Mon, Wed, Fri</td>
+                            <td>6:00 am, 6:00 pm</td>
+                            <td>Schultz</td>
+                            <td>B</td>
+                        </tr>
+                        <tr><!--Third Row-->
+                            <td>Boot camp</td>
+                            <td>Tue, Thu</td>
+                            <td>5:00am, 5:00pm</td>
+                            <td>Taylor</td>
+                            <td>B</td>
+                        </tr>
+                        <tr><!--Fourth Row-->
+                            <td>Spinning</td>
+                            <td>Tue, Thu</td>
+                            <td>6:00 am, 6:00pm</td>
+                            <td>Roberts</td>
+                            <td>A</td>
+                        </tr>
+                        <tr><!--Fifth Row-->
+                            <td>Kickboxing</td>
+                            <td>Mon, Wed, Fri</td>
+                            <td>8:00am, 7:15pm</td>
+                            <td>Lawrence</td>
+                            <td>A</td>
+                        </tr>
+                        <tr><!--Sixth Row-->
+                            <td>Yoga</td>
+                            <td>Tue, Thu</td>
+                            <td>6:00am, 6:00pm</td>
+                            <td>Schultz</td>
+                            <td>B</td>
+                        </tr>
+                        <tr><!--Seventh Row-->
+                            <td>Zumba</td>
+                            <td>Mon, Wed, Fri</td>
+                            <td>7:00am, 6:00pm</td>
+                            <td>Roberts</td>
+                            <td>A</td>
+                        </tr>
 
-        </main>
+                    </table> <!-- End Table -->
+                </div>
+            </main>
 
-        <footer>
-            <p>&copy; Copyright 2024. All Rights Reserved.</p>
-            <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
-        </footer>
-
-    </div>
-
-</body>
+            <footer>
+                <p>&copy; Copyright 2024. All Rights Reserved.</p>        
+                <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+            </footer>
+    
+        </div>  
+    
+    </body>
 
 </html>
