@@ -100,7 +100,7 @@ article h3{
 }
 
 article img{
-    margin:auto 0;
+    margin:0 auto;
 }
 
 article ul{
@@ -335,6 +335,10 @@ aside{
 
     main h1{
         font-size: 1.8em;
+    }
+
+    article h3 {
+        font-size: 1.75em;
     }
 
     .pic-text {
