@@ -50,6 +50,18 @@ function createLightbox(){
    lightBox.appendChild(lbPlay);
    lbPlay.id= "lbPlay";
    lbPlay.innerHTML= "&#9199;"; //symbol for play/pause button
+   let timeID;
+   lbPlay.onclick = function(){
+      if (timeID) {
+         //stop the slideshow
+         window.clearInterval(timeID);
+         timeId=undefined;
+      }
+      else {
+         showNext();
+         timeID = window.setInterval(showNext,1500);
+      }
+   }
 
    //Design the lightbox images container
    lightBox.appendChild(lbImages);
@@ -80,6 +92,17 @@ function createLightbox(){
          lbImages.insertBefore(lbImages.lastElementChild, lbImages.firstElementChild);
          (currentImg > 1) ? currentImg-- : currentImg = imgCount;
          lbCounter.textContent = currentImg +" / "+ imgCount;
+      }
+
+      //function to create an overlay for the window
+      function createOverlay(){
+         let overlay= document.createElement("div");
+
+         //Add the figure box to th overlay
+         let figureBox= document.creatueElement("figure");
+         overlay.appendChild(figureBox);
+
+         document.body.appendChild(overlay);
       }
 }
 
