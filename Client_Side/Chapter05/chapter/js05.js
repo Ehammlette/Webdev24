@@ -72,6 +72,7 @@ function createLightbox(){
       let image = document.createElement("img");
       image.src = imgFiles[i];
       image.alt = imgCaptions[i];
+      image.onclick = createOverlay;
       lbImages.appendChild(image);
    }
 
@@ -118,6 +119,7 @@ function createLightbox(){
          let closeBox = document.createElement("div");
          closeBox.id = "lbOverlayClose";
          closeBox.innerHTML = "&times;";
+
          closeBox.onclick = function(){
             document.body.removeChild(overlay);
          }
