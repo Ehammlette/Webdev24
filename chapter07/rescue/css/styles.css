@@ -139,8 +139,27 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport. */
-@media screen and (mid-width: 620px), print {
+@media screen and (min-width: 620px), print {
     
-    /* Tablet Viewport colon Show tab hyphen desk class, comma, hide mobile class.*/
-    /* Tablet Viewport colon Style rules for nav area.*/
+    /* Tablet Viewport: Show tab hyphen desk class, comma, hide mobile class.*/
+    .tab-desk{
+        display:block;
+    }
+
+    .mobile{
+        display:none;
+    }
+
+    /* Tablet Viewport: Style rules for nav area.*/
+    nav li{
+        border-top:none;
+        text-decoration: none;
+        display:inline-block;
+        font-size: 1.25em;
+    }
+
+    nav li a {
+        padding: 0.5em;
+    }
+
 }
