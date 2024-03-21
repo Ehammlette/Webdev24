@@ -99,9 +99,31 @@ function createLightbox(){
          let overlay= document.createElement("div");
 
          //Add the figure box to th overlay
-         let figureBox= document.creatueElement("figure");
+         let figureBox= document.createElement("figure");
          overlay.appendChild(figureBox);
 
+         //Add the image to the figure box
+         let overlayImage = this.cloneNode("true");
+         figureBox.appendChild(overlayImage);
+
+         //Add the caption to the figure box
+         let overlayCaption= document.createElement("figcaption");
+         overlayCaption.textContent = this.alt;
+         figureBox.appendChild(overlayCaption);
+
+         document.body.appendChild(overlay);
+
+         figureBox.appendChild(overlayCaption);
+
+         //Add a close button to the overlay
+         let closeBox = document.createElement("div");
+         closeBox.id = "lbOverlayClose";
+         closeBox.innerHTML = "&times;";
+         closeBox.onclick = function(){
+            document.body.removeChild(overlay);
+         }
+         overlay.appendChild(closeBox);
+   
          document.body.appendChild(overlay);
       }
 }
