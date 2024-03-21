@@ -5,7 +5,7 @@
 
       Application to generate a slide show
       Author: nora hammons
-      Date:   3/19/2024
+      Date:   3/21/2024
 
       Filename: js05.js
 */
@@ -97,6 +97,7 @@ function createLightbox(){
       //function to create an overlay for the window
       function createOverlay(){
          let overlay= document.createElement("div");
+         overlay.id= "lbOverlay";
 
          //Add the figure box to th overlay
          let figureBox= document.createElement("figure");
@@ -112,8 +113,6 @@ function createLightbox(){
          figureBox.appendChild(overlayCaption);
 
          document.body.appendChild(overlay);
-
-         figureBox.appendChild(overlayCaption);
 
          //Add a close button to the overlay
          let closeBox = document.createElement("div");
