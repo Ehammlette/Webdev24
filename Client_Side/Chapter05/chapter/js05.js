@@ -38,6 +38,7 @@ function createLightbox(){
    lightBox.appendChild(lbPrev);
    lbPrev.id = "lbPrev";
    lbPrev.innerHTML= "&#9664;"; //symbol previous button
+   lbPrev.onclick = showPrev;
 
    //Design the lightbox next slide button
    lightBox.appendChild(lbNext);
@@ -74,7 +75,12 @@ function createLightbox(){
       //set the text content of the counter to current / imgCount
       lbCounter.textContent = currentImg + " / " + imgCount;
    }
-
+      //function to move backward through the image list
+      function showPrev(){
+         lbImages.insertBefore(lbImages.lastElementChild, lbImages.firstElementChild);
+         (currentImg > 1) ? currentImg-- : currentImg = imgCount;
+         lbCounter.textContent = currentImg +" / "+ imgCount;
+      }
 }
 
 
