@@ -188,3 +188,31 @@ footer a {
         margin-left: 5%;
     }
 }
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1921px), print {
+    
+    /*Style rule for body element*/
+    body{
+        background-image: linear-gradient(#f6eee4,#78593a);
+    }
+
+    /*Style rule for wrapper*/
+    #wrapper{
+        width:1920px;
+        margin:0 auto;
+    }
+
+    /*Style rule for main*/
+    main{
+        background-color:#f6eee4;
+    }
+}
+
+/* Media Query for Print */
+@media print{
+    body{
+        background-color: #fff;
+        color:#000;
+    }
+}
