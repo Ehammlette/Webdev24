@@ -5,7 +5,7 @@
 
       Project to present an online quiz with a countdown clock
       Author: Nora Hammons
-      Date:   3/21/2024
+      Date:   3/25/2024
 
       Filename: project05-01.js
 */
