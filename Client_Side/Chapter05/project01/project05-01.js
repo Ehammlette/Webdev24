@@ -28,14 +28,36 @@ let timeLeft = quizTime;
 let timeID;
 
 // and the node list for questions
-let questionList= querySelectorAll("div#quiz input");
+let questionList = querySelectorAll("div#quiz input");
 
 //onclick calls anonymous function that sets class atribute
 //of overlay object to "showquiz" and repeats countdown every 1 second
 //storing time in timeID
-startQuiz.onclick= function(){
+startQuiz.onclick = function () {
    overlay.className = "showquiz";
    timeID = setInterval(countdown(), 1000);
+}
+
+function countdown() {
+   if (timeLeft === 0) {
+      clearInterval(timeID);
+      var totalCorrect = checkAnswers();
+      if (totalCorrect === correctAnswers.length) {
+         alert("Congratulations! You have " + totalCorrect + " / " + correctAnswers.length + "Your score is 100%!")
+      }
+      else {
+         var incorrectAnswers = correctAnswers.length - totalCorrect;
+         alert("You have " + incorrectAnswers + " incorrect answers out of " + correctAnswers.length + " questions on the quiz." +
+            "Your score is " + totalCorrect / correctAnswers.length + "%.");
+         timeLeft = quizTime;
+         quizClock.value = timeLeft;
+         overlay.className = "hidequiz";
+      }
+   }
+   else {
+      timeLeft--;
+      quizClock.value = timeLeft;
+   }
 }
 
 
@@ -61,14 +83,14 @@ startQuiz.onclick= function(){
 /*------------- Function to check the student answers ----------------*/
 function checkAnswers() {
    let correctCount = 0;
-   
+
    for (let i = 0; i < questionList.length; i++) {
       if (questionList[i].value === correctAnswers[i]) {
          correctCount++;
          questionList[i].className = "";
       } else {
          questionList[i].className = "wronganswer";
-      }      
+      }
    }
    return correctCount;
 }
