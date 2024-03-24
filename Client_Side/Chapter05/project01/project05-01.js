@@ -25,7 +25,18 @@ quizClock.value = quizTime;
 let timeLeft = quizTime;
 
 // Declare the ID for timed commands
+let timeID;
+
 // and the node list for questions
+let questionList= querySelectorAll("div#quiz input");
+
+//onclick calls anonymous function that sets class atribute
+//of overlay object to "showquiz" and repeats countdown every 1 second
+//storing time in timeID
+startQuiz.onclick= function(){
+   overlay.className = "showquiz";
+   timeID = setInterval(countdown(), 1000);
+}
 
 
 
