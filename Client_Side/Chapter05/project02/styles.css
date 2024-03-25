@@ -142,7 +142,7 @@ ol {
 }
 
 ol li {
-   margin-left: 0
+   margin-left: 0;
    padding-left: 0;
    margin-right: 40px;
 }
