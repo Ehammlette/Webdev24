@@ -10,3 +10,12 @@
       Filename: project05-02.js
 */
 
+//collect all the node images in img tag
+let images = document.querySelectorAll("img");
+
+//The photoBucket variable referencing the element with the id “photo_bucket”
+let photoBucket = document.getElementById("photo_bucket");
+
+//The photoList variable referencing the element with the id “photo_list”
+let photoList = document.getElementById("photo_list");
+
