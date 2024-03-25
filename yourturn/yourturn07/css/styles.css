@@ -159,8 +159,7 @@ img {
 
 #project_game,
 #project_webtoon {
-    margin: 0 2%;
-    font-size: 1.30em;
+    margin: 2% 2%;
 }
 
 
@@ -217,8 +216,6 @@ print {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding: 30px;
         border: 15px;
-        font-size: 1.21em;
-        line-height: 1.35;
     }
 
     /* Tablet viewport: hide mobile view*/
@@ -276,9 +273,9 @@ print {
     /*Projects side by side*/
     #project_game,
     #project_webtoon {
-        width: 50%;
+        width: 45%;
         float: left;
-        margin: 0 2%;
+        margin: 1% 2% 3%;
     }
 
 
