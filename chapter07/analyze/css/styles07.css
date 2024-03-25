@@ -1,7 +1,7 @@
 /*
-Author:
-Date:
-File Name: 
+Author: Nora Hammons
+Date: 3/25/2024
+File Name: styles07.css
 */
 
 /* CSS Reset */
@@ -57,6 +57,8 @@ main h1 {
 section {
     color: #fff;
     padding: 3%;
+    background-color: #9d4502;
+    margin: 50%, 75%;
 }
 
 article {
