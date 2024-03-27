@@ -5,7 +5,7 @@ File Name: styles07.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, h3, div, article, section {
+body, header, nav, main, footer, h1, h3, div, article, section,aside {
     margin: 0;
     padding: 0;
     border: 0;
@@ -75,6 +75,8 @@ aside {
     font-style: italic;
     text-align: center;
     border-radius: 15px;
+    text-shadow: 4px 4px 8px #fc7307;
+    box-shadow: 4px 4px 10px #183440;
 }
 
 footer {
@@ -84,6 +86,13 @@ footer {
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 700px), print {
-    
-    
+    .grid{
+        display: grid;
+        grid-template-columns: auto, auto, auto;
+        gap: 20px;
+    }
+
+    aside{
+        grid-column:1 / span 3;
+    }
 }
