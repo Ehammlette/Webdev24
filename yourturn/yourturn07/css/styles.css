@@ -25,20 +25,11 @@ ul {
     border: 0;
 }
 
-.pallet {
-    background-color: aqua;
-    display: block;
-    width: 80%;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-}
-
 body {
     /*There are alternative color choices*/
     /**/
-    color: #261C15;
-    background-color: #F7F7F2;
+    color: #264653;
+    background-color: #F4A261;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.10em;
 }
@@ -48,8 +39,11 @@ body {
 
 /* Style rule for header */
 header {
-    color: #F05D23;
+    color: #264653;
     text-align: center;
+    background:#2A9D8F;
+    font-size: 1.10em;
+    padding:10px;
 }
 
 /*nav*/
@@ -57,7 +51,7 @@ header {
 nav ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: #C5D86D;
+    background-color: #264653;
     font-family: 'Gill Sans MT';
 }
 
@@ -68,14 +62,14 @@ nav li {
 
 nav li a {
     display: block;
-    color: #261C15;
+    color: #E76F51;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 nav li a:hover {
-    background-color: #E4E6C3;
+    background-color: #2A9D8F;
 }
 
 /*image*/
@@ -94,7 +88,7 @@ img {
 
 /* Show mobile class, hide desktop class, hide desktop */
 .mobile {
-    color: #261C15;
+    color: #264653;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px 30px;
     border: 15px;
@@ -135,12 +129,12 @@ img {
 }
 
 #contact .contact-email-link {
-    color: #666600;
+    color: #F4A261;
     text-decoration: none;
 }
 
 .map {
-    border: 2px solid #000;
+    border: 2px solid #264653;
     width: 95%;
     height: 50%;
 }
@@ -191,19 +185,20 @@ display:none;
 
 /*footer*/
 footer {
-    color: #261C15;
+    background-color: #264653;
+    color:#E76F51;
     font-size: 1em;
     text-align: center;
-    padding: 0 1em;
+    padding: 1px 1em;
 }
 
 footer a {
-    color: #F05D23;
     text-decoration: none;
+    color:#E76F51;
 }
 
 footer a:hover {
-    color: #C5D86D;
+    color: #E9C46A;
 }
 
 /* Media Query for Tablet Viewport */
@@ -252,7 +247,7 @@ print {
     /* Desktop viewport: Style rule for showing tablet-desktop class*/
     .desktop {
         display: block;
-        color: #261C15;
+        color: #264653;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding: 30px;
         border: 15px;
@@ -282,6 +277,7 @@ print {
     .headshot
     {
         display: block;
+        text-align:center;
     }
 
     header{
@@ -297,27 +293,16 @@ print {
     /*Projects side by side*/
     #project_game,
     #project_webtoon {
+        text-align: left;
         width: 45%;
         float: left;
         margin: 1% 2% 3%;
     }
 
-
-    /*footer*/
-    footer {
-        color: #261C15;
-        font-size: 1em;
-        text-align: center;
-        padding: 0 1em;
-    }
-
-    footer a {
-        color: #F05D23;
-        text-decoration: none;
-    }
-
-    footer a:hover {
-        color: #C5D86D;
+    /*pictures in project only */
+    #project_game img, #project_webtoon img
+    {
+        max-width: 300px;
     }
 
 }
