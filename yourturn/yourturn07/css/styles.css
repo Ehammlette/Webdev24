@@ -69,7 +69,8 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #2A9D8F;
+    background-color: #E76F51;
+    color:#264653;
 }
 
 /*image*/
