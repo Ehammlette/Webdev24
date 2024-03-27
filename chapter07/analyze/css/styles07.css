@@ -5,7 +5,7 @@ File Name: styles07.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, h3, div {
+body, header, nav, main, footer, h1, h3, div, article, section {
     margin: 0;
     padding: 0;
     border: 0;
