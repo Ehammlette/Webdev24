@@ -158,7 +158,6 @@ img {
 display:none;
 }
 
-
 /*
 .project_mobile
 {
@@ -276,8 +275,15 @@ print {
 
     .headshot
     {
+        background-image: linear-gradient(to right, #2A9D8F, #8FA078,#C2A16D, #F4A261);
         display: block;
         text-align:center;
+        border-radius: 20%;
+    }
+
+    .words{
+        background-color: #F4A261;
+        padding: 30px;
     }
 
     header{
