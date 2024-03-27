@@ -92,7 +92,7 @@ img {
     border-radius: 50%;
 }
 
-/* Show mobile class, hide tablet-desktop class, hide desktop */
+/* Show mobile class, hide desktop class, hide desktop */
 .mobile {
     color: #261C15;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -100,10 +100,6 @@ img {
     border: 15px;
     font-size: 1.2em;
     line-height: 1.35em;
-}
-
-.tablet-desktop {
-    display: none;
 }
 
 .desktop {
@@ -162,6 +158,11 @@ img {
     margin: 2% 2%;
 }
 
+/* headshot class hide*/
+.headshot
+{
+display:none;
+}
 
 
 /*
@@ -209,8 +210,9 @@ footer a:hover {
 @media screen and (min-width: 481px),
 print {
 
-    /* Tablet viewport: Style rule for showing tablet-desktop class*/
-    .tablet-desktop {
+    /* 
+    Tablet viewport: Style rule for showing tablet-desktop class
+    desktop {
         display: block;
         color: #261C15;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -218,10 +220,11 @@ print {
         border: 15px;
     }
 
-    /* Tablet viewport: hide mobile view*/
+    Tablet viewport: hide mobile view
     .mobile {
         display: none;
     }
+    /*
 
     /*image*/
     .header_img {
@@ -246,13 +249,19 @@ print {
 @media screen and (min-width: 769px),
 print {
 
-    /* Tablet viewport: Style rule for showing tablet-desktop class*/
-    .tablet-desktop {
+    /* Desktop viewport: Style rule for showing tablet-desktop class*/
+    .desktop {
         display: block;
         color: #261C15;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         padding: 30px;
         border: 15px;
+    }
+    
+    /* Desktop viewport: hide mobile view*/
+    .mobile
+    {
+        display:none;
     }
 
     .tel-num {
@@ -264,10 +273,25 @@ print {
         height: 450px;
     }
 
-    /*image*/
+    /*image
     .header_img {
         max-width: 30%;
         border-radius: 50%;
+    }*/
+
+    .headshot
+    {
+        display: block;
+    }
+
+    header{
+        display: none;
+    }
+    
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto;
+
     }
 
     /*Projects side by side*/
