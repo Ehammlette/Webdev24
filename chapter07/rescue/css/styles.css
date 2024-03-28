@@ -5,7 +5,18 @@ Date: 3/04/2024
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption {
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+h3,
+ul,
+aside,
+figure,
+figcaption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,22 +35,27 @@ img {
 /* Style rules for mobile viewport */
 
 /*Style rules to show mobile class and hide tab-desk class */
-.mobile{display: block;}
+.mobile {
+    display: block;
+}
 
-.tab-desk{display: none;}
+.tab-desk {
+    display: none;
+}
 
 /*Style rules for header area*/
-.mobile h1,h3{
-  padding: 2%;
-  text-align: center;
+.mobile h1,
+h3 {
+    padding: 2%;
+    text-align: center;
 }
 
-.mobile h1{
-  font-family: 'Emblema One', cursive;
+.mobile h1 {
+    font-family: 'Emblema One', cursive;
 }
 
-.mobile h3{
-  font-family: 'Lora', serif;
+.mobile h3 {
+    font-family: 'Lora', serif;
 }
 
 /* Style rules for navigation area */
@@ -100,7 +116,7 @@ main ul {
 }
 
 .round {
-  border-radius: 6px;
+    border-radius: 6px;
 }
 
 .aside {
@@ -117,30 +133,30 @@ figure {
     margin: 2% auto;
 }
 
-figcaption{
+figcaption {
     padding: 2%;
     border-top: 4px solid #2a1f14;
 }
 
 #info ul {
-  margin-left: 10%;
+    margin-left: 10%;
 }
 
 #contact {
     text-align: center;
 }
 
-.tel-link{
-  background-color: #2a1f14;
-  padding: 2%;
-  width: 80%;
-  margin: 0 auto;
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
 }
 
-.tel-link a{
-  color: #f6eee4;
-  text-decoration: none;
-  font-weight: bold;
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /* Style rules for footer content */
@@ -158,22 +174,23 @@ footer a {
 }
 
 /* Media Query for Tablet Viewport. */
-@media screen and (min-width: 620px), print {
-    
+@media screen and (min-width: 620px),
+print {
+
     /* Tablet Viewport: Show tab hyphen desk class, comma, hide mobile class.*/
-    .tab-desk{
-        display:block;
+    .tab-desk {
+        display: block;
     }
 
-    .mobile{
-        display:none;
+    .mobile {
+        display: none;
     }
 
     /* Tablet Viewport: Style rules for nav area.*/
-    nav li{
-        border-top:none;
+    nav li {
+        border-top: none;
         text-decoration: none;
-        display:inline-block;
+        display: inline-block;
         font-size: 1.25em;
     }
 
@@ -181,64 +198,85 @@ footer a {
         padding: 0.5em;
     }
 
-    /*Grid style rule*/
-    .grid{
+    /* Tablet Viewpoet: Grid style rule */
+    .grid {
         display: grid;
         grid-template-columns: 2;
         gap: 10px;
     }
 
+    /* Tablet Viewport: Aside */
+    aside {
+        grid-column: 1 / span 3;
+        font-size: 2em;
+    }
+
 }
 
 /* Media Query for Desktop Viewport. */
-@media screen and (min-width: 1000px), print {
-    
+@media screen and (min-width: 1000px),
+print {
+
     /* Desktop Viewport: Style rules for nav area */
-    nav li{
+    nav li {
         font-size: 1.5em;
     }
 
-    nav li a{
+    nav li a {
         padding-bottom: 0.5em;
         padding-left: 1.5em;
         padding-right: 1.5em;
     }
 
-    nav li a:hover{
-        color:#2a1f14;
+    nav li a:hover {
+        color: #2a1f14;
         background-color: #f6eee4;
     }
 
     /* Desktop Viewport: Style rules for main */
-    #info ul{
+    #info ul {
         margin-left: 5%;
     }
+
+    /* Desktop viewport: Grid style rule */
+    .grid {
+        display: grid;
+        grid-template-columns: 4;
+        gap: 10px;
+    }
+
+        /* Desktop Viewport: Aside */
+        aside {
+            grid-column: 1 / span 4;
+            font-size: 3em;
+        }
 }
 
 /* Media Query for Large Desktop Viewport */
-@media screen and (min-width: 1921px), print {
-    
+@media screen and (min-width: 1921px),
+print {
+
     /*Style rule for body element*/
-    body{
-        background-image: linear-gradient(#f6eee4,#78593a);
+    body {
+        background-image: linear-gradient(#f6eee4, #78593a);
     }
 
     /*Style rule for wrapper*/
-    #wrapper{
-        width:1920px;
-        margin:0 auto;
+    #wrapper {
+        width: 1920px;
+        margin: 0 auto;
     }
 
     /*Style rule for main*/
-    main{
-        background-color:#f6eee4;
+    main {
+        background-color: #f6eee4;
     }
 }
 
 /* Media Query for Print */
-@media print{
-    body{
+@media print {
+    body {
         background-color: #fff;
-        color:#000;
+        color: #000;
     }
 }
