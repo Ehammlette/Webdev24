@@ -193,6 +193,12 @@ text-align: center;
     color:#d82020;
 }
 
+/* Style rule for security */
+.security_body
+{
+    text-align: center;
+}
+
 /* Style rules for footer content */
 footer p {
     font-size: 0.75em;
