@@ -22,6 +22,42 @@ body {
 	margin: 0 auto;
 }
 
+/* Style rule table element */
+table{
+	width: 80%;
+	margin: 0, auto;
+	border: 3px solid #71881b;
+}
+
+/* Style rule: Table, tr, th, td style rule*/
+table,tr,th,td
+{
+	border:collapse;
+	padding: 2%;
+}
+
+/* Style rule caption */
+caption{
+font-size: 2em;
+padding: 2%;
+margin-top: 2%;
+}
+
+/* Style rule th and td selector */
+th,td{
+	border: 1px solid #7188bb;
+}
+
+/* Style rule td selector */
+td{
+	text-align: center;
+}
+
+/* Style rule tr */
+tr:nth-of-type(odd){
+background-color: #d3e788;
+}
+
 /* Style for the footer element */
 footer {
 	font-size: .70em;
