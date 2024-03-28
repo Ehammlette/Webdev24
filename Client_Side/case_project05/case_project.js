@@ -2,7 +2,7 @@
     case project
 
     Author: Nora(Ethan) Hammons
-    Date:   2/27/2024
+    Date:   3/28/2024
 
     Filename: project.js
 */
@@ -87,6 +87,7 @@ function choose_num() {
     return chosen_num;
 }
 
+//check answer to see if it is correct
 function checkAnswer() 
 {
     
@@ -125,12 +126,17 @@ function getCorrectAnswersList()
     document.getElementById("listOfAnswer").innerHTML=htmlCode;
 
 }
+//clears the list of correct answers
 function clear_answer_list()
 {
     document.getElementById("listOfAnswer").innerHTML="";
 }
 
+//refereshes screen
 function restartGame()
 {
     location.reload();
 }
+
+/*--------security_page--------*/
+
