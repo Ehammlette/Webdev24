@@ -163,7 +163,7 @@ substring in the text string will be highlighted.
 <table><tr>
 <td>
 Enter a text string<br />
-<textarea id="sample" name="sample"></textarea>
+<textarea id="sample" name="sample">With malice towards none.</textarea>
 </td><td>
 Regular expression codes<br />
 <iframe src="demo_regcodes.html" id="regcodes" tabindex="-1"></iframe>
@@ -199,7 +199,7 @@ Regular expression codes<br />
    </select>
 </td></tr><tr>
 <td class="tdlab">Or enter one directly</td>
-<td><textarea id="regtxt" name="regtxt" onchange="resetresult()" /></textarea></td>
+<td><textarea id="regtxt" name="regtxt" onchange="resetresult()" />/[^aeiou]/gi</textarea></td>
 </tr></table>
 <div id="pbutton">
    <input type="button" id="checkb" name="checkb" value="Pattern Test" onclick="checkIt()" />
