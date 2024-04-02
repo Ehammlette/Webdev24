@@ -53,6 +53,12 @@ fr.onload=function(){
             let alphaRegx = /[^a-zA-z\s]/g;
             sourceText = sourceText.replace(alphaRegx, "");
 
+            //Remove stop words from the text
+            for(let i=0; i < stopWords.length; i++){
+                  let stopRegx = new RegExp("\\b"+stopWords[i]+"g");
+                  sourceText = sourceText.replace(stopRegx,"");
+            }
+
             console.log(sourceText);
       }
 };
