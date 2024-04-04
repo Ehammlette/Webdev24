@@ -109,7 +109,7 @@ img {
 
 /* Mobile: tek-link*/
 .tel-link {
-    background-color: #404040;
+    background-color:#264653;
     padding: 2%;
     margin: 0 auto;
     width: 80%;
@@ -118,7 +118,7 @@ img {
 }
 
 .tel-link a {
-    color: #fff;
+    color: #E76F51;
     text-decoration: none;
     font-size: 1.5em;
     display: block;
