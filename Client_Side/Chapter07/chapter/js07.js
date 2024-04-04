@@ -67,7 +67,7 @@ fr.onload=function(){
 
             //Create an 2D array in which each item is array
             //containing a word and its duplicate count
-            let unique = [ [words[0],1] ];
+            let unique= [ [words[0],1] ];
 
             //keep an index of the unique words
             let uniqueIndex = 0;
@@ -83,7 +83,36 @@ fr.onload=function(){
                         unique[uniqueIndex] = [work[i],1];
                   }
             }
+
+            //sort by defending order of duplicate count
+            unique.sort(byDuplicate);
+            function byDuplicate(a, b) {
+                  return b[1]-a[1];
+            }
+
+            //keep the Top 100 words
+            unique = unique.slice(0, 100);
+
+            //find the duplicates of the most-repeated word
+            let maxCount = unique[0][1];
+
+            //sort the word list in alphabetic order
+            unique.sort();
+
+            //Reference the word cloud box
+            let cloudBox = document.getElementById("wc_cloud");
+            cloudBox.innerHTML = "";
+
+            //Size each word based on its usage
+            for(let i=0; i<unique.length; i++){
+                  let word = document.createElement("span");
+                  word.textContent = unique[i][0];
+                  word.style.fontSize = unique[i][1]/maxCount + "em";
+                  cloudBox.appendChild(word);
+            }
+
       }
+
 };
 
 
