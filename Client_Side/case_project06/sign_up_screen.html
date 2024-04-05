@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html>
+<!--
+            Student Name: Nora(Ethan) Hammons
+            File Name: template.html
+            Date: 3/21/2024
+        -->
+<html lang="en">
+
 <head>
-   <!--
-      JavaScript 7th Edition
-      Chapter 6
-      Hands-on Project 6-1
-
-      Author: Nora Hammons
-      Date:   3/31/2024
-
-      Filename: project06-01.html
-   -->
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <title>Hands-on Project 6-1</title>
-   <link rel="stylesheet" href="styles.css" />
-   <script src="project06-01.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraterrestrial Network Analysis Bureau Webpage</title>
+   <link rel="stylesheet" href="css/styles_form.css">
+   <script src="UserPassLogic.js" defer></script>
 </head>
 
 <body>
    <header>
-      <h1>
-         Hands-on Project 6-1
-      </h1>
-   </header>
+      <a href="index.html"><img height="120" width="120" src="image/symbol copy.jpg"
+              alt="Logo for Extraterrestrial Network Analysis Bureau &copy;"></img></a>
+      <h1>Extraterrestrial Network Analysis Bureau</h1>
+  </header>
+  <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="game.html">Start</a></li>
+          <li><a href="leader_board.html">Leaderboard</a></li>
+          <li><a href="manual.html" target="_blank">Manual</a></li>
+          <li><a href="security_page.html">Security Page</a></li>
+      </ul>
+  </nav>
+
 
    <section>
       <h1>Create your Account</h1>
       <form id="signup" name="signup" method="get" action="formsubmit.html">
          <fieldset>
             <legend>Enter your Account Information</legend>
+            
             <label for="user">Username</label>
             <input type="text" id="user" name="user" required />
 
