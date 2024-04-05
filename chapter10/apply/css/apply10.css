@@ -1,7 +1,7 @@
 /*
-    Student Name
+    Nora Hammons
 	File Name: 
-	Current Date: 
+	Current Date: 4/5/2024
 */
 
 /* CSS reset */
@@ -53,7 +53,23 @@ button {
     width: 200px;
     height: 200px;
     background-color: #33091b;
+	animation-name:color;
+	animation-duration: 5s;
     margin-left: 6%;
+}
+
+.square:hover{
+	transform: translate(80px);
+}
+
+/* Animation */
+@-webkit-keyframes color{
+	from { background-color: #fbdae9; }
+	to {background-color: #660b32;}
+}
+@keyframes color{
+	from { background-color: #fbdae9; }
+	to { background-color: #660b32;}
 }
 
 /* Style rules for the footer */
