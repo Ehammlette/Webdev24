@@ -13,8 +13,8 @@
    -->
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-   <title>Hands-on Project 6-1</title>
-   <link rel="stylesheet" href="styles.css" />
+   <title>Extraterrestrial Network Analysis Bureau Webpage</title>
+   <link rel="stylesheet" href="css/styles_form.css">
    <script>
       window.addEventListener("load", function(){   
          // Retrieve the field/value pairs from the URL
@@ -24,29 +24,46 @@
          let formFields = formData.split(/[&=]/g);
 
          // Write the field values to the account table
-         document.getElementById("username").textContent = formFields[1]; 
-         document.getElementById("email").textContent = formFields[3]; 
-         document.getElementById("pwd").textContent = formFields[5]; 
-         document.getElementById("pwd2").textContent = formFields[7];
-         document.getElementById("")          
+         document.getElementById("leader_board_name").textContent = formFields[1];
+         document.getElementById("username").textContent = formFields[3]; 
+         document.getElementById("email").textContent = formFields[5]; 
+         document.getElementById("pwd").textContent = formFields[7]; 
+         document.getElementById("pwd2").textContent = formFields[9];
+         document.getElementById("");
       } );   
    </script>
 </head>
 
 <body>
    <header>
-      <h1>
-         Hands-on Project 6-1
-      </h1>
-   </header>
+      <a href="index.html"><img height="120" width="120" src="image/symbol copy.jpg"
+              alt="Logo for Extraterrestrial Network Analysis Bureau &copy;"></img></a>
+      <h1>Extraterrestrial Network Analysis Bureau</h1>
+  </header>
+
+  <nav>
+   <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="game.html">Start</a></li>
+       <li><a href="leader_board.html">Leaderboard</a></li>
+       <li><a href="manual.html" target="_blank">Manual</a></li>
+       <li><a href="security_page.html">Security Page</a></li>
+   </ul>
+</nav>
 
    <section>
       <h1>Account Information</h1>
       <table id="account">
          <tr>
+            <td>Nickname</td>
+            <td><span id="leader_board_name"></span></td>
+         </tr>
+
+         <tr>
             <td>Username</td>
             <td><span id="username"></span></td>
          </tr>
+         
          <tr>
             <td>Email</td>
             <td><span id="email"></span></td>
@@ -60,6 +77,7 @@
             <td><span id="pwd2"></span></td>
          </tr>             
       </table>
+      <span></span>
    </section>
 </body>
 </html>
