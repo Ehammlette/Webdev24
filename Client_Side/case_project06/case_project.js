@@ -138,7 +138,7 @@ function restartGame()
     location.reload();
 }
 
-/*--------UserPassLogic.js--------*/
+/*--------Username and Password Logic--------*/
 
  //declaring submit button is referencing Element submitButton
  let submitButton = document.getElementById("submitButton");
