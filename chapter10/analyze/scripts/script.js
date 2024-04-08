@@ -24,7 +24,7 @@ function pic2(){
     figCap.textContent = "Coast of San Juan";
 }
 
-//Function to display the second picture
+//Function to display the third picture
 function pic3(){
     imgSource.src = "images/curacao.jpg";
     imgSource.alt = "The blue waters of Curacao";
