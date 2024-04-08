@@ -56,6 +56,10 @@ main {
 	border: inset 0.2em #7a6d68; 
 }
 
+#placeholder{
+display:none;
+}
+
 footer {
 	font-size: .90em;
 	text-align: center;
