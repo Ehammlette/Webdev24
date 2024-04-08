@@ -1,5 +1,5 @@
 /*
-    Student Name:
+    Student Name: Nora Hammons
     File Name: script.js
-    Date: 
+    Date: 4/8/2024
 */
