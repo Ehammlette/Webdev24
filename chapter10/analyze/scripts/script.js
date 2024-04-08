@@ -1,8 +1,13 @@
 /*
     Student Name: Nora Hammons
     File Name: script.js
-    Date: 
+    Date: 4/8/2024
 */
+
+//global vars
+var figElement = document.getElementById("placeholder");
+var imgSource = document.getElementById("image");
+var figCap = document.querySelector("figcaption");
 
 //Function to display the first picture
 function pic1() {
