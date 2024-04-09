@@ -23,8 +23,9 @@ function yourInformation()
 
     document.getElementById("height_screen").innerHTML= "<p>Screen Height: " + screen.height + " pixels </p>"; 
     document.getElementById("width_screen").innerHTML= "<p>Screen Width: " + screen.width + " pixels </p>"; 
-    document.getElementById("Operating_system").innerHTML= "<p> Operating system: " + navigator.platform + "</p>"; 
-    document.getElementById("appName").innerHTML= "<p> Browser: " + navigator.appName + "</p>"; 
+    document.getElementById("Operating_system").innerHTML= "<p> Navigator Platform: " + navigator.platform + "</p>"; 
+    document.getElementById("appName").innerHTML= "<p> appName: " + navigator.appName + "</p>"; 
     document.getElementById("onLine").innerHTML= "<p> Status of browser: " + status_onLine + "</p>"; 
-    document.getElementById("available_usable_screen").innerHTML= "<p> Available window ratio: " + screen.availWidth+ " x " + screen.availHeight + "</p>"; 
+    document.getElementById("available_width").innerHTML= "<p> AvailWidth: " + screen.availWidth + "</p>";
+    document.getElementById("available_height").innerHTML= "<p> AvailHeight: " + screen.availHeight + "</p>";
 }
