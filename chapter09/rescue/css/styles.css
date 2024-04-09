@@ -1,7 +1,7 @@
 /*
-Author: Nora(Ethan) Hammons
+Author: Nora Hammons
 File Name: styles.css
-Date: 3/04/2024
+Date: 4/9/2024
 */
 
 /* CSS Reset */
@@ -16,7 +16,7 @@ h3,
 ul,
 aside,
 figure,
-figcaption {
+figcaption,video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -27,7 +27,7 @@ body {
     background-color: #f6eee4;
 }
 
-img {
+img, video{
     max-width: 100%;
     display: block;
 }
