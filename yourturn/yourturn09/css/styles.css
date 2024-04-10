@@ -145,6 +145,10 @@ nav li a:hover {
     float: center;
 }
 
+figure{
+    max-width: 60%;
+}
+
 #project_game,
 #project_webtoon {
     margin: 2% 2%;
