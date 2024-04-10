@@ -86,7 +86,6 @@ nav li a:hover {
 .mobile {
     color: #264653;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 10px 30px;
     border: 15px;
 }
 
@@ -145,7 +144,7 @@ nav li a:hover {
     float: center;
 }
 
-figure{
+figure img{
     max-width: 60%;
 }
 
@@ -265,21 +264,7 @@ print {
         font-size: 1.25em;
     }
 
-    .contact-email-link{
-        background-color:#264653;
-        padding: 2%;
-        margin: 0 auto;
-        width: 80%;
-        text-align: center;
-        border-radius: 5px;
-    }
-
-    .contact-email-link a{
-        color: #E76F51;
-        text-decoration: none;
-        font-size: 1.5em;
-        display: block;
-    }
+    
 
     .map {
         width: 600px;
@@ -291,13 +276,19 @@ print {
         max-width: 30%;
         border-radius: 50%;
     }*/
-
+    
     .headshot
     {
         background-image: linear-gradient(to right, #2A9D8F, #8FA078,#C2A16D, #F4A261);
         display: block;
         text-align:center;
         border-radius: 20%;
+    }
+    .headshot img{
+        max-width: 70%;
+    }
+    .headshot h1,h4{
+        margin: 20px;
     }
 
     .words{
