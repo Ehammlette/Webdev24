@@ -63,21 +63,6 @@ nav {
     background-color: #2a1f14;
 }
 
-nav li {
-    display: block;
-    font-size: 1.5em;
-    font-family: Geneva, Arial, sans-serif;
-    font-weight: bold;
-    border-top: 0.5px solid #f6eee4;
-}
-
-nav li a {
-    display: block;
-    color: #f6eee4;
-    padding: 0.5em 2em;
-    text-decoration: none;
-}
-
 /* Style rules for Mobile navigation */
 .mobile-nav a{
 color: #fff;
@@ -103,6 +88,11 @@ display: block;
     color: #2a1f14;
 }
 
+#nav-links, .tab-desk, .desktop
+{
+display:none;
+}
+
 /* Style rules for main content */
 main {
     padding: 2%;
@@ -119,6 +109,10 @@ main h3 {
 
 main ul {
     list-style-type: square;
+}
+
+.mobile h1{
+    margin: 2% 0 0 3%;
 }
 
 /* Style rules for class and id selectors */
@@ -206,22 +200,32 @@ print {
         display: none;
     }
 
+    .mobile-nav{
+        display:none;
+        color:#2a1f14;
+    }
+
     /* Tablet Viewport: Style rules for nav area.*/
 
     nav ul {
         list-style-type: none;
         text-align: center;
     }
-    
+
     nav li {
         border-top: none;
         text-decoration: none;
         display: inline-block;
         font-size: 1.25em;
+        font-family: Geneva, Arial, sans-serif;
+        font-weight: bold;
     }
 
     nav li a {
         padding: 0.5em;
+        display: block;
+        color: #f6eee4;
+        text-decoration: none;
     }
 
     /* Tablet Viewpoet: Grid style rule */
