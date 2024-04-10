@@ -257,6 +257,7 @@ print {
     }
 
     .tel-num {
+        display:block;
         font-size: 1.25em;
     }
 
