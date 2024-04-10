@@ -101,6 +101,10 @@ nav li a:hover {
 }
 
 /* Mobile: tek-link*/
+.tel-num {
+    display: none;
+}
+
 .tel-link {
     background-color:#264653;
     padding: 2%;
