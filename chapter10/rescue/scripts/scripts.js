@@ -5,7 +5,7 @@
 */
 
 //Hamburger menu function
-function menu(){
+function hamburger(){
     var navlinks = document.getElementById("nav-links");
     var menuicon = document.getElementById("icon");
     if (navlinks.style.display === "block") {
