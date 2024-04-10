@@ -31,7 +31,6 @@ body {
     color: #264653;
     background-color: #F4A261;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.10em;
 }
 
 
@@ -42,7 +41,6 @@ header {
     color: #264653;
     text-align: center;
     background:#2A9D8F;
-    font-size: 1.10em;
     padding:10px;
 }
 
@@ -74,9 +72,6 @@ nav li a:hover {
 }
 
 /*image*/
-img {
-    max-width: 60%;
-}
 
 .round {
     border-radius: 8px;
@@ -93,8 +88,6 @@ img {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px 30px;
     border: 15px;
-    font-size: 1.2em;
-    line-height: 1.35em;
 }
 
 .desktop {
