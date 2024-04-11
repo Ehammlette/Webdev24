@@ -12,7 +12,7 @@
 
 var regex1= /[A-Z]/;
 var regex2= /[0-9]/;
-var regex3= /[!$#%.]/;
+var regex3= /[!\$#%.]/;
 
 let signupForm = document.getElementById("signup");
 
@@ -27,7 +27,7 @@ signupForm.addEventListener("submit", function(e)
    {
       feedback.textContent= "Your password must be at least 8 characters.";
    }
-   else if(regex1.test(pwd)===true)
+   else if(regex1.test(pwd)===false)
    {
       feedback.textContent= "Your password must include an uppercase letter.";
    }
