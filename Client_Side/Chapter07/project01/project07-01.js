@@ -4,8 +4,8 @@
       Project 07-01
 
       Project to validate a form used for setting up a new account
-      Author: 
-      Date:   
+      Author: Nora Hammons
+      Date:   4/11/2024
 
       Filename: project07-01.js
 */
