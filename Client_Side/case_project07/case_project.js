@@ -64,7 +64,7 @@ function getCurrentFrequency() {
 //chooses a random number that is set to be a specific 4 digit integer
 function choose_num() {
     let chosen_num = Math.floor(Math.random() * 12);
-    let chosen_freq=Math.floor(Math.random() * 101).toPrecision(2);
+    let chosen_freq=Math.floor(101* Math.random()).toPrecision(2);
 
     if (chosen_freq == 0 && chosen_num != 11) {
         chosen_num = chosen_num + .00;
