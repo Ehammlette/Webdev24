@@ -27,7 +27,7 @@ signupForm.addEventListener("submit", function(e)
    {
       feedback.textContent= "Your password must be at least 8 characters.";
    }
-   else if(regex1.test(pwd)===false)
+   else if(regex1.test(pwd)===true)
    {
       feedback.textContent= "Your password must include an uppercase letter.";
    }
