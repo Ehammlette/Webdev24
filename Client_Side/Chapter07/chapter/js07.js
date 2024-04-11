@@ -80,7 +80,7 @@ fr.onload=function(){
                   else {
                         //add a new word to the unique array
                         uniqueIndex++;
-                        unique[uniqueIndex] = [work[i],1];
+                        unique[uniqueIndex] = [words[i],1];
                   }
             }
 
