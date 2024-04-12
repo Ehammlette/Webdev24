@@ -12,7 +12,7 @@
 
 var regex1= /[A-Z]/;
 var regex2= /[0-9]/;
-var regex3= /[!\$#%.]/;
+var regex3= /[!\$#%]/;
 
 let signupForm = document.getElementById("signup");
 
@@ -44,6 +44,5 @@ signupForm.addEventListener("submit", function(e)
       signupForm.submit();
    }
 
-}
-);
+});
 
