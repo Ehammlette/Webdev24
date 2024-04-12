@@ -9,40 +9,33 @@
 
       Filename: project07-01.js
 */
+var signupForm = document.getElementById("signup");
 
-var regex1= /[A-Z]/;
-var regex2= /[0-9]/;
-var regex3= /[!\$#%]/;
+signupForm.addEventListener("submit", function (e) {
 
-let signupForm = document.getElementById("signup");
+      var regex1 = /[A-Z]/;
+      var regex2 = /[0-9]/;
+      var regex3 = /[!\$#%]/;
+      let pwd = document.getElementById("pwd").value;
+      let feedback = document.getElementById("feedback");
 
-signupForm.addEventListener("submit", function(e) 
-{ 
-   let pwd = document.getElementById("pwd").value;
-   let feedback = document.getElementById("feedback");
+      e.preventDefault();
 
-   e.preventDefault();
-
-   if(pwd.length<8)
-   {
-      feedback.textContent= "Your password must be at least 8 characters.";
-   }
-   else if(regex1.test(pwd)===false)
-   {
-      feedback.textContent= "Your password must include an uppercase letter.";
-   }
-   else if(regex2.test(pwd)===false)
-   {
-      feedback.textContent = "Your password must include a number.";
-   }
-   else if (regex3.test(pwd)===false)
-   {
-      feedback.textContent= "Your password must include one of the following: !$#%";
-   }
-   else
-   {
-      signupForm.submit();
-   }
+      if (pwd.length < 8) {
+            feedback.textContent = "Your password must be at least 8 characters.";
+      }
+      else if (pwd.length >= 8 && regex1.test(pwd) === false) {
+            feedback.textContent = "Your password must include an uppercase letter.";
+      }
+      else if (pwd.length >= 8 && regex2.test(pwd) === false) {
+            feedback.textContent = "Your password must include a number.";
+      }
+      else if (pwd.length >= 8 && regex3.test(pwd) === false) {
+            feedback.textContent = "Your password must include one of the following: !$#%";
+      }
+      else {
+            signupForm.submit();
+      }
 
 });
 
