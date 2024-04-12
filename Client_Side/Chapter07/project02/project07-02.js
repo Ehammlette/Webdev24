@@ -4,8 +4,8 @@
       Project 07-02
 
       Project to deal cards from a shuffled poker deck
-      Author: 
-      Date:   
+      Author: Nora Hammons
+      Date:   4/11/2024
 
       Filename: project07-02.js
 */
