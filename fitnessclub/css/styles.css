@@ -87,6 +87,10 @@ main {
     font-family: 'Roboto Slab', serif;
 }
 
+video {
+    margin: 0 auto 4%;
+}
+
 .mobile h3{
     text-shadow: 5px 5px 8px #ccc;
 }
