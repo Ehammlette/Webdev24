@@ -28,7 +28,40 @@ let cardsLeft = document.getElementById("cardsLeft");
 let deck = [];
 
 document.getElementById("deal").onclick = function() {   
-   
+
+   function newDeck(){
+          // Array to store the deck of cards
+          deck= deckStr.split(", ");
+          
+         /* // Shuffle the deck array
+          deck.sort(shuffle());
+
+          function shuffle(a,b){
+            return 0.5 - Math.random();
+          }*/
+   };
+
+   for(var i=0; i< deck.length; i++)
+   {
+      document.getElementById("deck_string").innerHTML=deck[i];
+   }
+/*
+   for (var i=0; i< cards.length; i++)
+   {
+      //if array is empty
+         if (shuffledDeck.length ===0)
+         {
+            newDeck();
+         }
+         else
+         {
+           cards[i].textContent=shuffleDeck.pop();
+         }
+   }
+
+   //Change the value of the text content of the cardsLeft
+   document.getElementById("cardsLeft").textContent = shuffleDeck.length;
+   */
 
 }
 
