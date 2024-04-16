@@ -4,8 +4,17 @@
       Chapter case
       
       Eating Well in Season 
-      Author: 
-      Date:   
+      Author: Nora Hammons
+      Date:   4/16/2024
       
       Filename: js09b.js
  */
+
+// Retrieve the text of the query string
+let qString = location.search.slice(1);
+
+//Replace the encoded characters in the query string
+qString = qString.replace(/\+/g, " ");
+qString = decodedURIComponent(qString);
+
+console.log(qString);
