@@ -7,6 +7,8 @@
     Filename: manual.js
 */
 
+/*--------Arrays--------*/
+
 // generates host array to be paired with a destination
 let hosts= new Array(10);
 hosts[0]="Zenithia";
@@ -58,3 +60,5 @@ code_destinations[6]="715";
 code_destinations[7]="934";
 code_destinations[8]="281";
 code_destinations[9]="569";
+
+/*-------- End Arrays--------*/
