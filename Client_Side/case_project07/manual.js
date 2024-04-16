@@ -62,3 +62,16 @@ code_destinations[8]="281";
 code_destinations[9]="569";
 
 /*-------- End Arrays--------*/
+
+window.addEventListener("load", function(){
+    let htmlCode="";
+
+    for(let i=0; i<data.length;i++)
+        {
+                htmlCode+='<p>'+data[i]+
+                '</p>';
+        }
+
+    //put the displayed code into div element
+    document.getElementById("listOfThings").innerHTML=htmlCode;
+});
