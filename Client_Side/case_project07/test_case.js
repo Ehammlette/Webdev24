@@ -7,6 +7,8 @@
     Filename: project.js
 */
 
+
+
 let frequency = 0;
 let random_number=0;
 let correct_count=0;
@@ -21,8 +23,7 @@ document.getElementById("clear").addEventListener("click", clear_answer_list);
 
 function setupGame() {
     //set up defaults
-    random_number=choose_num();
-    document.getElementById("looking_for_frequency").innerHTML = random_number;
+    
     document.getElementById("number1").value = 5;
     document.getElementById("range_input").value = 50;
 
@@ -61,10 +62,13 @@ function getCurrentFrequency() {
     document.getElementById("currentFrequency").innerHTML = frequency;
 }
 
-//chooses a random number that is set to be a specific 4 digit integer
+function choose_destHost(){
+
+}
+
+//chooses a random number (this is the correct answer)
 function choose_num() {
-    let chosen_num = Math.floor(Math.random() * 12);
-    let chosen_freq=Math.floor(101* Math.random()).toPrecision(2);
+    let chosen_num = Math.floor(Math.random() * 10);
 
     if (chosen_freq == 0 && chosen_num != 11) {
         chosen_num = chosen_num + .00;
@@ -132,7 +136,7 @@ function clear_answer_list()
     document.getElementById("listOfAnswer").innerHTML="";
 }
 
-//refereshes screen
+//refreshes screen
 function restartGame()
 {
     location.reload();
