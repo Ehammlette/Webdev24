@@ -66,9 +66,9 @@ code_destinations[9]="569";
 window.addEventListener("load", function(){
     let htmlCode="";
 
-    for(let i=0; i<data.length;i++)
+    for(let i=0; i<hosts.length;i++)
         {
-                htmlCode+='<p>'+i+ '.' + hosts[i]+
+                htmlCode+='<p>'+(i+1)+'. '+ hosts[i]+
                 '</p>';
         }
 
