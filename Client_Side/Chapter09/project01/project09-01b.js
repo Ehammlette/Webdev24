@@ -10,5 +10,22 @@
       Filename: project09-01b.js
 */
 
+var query = location.search.slice(0);
 
+var decodedQueryString = decodeURIComponent(query.replace(/\+/g, ' '));
 
+var cardFields = decodedQueryString.split('&');
+
+for (let item of cardFields) {
+      // Split each item at the location of the = character
+      let nameValue = item.split('=');
+      
+      // Store the first item in the nameValue array in the name variable
+      let name = nameValue[0];
+      
+      // Store the second item in the nameValue array in the value variable
+      let value = nameValue[1];
+      
+      // Store the value of the value variable as the text content of the document element with an id equal to the name variable
+      document.getElementById(name).textContent = value;
+  }
