@@ -71,7 +71,7 @@ nav li a
     text-decoration: none;
 }
 nav li:last-child {
-    float:right;
+    background-color: #111;
   }
 nav li a:hover {
     background-color: #111;
@@ -134,11 +134,6 @@ bold {
 .control_panel
 {
 text-align: center;
-}
-
-.channel_selector
-{
-
 }
 
 /*slider element*/

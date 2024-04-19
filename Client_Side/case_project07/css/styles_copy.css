@@ -72,9 +72,9 @@ nav li a
 }
 
 nav li:last-child {
-    float:right;
+    background-color: #111;
   }
-  
+
 nav li a:hover {
     background-color: #111;
 }
