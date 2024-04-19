@@ -192,13 +192,6 @@ text-align: center;
     color:#d82020;
 }
 
-/* Style rule for security */
-.security_body
-{
-    text-align: center;
-}
-
-/* Dropdown */
 .dropbtn {
     background-color: #3498DB;
     color: white;
@@ -235,7 +228,9 @@ text-align: center;
   }
   
   .dropdown a:hover {background-color: #ddd;}
-
+  
+  .show {display: block;}
+  
 /* Style rules for footer content */
 footer p {
     font-size: 0.75em;
