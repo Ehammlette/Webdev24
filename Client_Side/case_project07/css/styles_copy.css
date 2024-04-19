@@ -178,7 +178,9 @@ bold {
   }
   
   .dropdown a:hover {background-color: #ddd;}
-
+  
+  .show {display: block;}
+  
 /* Style rules for footer content */
 footer p {
     font-size: 0.75em;
