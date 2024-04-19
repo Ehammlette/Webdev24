@@ -35,19 +35,28 @@
         <div class="home_info">
         <h2>Game</h2>
         <p >Time to play the game.</p>
-        <p>You must connect the two satellites</p>
-        <p>Underneath the tuning frequency is your current frequency. When the frequencies are the same click "Check Result"</p>
+        <p>You must connect the two satellites together using a specific number based code</p>
+        <p>Each satellite goes by a number </p>
+        <p>The manual will tell you the location that corresponds with a specific satellite number</p>
+        <p>Type the host satellite number and the destination satellite with no spaces</p>
+        <p>We will give you the name of the location of the host satellite and the destination we need it to reach. </p>
         </div>
+        
+        <div class="gameBox">
+        <div class="display"><div id="host"> </div> <p>to</p><div id="destination">Bla bla</div></div>
 
-        <div></div>
-
-        <input type="number">
+        <div class="inputs">
+        <input type="number" id="code">
+    </div>
 
         <br>
-        <a href="sign_up_screen.html"><button>Check:Sign up</button></a>
+        <div class="security_body">
         <button id="list_correct_answers">See correct answers</button>
+        <button id="check_button">Check result</button>
         <button id="restart">Restart</button>
+    </div>
         <br>
+</div>
         <span id="listOfAnswer"></span>
 
 

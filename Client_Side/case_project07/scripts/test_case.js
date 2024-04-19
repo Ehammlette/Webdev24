@@ -54,85 +54,62 @@ code_satellites[18]="281";
 code_satellites[19]="569";
 
 /*--------End Arrays--------*/
-
-let frequency = 0;
-let random_number=0;
+let host;
+let destination;
+let answerOfYours;
+let correct_answer;
 let correct_count=0;
 let data = new Array();
 
 window.addEventListener("load", setupGame);
 document.getElementById("check_button").addEventListener("click", checkAnswer);
 document.getElementById("list_correct_answers").addEventListener("click", getCorrectAnswersList);
-document.getElementById("restart").addEventListener("click", restartGame);
 document.getElementById("clear").addEventListener("click", clear_answer_list);
 
 
 function setupGame() {
-    //set up defaults
-    
-    document.getElementById("number1").value = 5;
-    document.getElementById("range_input").value = 50;
 
-    //Call to find frequency
-    getCurrentFrequency();
+    //set up defaults
+    choose_from_list();
 
     //add event handlers for each input control
-    document.getElementById("number1").onchange = getCurrentFrequency;
+    document.getElementById("number1").onclick = getYourAnswer();
     document.getElementById("range_input").onchange = getCurrentFrequency;
     
 }
 
-function getCurrentFrequency() {
-    //set two variables equal to the two input elements
-    let channel = document.getElementById("number1").value;
-    let slider_range = document.getElementById("range_input").value;
-
-    //displays the range input
-    document.getElementById("range_of_input").innerHTML = document.getElementById("range_input").value;
-
-    //get get frequency + trouble if statement to fix bug + number bug fix
-    if (slider_range == 100) {//if decimal is equal to 100
-        frequency = Number(channel)+1;
-    }
-    else {
-        if (slider_range < 10) {//if decimal is less then ten
-            frequency = Number(channel)  + Number((slider_range / 100).toPrecision(1));
-        }
-        else {//if decimal is greater then ten
-            frequency = Number(channel) + Number((slider_range / 100).toPrecision(2));
-        }
-    }
-
-
-    //type total into span currentFrequency
-    document.getElementById("currentFrequency").innerHTML = frequency;
+function getYourAnswer() {
 }
 
-function choose_destHost(){
+function choose_from_list(){
+host=choose_num();
+destination=choose_num();
 
+if(host==destination){
+    let isDestinationSameAsHost=true;
+    while(isDestinationSameAsHost==true)
+    {
+        if(host==destination)
+        {
+            destination=choose_num();
+        }
+        else
+        {
+            isDestinationSameAsHost=false;
+        }
+    }
+}
+else
+{
+    correct_answer=code_satellites[host]+code_satellites[destination];
+    document.getElementById("host").innerHTML=satellites[host];
+    document.getElementById("destination").innerHTML=satellites[destination];
+}
 }
 
 //chooses a random number (this is the correct answer)
 function choose_num() {
-    let chosen_num = Math.floor(Math.random() * 10);
-
-    if (chosen_freq == 0 && chosen_num != 11) {
-        chosen_num = chosen_num + .00;
-    }
-    else if (chosen_freq === 100 && chosen_num != 11) {
-        chosen_num = chosen_num + 1;
-    }
-    else if (chosen_num === 11) {
-        chosen_num = 11;
-    }
-    else if(chosen_freq < 10)
-    {
-        chosen_num = chosen_num +Number((chosen_freq / 100).toPrecision(1));  
-    }
-    else
-    {
-        chosen_num = chosen_num + Number((chosen_freq / 100).toPrecision(2));
-    }
+    let chosen_num = Math.floor(Math.random() * 20);
     
     return chosen_num;
 }
