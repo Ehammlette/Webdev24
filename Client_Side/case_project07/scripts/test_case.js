@@ -58,6 +58,7 @@ let host;
 let destination;
 let answerOfYours;
 let correct_answer;
+let points=0;
 let correct_count=0;
 let data = new Array();
 
@@ -73,8 +74,7 @@ function setupGame() {
     choose_from_list();
 
     //add event handlers for each input control
-    document.getElementById("number1").onclick = getYourAnswer();
-    document.getElementById("range_input").onchange = getCurrentFrequency;
+    document.getElementById("").onclick
     
 }
 
@@ -118,7 +118,7 @@ function choose_num() {
 function checkAnswer() 
 {
     
-    if(random_number===frequency)//if answer is correct
+    if(answerOfYours===correct_answer)//if answer is correct
     {
         data[correct_count]=random_number;
         setupGame();
@@ -131,6 +131,9 @@ function checkAnswer()
     }
 }
 
+function setPoints(){
+
+}
 
 function getCorrectAnswersList()
 {
