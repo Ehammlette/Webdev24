@@ -15,6 +15,6 @@ let qString = location.search.slice(1);
 
 //Replace the encoded characters in the query string
 qString = qString.replace(/\+/g, " ");
-qString = decodedURIComponent(qString);
+qString = decodeURIComponent(qString);
 
 console.log(qString);
