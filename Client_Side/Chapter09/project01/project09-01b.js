@@ -10,7 +10,7 @@
       Filename: project09-01b.js
 */
 
-var query = location.search.slice(0);
+var query = location.search.slice(1);
 
 var decodedQueryString = decodeURIComponent(query.replace(/\+/g, ' '));
 
