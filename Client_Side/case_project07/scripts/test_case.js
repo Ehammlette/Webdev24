@@ -106,7 +106,7 @@ function choose_from_list() {
 
 //chooses a random number (this is the correct answer)
 function choose_num() {
-    let chosen_num = Math.floor(Math.random() * 21);
+    let chosen_num = Math.floor(Math.random() * 20);
 
     return chosen_num;
 }
