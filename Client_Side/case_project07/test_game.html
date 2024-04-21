@@ -32,6 +32,7 @@
     </nav>
 
     <main>
+        <div id=overlay class="show">
         <div class="home_info">
         <h2>Game</h2>
         <p >Time to play the game.</p>
@@ -42,24 +43,30 @@
         <p>We will give you the name of the location of the host satellite and the destination we need it to reach. </p>
         </div>
         
+        <div id="isAnswerQuestion"></div>
         <div class="gameBox">
         <div class="display"><div id="host"> </div> <p>to</p><div id="destination">Bla bla</div></div>
 
         <div class="inputs">
-        <input type="number" id="code">
+        <input type="number" id="code" min="000000" max="999999">
     </div>
 
         <br>
         <div class="security_body">
         <button id="list_correct_answers">See correct answers</button>
         <button id="check_button">Check result</button>
-        <button id="restart">Restart</button>
+        <button id="restart" onclick=restartGame()>Restart</button>
+        
+        <form action="sign_up_screen.html" method="get">
+                <input type="submit">
+                <input type="hidden" name="yourPoints" id="yourPoints" value="got it good">
+        </form>
     </div>
         <br>
 </div>
         <span id="listOfAnswer"></span>
 
-
+    </div>
     </main>
 
     <footer>
