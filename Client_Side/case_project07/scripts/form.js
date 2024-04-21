@@ -12,6 +12,7 @@
          formData = formData.replace(/\+/g," ");
          formData = decodeURIComponent(formData);
          let formFields = formData.split(/[&=]/g);
+         document.getElementById("points").innerHTML='<input type="hidden" name="points" id="points" '+'value='+formFields[1]+'></input>';
 
 /*--------Username and Password Logic--------*/
 
