@@ -23,13 +23,21 @@
          formData = decodeURIComponent(formData);
          let formFields = formData.split(/[&=]/g);
 
+         //set point variable
+         let num_point=formFields[1];
+
          // Write the field values to the account table
          document.getElementById("leader_board_name").textContent = formFields[3];
          document.getElementById("username").textContent = formFields[5]; 
          document.getElementById("email").textContent = formFields[7]; 
          document.getElementById("pwd").textContent = formFields[9]; 
          document.getElementById("pwd2").textContent = formFields[11];
-         document.getElementById("points").innerHTML="You earned: "+formFields[1] + " points";
+         
+         //States the points you got from the game
+         if(num_point!="undefined")
+         {
+            document.getElementById("points").innerHTML="You earned: "+num_point + " points";
+         }
       } );   
    </script>
 </head>
@@ -79,6 +87,7 @@
          </tr>             
       </table>
    </section>
-   <div id="points"></div>
+   <div></div>
+   <div id="points"><a href="game.html"><button>Start Game Here</button></a></div>
 </body>
 </html>
