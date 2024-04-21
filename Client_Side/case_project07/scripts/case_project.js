@@ -55,25 +55,24 @@ code_satellites[18] = "281";
 code_satellites[19] = "569";
 
 /*--------End Arrays--------*/
-let host;
-let destination;
-let answerOfYours;
-let correct_answer;
-let points = 0;
-let correct_count = 0;
-let data = new Array();
+let host; // the first sat
+let destination; // second sat
+let answerOfYours;// your answer
+let correct_answer;// correct answer
+let points = 0; // total points
+let correct_count = 0; // amount of correct answers
+let data = new Array(); // the correct answers gotten right
 
-window.addEventListener("load", setupGame);
-document.getElementById("check_button").addEventListener("click", checkAnswer);
-document.getElementById("list_correct_answers").addEventListener("click", getCorrectAnswersList);
-document.getElementById("clear_list").addEventListener("click", clear_answer_list)
+window.addEventListener("load", setupGame); //start game
+document.getElementById("check_button").addEventListener("click", checkAnswer); // checks answer when click
+document.getElementById("list_correct_answers").addEventListener("click", getCorrectAnswersList); //gives the list stored in data
+document.getElementById("clear_list").addEventListener("click", clear_answer_list) //clears the list so you can do an updated one
 
 
 function setupGame() {
 
     //sets values for the game
     choose_from_list();
-    document.getElementById("code").value="000000";
 
 }
 
@@ -130,6 +129,7 @@ function checkAnswer() {
     }
 }
 
+//sets the points
 function setPoints() {
     points=data.length;
     sendPoints();
