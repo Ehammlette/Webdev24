@@ -132,10 +132,11 @@ function checkAnswer() {
 
 function setPoints() {
     data.length=points;
+    getPoints();
 }
 
 function getPoints(){
-    document.getElementById("yourPoints").innerHTML='<input type="hidden" name="yourPoints" id="yourPoints"></input>';
+    document.getElementById("yourPoints").innerHTML='<input type="hidden" name="yourPoints" id="yourPoints" '+'value='+points+'></input>';
 }
 
 function getCorrectAnswersList() {
