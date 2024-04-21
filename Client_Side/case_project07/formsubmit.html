@@ -29,7 +29,7 @@
          document.getElementById("email").textContent = formFields[7]; 
          document.getElementById("pwd").textContent = formFields[9]; 
          document.getElementById("pwd2").textContent = formFields[11];
-         document.getElementById("points").textContent="hello world\nYou earned: $"+formFields[1];
+         document.getElementById("points").innerHTML="You earned: "+formFields[1] + "Points";
       } );   
    </script>
 </head>
@@ -79,6 +79,6 @@
          </tr>             
       </table>
    </section>
-   <span id="points"></span>
+   <div id="points"></div>
 </body>
 </html>
