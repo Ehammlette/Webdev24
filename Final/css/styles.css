@@ -1,0 +1,17 @@
+/*
+Author: Nora Hammons
+Date: 4/21/2024
+File name: styles.css
+*/
+
+body,
+nav,
+main,
+footer,
+h1,
+div,
+img,ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
