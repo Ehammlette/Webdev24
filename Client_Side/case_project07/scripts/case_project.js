@@ -131,7 +131,7 @@ function checkAnswer() {
 }
 
 function setPoints() {
-    data.length=points;
+    points=data.length;
     sendPoints();
 }
 
