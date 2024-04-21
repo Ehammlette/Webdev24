@@ -24,12 +24,12 @@
          let formFields = formData.split(/[&=]/g);
 
          // Write the field values to the account table
-         document.getElementById("leader_board_name").textContent = formFields[1];
-         document.getElementById("username").textContent = formFields[3]; 
-         document.getElementById("email").textContent = formFields[5]; 
-         document.getElementById("pwd").textContent = formFields[7]; 
-         document.getElementById("pwd2").textContent = formFields[9];
-         document.getElementById("");
+         document.getElementById("leader_board_name").textContent = formFields[3];
+         document.getElementById("username").textContent = formFields[5]; 
+         document.getElementById("email").textContent = formFields[7]; 
+         document.getElementById("pwd").textContent = formFields[9]; 
+         document.getElementById("pwd2").textContent = formFields[11];
+         document.getElementById("points").textContent="hello world\nYou earned: $"+formFields[1];
       } );   
    </script>
 </head>
@@ -78,7 +78,7 @@
             <td><span id="pwd2"></span></td>
          </tr>             
       </table>
-      <span></span>
    </section>
+   <span id="points"></span>
 </body>
 </html>
