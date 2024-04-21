@@ -77,7 +77,7 @@ function setupGame() {
 }
 
 function setYourAnswer() {
-answerOfYours=document.getElementById(code).value;
+answerOfYours=document.getElementById("code").value;
 }
 
 //function to choose which places are the hosts and destinations
@@ -113,6 +113,7 @@ function choose_num() {
 
 //check answer to see if it is correct
 function checkAnswer() {
+
     setYourAnswer();
 
     if (answerOfYours === correct_answer)//if answer is correct
@@ -129,7 +130,11 @@ function checkAnswer() {
 }
 
 function setPoints() {
+    data.length=points;
+}
 
+function getPoints(){
+    document.getElementById("yourPoints").value=points;
 }
 
 function getCorrectAnswersList() {
