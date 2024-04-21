@@ -121,6 +121,7 @@ function checkAnswer() {
         data[correct_count] = correct_answer;
         setupGame();
         correct_count++;
+        setPoints();
         document.getElementById("isAnswerQuestion").innerHTML = "Correct";
     }
     else//if answer is incorrect
@@ -134,7 +135,7 @@ function setPoints() {
 }
 
 function getPoints(){
-    document.getElementById("yourPoints").value=points;
+    document.getElementById("yourPoints").innerHTML='<input type="hidden" name="yourPoints" id="yourPoints"></input>';
 }
 
 function getCorrectAnswersList() {
