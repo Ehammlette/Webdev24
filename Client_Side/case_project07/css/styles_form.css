@@ -164,3 +164,8 @@ section h1 {
  table tr td:first-of-type {
     background-color: #E3E09B;
  }
+
+ #points{
+   margin-left: 100px;
+   align-self: center;
+ }
