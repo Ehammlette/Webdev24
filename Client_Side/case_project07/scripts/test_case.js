@@ -1,3 +1,4 @@
+"use strict"
 /*  JavaScript 7th Edition
     case project
 
@@ -65,7 +66,6 @@ let data = new Array();
 window.addEventListener("load", setupGame);
 document.getElementById("check_button").addEventListener("click", checkAnswer);
 document.getElementById("list_correct_answers").addEventListener("click", getCorrectAnswersList);
-document.getElementById("clear").addEventListener("click", clear_answer_list);
 
 
 function setupGame() {
@@ -76,7 +76,8 @@ function setupGame() {
 
 }
 
-function getYourAnswer() {
+function setYourAnswer() {
+answerOfYours=document.getElementById(code).value;
 }
 
 //function to choose which places are the hosts and destinations
@@ -99,6 +100,7 @@ function choose_from_list() {
         correct_answer = code_satellites[host] + code_satellites[destination];
         document.getElementById("host").innerHTML = satellites[host];
         document.getElementById("destination").innerHTML = satellites[destination];
+        console.log(host + destination);
     }
 }
 
@@ -111,6 +113,7 @@ function choose_num() {
 
 //check answer to see if it is correct
 function checkAnswer() {
+    setYourAnswer();
 
     if (answerOfYours === correct_answer)//if answer is correct
     {
