@@ -166,6 +166,15 @@ bold {
     border: 10px solid #333;
 }
 
+/* overlay settings */
+.show{
+    display:block;
+}
+
+.hide{
+    display:none;
+}
+
 /* Style rules for footer content */
 footer p {
     font-size: 0.75em;
