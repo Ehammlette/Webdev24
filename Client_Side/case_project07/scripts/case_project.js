@@ -66,6 +66,7 @@ let data = new Array();
 window.addEventListener("load", setupGame);
 document.getElementById("check_button").addEventListener("click", checkAnswer);
 document.getElementById("list_correct_answers").addEventListener("click", getCorrectAnswersList);
+document.getElementById("clear_list").addEventListener("click", clear_answer_list)
 
 
 function setupGame() {
