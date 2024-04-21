@@ -7,6 +7,12 @@
     Filename: project.js
 */
 
+         // Retrieve the field/value pairs from the URL
+         var formData = location.search.slice(1);
+         formData = formData.replace(/\+/g," ");
+         formData = decodeURIComponent(formData);
+         let formFields = formData.split(/[&=]/g);
+
 /*--------Username and Password Logic--------*/
 
  //declaring submit button is referencing Element submitButton
