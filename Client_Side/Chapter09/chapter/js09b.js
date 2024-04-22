@@ -5,7 +5,7 @@
       
       Eating Well in Season 
       Author: Nora Hammons
-      Date:   4/16/2024
+      Date:   4/22/2024
       
       Filename: js09b.js
  */
@@ -38,4 +38,16 @@ for(let items of formData){
       inputBox.value = fieldValue;
       inputBox.disabled = true;
       document.getElementById("contactInfo").appendChild(inputBox);
+}
+
+//Store data to local storage when the user signs up
+document.getElementById("signupBtn").onclick = function(){
+      let formFields = document.querySelectorAll("#contactInfo input, input[type=radio], textarea");
+
+      //write each field name and value to local storage
+      for(let fields of formFields){
+            localStorage.setItem(fields.name, fields.value);
+      }
+
+      console.log(localStorage);
 }
