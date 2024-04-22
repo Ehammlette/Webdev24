@@ -16,6 +16,16 @@ img,ul {
     border: 0;
 }
 
+.container
+{
+    margin: 50px;
+}
+
+body{
+  background: #212534;
+}
+
+
 /*nav*/
 
 nav ul {
@@ -23,11 +33,13 @@ nav ul {
   overflow: hidden;
   background-color: #264653;
   font-family: 'Gill Sans MT';
+  border-bottom: 20px;
+  text-align: center;
 }
 
 nav li {
   font-size: 1.3em;
-  text-align: center;
+  display: inline-block;
 }
 
 nav li a {
@@ -43,6 +55,8 @@ nav li a:hover {
   color:#264653;
 }
 
+/* Magic */
+
 @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
@@ -52,18 +66,6 @@ nav li a:hover {
   :root {
     --card-height: 65vh;
     --card-width: calc(var(--card-height) / 1.5);
-  }
-  
-  
-  body {
-    min-height: 100vh;
-    background: #212534;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    box-sizing: border-box;
   }
   
   
