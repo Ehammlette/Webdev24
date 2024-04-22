@@ -20,11 +20,8 @@ if (localStorage.sbloggerVisit) {
       // Retrieve the value of the sbloggerVisit key and save it to storedLastDate
       var storedLastDate = localStorage.sbloggerVisit;
 
-      // Select the lastVisitDate object
-      var lastVisitDateObject = document.getElementById('lastVisitDate'); // Assuming 'lastVisitDate' is the ID of the object
-
       // Update the text content of lastVisitDate object with storedLastDate
-      lastVisitDateObject.textContent = storedLastDate;
+      lastVisitDate.textContent = storedLastDate;
 
       // Parse the storedLastDate string into a Date object
       var lastDate = new Date(storedLastDate);
@@ -43,3 +40,18 @@ if (localStorage.sbloggerVisit) {
 
 
 }
+else {
+      lastDate = null;
+
+      lastVisitDate.textContent = "Welcome to SBlogger!"
+
+      // Iterate through each item in the articleDates collection
+      for (const articleDateText of articleDates) {
+            // Add "<strong>new</strong>" to the HTML content of each item in the articleDates collection
+            articleDateText.innerHTML += "<strong>new</strong>";
+      }
+}
+
+var currentDate = new Date("9/12/2024");
+
+localStorage.sbloggerVisit = currentDate.toLocaleDateString();
