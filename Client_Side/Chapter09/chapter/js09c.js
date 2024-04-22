@@ -36,3 +36,7 @@
             localStorage.removeItem(item);
         }
       }
+
+      function writeCookie(name, value, expData, path, domain, secure){
+        
+      }
