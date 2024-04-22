@@ -30,4 +30,4 @@
           document.getElementById("prefTable").appendChild(newRow);
       }
 
-      //Re
+      //Remove Eating
