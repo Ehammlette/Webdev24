@@ -29,3 +29,5 @@
           //Append each key=name pair as a table row
           document.getElementById("prefTable").appendChild(newRow);
       }
+
+      //Re
