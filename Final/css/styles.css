@@ -29,6 +29,7 @@ body{
 /*nav*/
 
 nav ul {
+  background: #191c29;
   list-style-type: none;
   overflow: hidden;
   background-color: #264653;
