@@ -30,4 +30,9 @@
           document.getElementById("prefTable").appendChild(newRow);
       }
 
-      //Remove Eating
+      //Remove Eating Well keys when the Remove Preference button is clicked
+      document.getElementById("removePrefBtn").onclick=function(){
+        for (let item of keys) {
+            localStorage.removeItem(item);
+        }
+      }
