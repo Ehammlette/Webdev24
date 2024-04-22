@@ -16,6 +16,33 @@ img,ul {
     border: 0;
 }
 
+/*nav*/
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #264653;
+  font-family: 'Gill Sans MT';
+}
+
+nav li {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+nav li a {
+  display: block;
+  color: #E76F51;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #E76F51;
+  color:#264653;
+}
+
 @property --rotate {
     syntax: "<angle>";
     initial-value: 132deg;
@@ -111,10 +138,4 @@ img,ul {
     }
   }
   
-  a {
-    color: #212534;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-top: 2rem;
-  }
+
