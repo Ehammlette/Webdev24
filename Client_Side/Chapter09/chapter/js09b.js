@@ -33,7 +33,7 @@ for(let items of formData){
 
       //Create an disabled input box with the field value
       let inputBox = document.createElement("input");
-      inputBox = fieldName;
+      inputBox.id = fieldName;
       inputBox.name = fieldName;
       inputBox.value = fieldValue;
       inputBox.disabled = true;
