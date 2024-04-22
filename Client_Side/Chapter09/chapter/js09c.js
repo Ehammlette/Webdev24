@@ -38,5 +38,29 @@
       }
 
       function writeCookie(name, value, expData, path, domain, secure){
-        
+        if (name && value){
+            let cStr = name + "=" + encodeURIComponent(value);
+            if (expData) cStr += ";expires" + expData.toUTCString();
+            if (path) cStr += ";path=" +path;
+            if(domain) cStr += ";domain=" + domain;
+            if (secure) cStr += ";secure";
+            document.cookie = cStr;
+         }
+      }
+
+      function readCookie(){
+        let fields = {};
+
+        if(document.cookie) {
+            let cookieList = document.cookie.split("; ");
+
+            for (items of cookieList){
+                let cookie = items.split("=");
+                let name=cookie[0];
+                let value = decodeURIComponent(cookie[1]);
+                fields[name]=value;
+            }
+
+            return fields;
+        }
       }
