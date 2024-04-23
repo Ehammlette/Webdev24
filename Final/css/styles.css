@@ -16,6 +16,10 @@ img,ul {
     border: 0;
 }
 
+h1{
+  color: hsl(199, 95%, 76%);
+}
+
 .container
 {
     margin: 50px;
@@ -58,20 +62,26 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 nav li a:hover {
-  color: rgb(88 199 250 / 100%);
+  color: hsl(199, 95%, 76%);
   transform: scale(1.4);
   background-image: linear-gradient(
     var(--rotate)
     , #5ddcff, #3c67e3 43%, #4e00c2);
     animation: spin 2.5s linear infinite;
+    
     transition: animation 3s;
-    transition: all 3s;
+    transition: all 2.2s;
+    
 }
 nav li a:hover::before{
   opacity: 1;
+}
+nav li a:hover::after{
+  
 }
 
 /* Highlight text in  */
