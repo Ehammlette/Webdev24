@@ -80,7 +80,6 @@ nav li a:hover {
     var(--rotate)
     , #5ddcff, #3c67e3 43%, #4e00c2);
     animation: spin 2.5s linear infinite;
-    
     transition: animation 1s;
     transition: all 1.7s;
     
