@@ -16,9 +16,11 @@ img,ul {
     border: 0;
 }
 
-h1{
+header{
   color: hsl(199, 95%, 76%);
+  margin-bottom: 30px;
 }
+
 
 .container
 {
