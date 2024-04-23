@@ -10,7 +10,7 @@ main,
 footer,
 h1,
 div,
-img,ul {
+img,ul,article,p {
     margin: 0;
     padding: 0;
     border: 0;
@@ -29,6 +29,7 @@ header{
 
 body{
   background:#212534;
+  color:#3c67e3;
 }
 
 /*Animation*/
@@ -91,20 +92,11 @@ nav li a:hover::after{
   
 }
 
-/* Highlight text in  */
-
-.highlightTextIn
-{
-    color: rgba(0, 0, 0, 0.4); 
+/*footer*/
+footer{
+  text-decoration:none;
+  text-align: center;
 }
-
-.block
-{
-  background-color: aliceblue;
-}
-.block:hover{
-}
-
 
 /* Magic */
 
