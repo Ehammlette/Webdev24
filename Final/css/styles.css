@@ -54,13 +54,12 @@ nav ul {
 nav li {
   font-size: 1.3em;
   display: inline-block;
-  border-top: 2px solid #5ddcff;
-  border-bottom:2px solid #5ddcff; ;
-  border-right:2px #5ddcff;
+  box-shadow: 0px 0px 12px #5ddcff;
+  border: 2px solid #5ddcff;
   border-radius: 10px;
   margin-left: 20px;
   margin-right:20px;
-  background: #3c67e3;
+  background: radial-gradient(#3c67e3,#3c67e3,#5ddcff) ;
 
 }
 
