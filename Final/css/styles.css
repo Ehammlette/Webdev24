@@ -28,7 +28,7 @@ header{
 }
 
 body{
-  background: #212534;
+  background-image:radial-gradient(#212534,black)
 }
 
 /*Animation*/
@@ -47,7 +47,6 @@ body{
 nav ul {
   background: #191c29;
   list-style-type: none;
-  overflow: hidden;
   font-family: 'Gill Sans MT';
   border-bottom: 20px;
   text-align: center;
@@ -75,8 +74,8 @@ nav li a:hover {
     , #5ddcff, #3c67e3 43%, #4e00c2);
     animation: spin 2.5s linear infinite;
     
-    transition: animation 3s;
-    transition: all 2.2s;
+    transition: animation 1s;
+    transition: all 1.7s;
     
 }
 nav li a:hover::before{
