@@ -57,7 +57,7 @@ nav li {
 }
 
 nav li a {
-  color: rgb(46, 39, 81);
+  background: rgb(46, 39, 81);
   display: block;
   color: #212534;
   text-align: center;
