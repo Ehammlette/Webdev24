@@ -20,16 +20,8 @@ document.querySelector('article > h2').addEventListener("click",function(){
       var headingImage= heading.querySelector('img');
 
       //Toggel the list using slideToggle
-      let isVisible = true;
-      setInterval(() => {
-            if (isVisible){
-                  list.style.display = 'none';
-            }
-            else{
-                  list.style.display='block';
-            }
-            isVisible = !isVisible;
-      },500);
+      list.style.transition = 'height 0.5s ease';
+      list.style.height = list.offsetHeight === 0 ? `${list.scrollHeight}px` : 0;
 
       const src = headingImage.getAttribute('src');
       if (src === 'plus.png') {
