@@ -19,6 +19,7 @@ document.querySelector('article > h2').addEventListener("click",function(){
 
       var headingImage= heading.querySelector('img');
 
+      $('list').slideToggle();
 
         const src = headingImage.getAttribute('src');
   if (src === 'plus.png') {
@@ -26,14 +27,4 @@ document.querySelector('article > h2').addEventListener("click",function(){
   } else {
     headingImage.setAttribute('src', 'plus.png');
   }
-
-  if (src ==='plus.png')
-  {
-      list.style.display='block';
-  }
-  else
-  {
-      list.style.display='none';
-  }
-
 });
