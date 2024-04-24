@@ -11,21 +11,21 @@
 */
 
 
-$('article > h2').click(function() {
+$('article > h2').click(function () {
 
-      var heading= document.querySelector('article > h2');
+      var heading = $(this);
 
-      var list= heading.nextElementSibling;
+      var list = heading.next();
 
-      var headingImage= heading.querySelector('img');
+      var headingImage = heading.find('img');
 
       $(list).slideToggle(500);
 
-      const src = $(headingImage).attr('src');
-      
-  if (src === 'plus.png') {
-    headingImage.setAttribute('src', 'minus.png');
-  } else {
-    headingImage.setAttribute('src', 'plus.png');
-  }
+      var src = $(headingImage).attr('src');
+
+      if (src === 'plus.png') {
+            headingImage.attr('src', 'minus.png');
+      } else {
+            headingImage.attr('src', 'plus.png');
+      }
 });
