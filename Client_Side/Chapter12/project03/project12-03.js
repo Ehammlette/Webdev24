@@ -19,15 +19,21 @@ document.querySelector('article > h2').addEventListener("click",function(){
 
       var headingImage= heading.querySelector('img');
 
-      //Toggel the list using slideToggle
-      list.style.transition = 'height 0.5s ease';
-      list.style.height = list.offsetHeight === 0 ? `${list.scrollHeight}px` : 0;
 
-      const src = headingImage.getAttribute('src');
-      if (src === 'plus.png') {
-        headingImage.setAttribute('src', 'minus.png');
-      } else {
-        headingImage.setAttribute('src', 'plus.png');
-      }
+        const src = headingImage.getAttribute('src');
+  if (src === 'plus.png') {
+    headingImage.setAttribute('src', 'minus.png');
+  } else {
+    headingImage.setAttribute('src', 'plus.png');
+  }
+
+  if (src ==='plus.png')
+  {
+      list.style.display='block';
+  }
+  else
+  {
+      list.style.display='none';
+  }
 
 });
