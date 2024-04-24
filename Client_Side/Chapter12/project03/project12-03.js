@@ -11,17 +11,18 @@
 */
 
 
-document.querySelector('article > h2').addEventListener("click",function(){
+$('article > h2').click(function() {
 
-      var heading= event.target;
+      var heading= document.querySelector('article > h2');
 
       var list= heading.nextElementSibling;
 
       var headingImage= heading.querySelector('img');
 
-      $('list').slideToggle();
+      $(list).slideToggle(500);
 
-        const src = headingImage.getAttribute('src');
+      const src = $(headingImage).attr('src');
+      
   if (src === 'plus.png') {
     headingImage.setAttribute('src', 'minus.png');
   } else {
