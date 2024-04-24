@@ -11,3 +11,6 @@
 */
 
 
+document.querySelector('article > h2').addEventListener("click",function(){
+
+});
