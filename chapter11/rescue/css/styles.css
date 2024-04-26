@@ -16,7 +16,8 @@ h3,
 ul,
 aside,
 figure,
-figcaption,video {
+figcaption,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -27,7 +28,8 @@ body {
     background-color: #f6eee4;
 }
 
-img, video{
+img,
+video {
     max-width: 100%;
     display: block;
 }
@@ -35,11 +37,13 @@ img, video{
 /* Style rules for mobile viewport */
 
 /*Style rules to show mobile class and hide tab-desk class */
-.mobile, .mobile-tablet {
+.mobile,
+.mobile-tablet {
     display: block;
 }
 
-.tab-desk, .desktop {
+.tab-desk,
+.desktop {
     display: none;
 }
 
@@ -64,16 +68,16 @@ nav {
 }
 
 /* Style rules for Mobile navigation */
-.mobile-nav a{
-color: #fff;
-text-align:center;
-font-size: 2em;
-text-decoration: none;
-padding: 3%;
-display: block;
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
 }
 
-.mobile-nav a.nav-icon{
+.mobile-nav a.nav-icon {
     display: block;
     position: absolute;
     left: 0;
@@ -82,15 +86,16 @@ display: block;
     padding: 2%;
 }
 
-.nav-icon div{
+.nav-icon div {
     height: 40px;
     width: 40px;
     color: #2a1f14;
 }
 
-#nav-links, .tab-desk, .desktop
-{
-display:none;
+#nav-links,
+.tab-desk,
+.desktop {
+    display: none;
 }
 
 /* Style rules for main content */
@@ -111,7 +116,7 @@ main ul {
     list-style-type: square;
 }
 
-.mobile h1{
+.mobile h1 {
     margin: 2% 0 0 3%;
 }
 
@@ -173,19 +178,19 @@ figcaption {
     font-weight: bold;
 }
 
-#questions p{
-    cursor:pointer;
+#questions p {
+    cursor: pointer;
 }
 
-#answer{
-    text-align:center;
-    font-weight:bold;
-    width:80%;
-    margin:0 auto;
+#answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
 }
 
-#answer h2{
-    display:none;
+#answer h2 {
+    display: none;
 }
 
 /* Style rules for footer content */
@@ -207,17 +212,19 @@ footer a {
 print {
 
     /* Tablet Viewport: Show tab hyphen desk class, comma, hide mobile class.*/
-    .tab-desk, .desktop {
+    .tab-desk,
+    .desktop {
         display: block;
     }
 
-    .mobile, .mobile-tablet {
+    .mobile,
+    .mobile-tablet {
         display: none;
     }
 
-    .mobile-nav{
-        display:none;
-        color:#2a1f14;
+    .mobile-nav {
+        display: none;
+        color: #2a1f14;
     }
 
     /* Tablet Viewport: Style rules for nav area.*/
@@ -263,12 +270,12 @@ print {
 print {
 
     /* Desktop Viewport: Show desktop class, hide mobile-tablet class*/
-    .desktop{
+    .desktop {
         display: block;
     }
 
-    .mobile-tablet{
-        display:none;
+    .mobile-tablet {
+        display: none;
     }
 
     /* Desktop Viewport: Style rules for nav area */
@@ -299,42 +306,40 @@ print {
         gap: 10px;
     }
 
-        /* Desktop Viewport: Aside */
-        aside {
-            grid-column: 1 / span 4;
-            font-size: 3em;
-        }
+    /* Desktop Viewport: Aside */
+    aside {
+        grid-column: 1 / span 4;
+        font-size: 3em;
+    }
 
-        /* Table partnership.html */
-        table{
-            border: 1px solid #2a1f14;
-            border-collapse: collapse;
-            margin-top: 0;
-            margin-bottom: 0;
-            margin-left: auto;
-            margin-right: auto;
-        }
+    /* Table partnership.html */
+    table {
+        border: 1px solid #2a1f14;
+        border-collapse: collapse;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-        caption{
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 1%;
-        }
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
 
-        th, td {
-            border: 1px solid #2a1f14;
-            padding: 1%;
-        }
+    th,
+    td {
+        border: 1px solid #2a1f14;
+        padding: 1%;
+    }
 
-        th{
-            background-color: #2a1f14;
-            color:#fff;
-            font-size: 1.15em;
-        }
+    th {
+        background-color: #2a1f14;
+        color: #fff;
+        font-size: 1.15em;
+    }
 
-        tr:odd{
-            background-color: #deccba;
-        }
 }
 
 /* Media Query for Large Desktop Viewport */
