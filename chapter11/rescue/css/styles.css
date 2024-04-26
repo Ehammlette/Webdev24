@@ -212,13 +212,11 @@ footer a {
 print {
 
     /* Tablet Viewport: Show tab hyphen desk class, comma, hide mobile class.*/
-    .tab-desk,
-    .desktop {
+    .tab-desk {
         display: block;
     }
 
-    .mobile,
-    .mobile-tablet {
+    .mobile {
         display: none;
     }
 
@@ -311,35 +309,6 @@ print {
         grid-column: 1 / span 4;
         font-size: 3em;
     }
-
-    /* Table partnership.html */
-    table {
-        border: 1px solid #2a1f14;
-        border-collapse: collapse;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    caption {
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 1%;
-    }
-
-    th,
-    td {
-        border: 1px solid #2a1f14;
-        padding: 1%;
-    }
-
-    th {
-        background-color: #2a1f14;
-        color: #fff;
-        font-size: 1.15em;
-    }
-
 }
 
 /* Media Query for Large Desktop Viewport */
