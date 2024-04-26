@@ -207,11 +207,11 @@ footer a {
 print {
 
     /* Tablet Viewport: Show tab hyphen desk class, comma, hide mobile class.*/
-    .tab-desk {
+    .tab-desk, .desktop {
         display: block;
     }
 
-    .mobile {
+    .mobile, .mobile-tablet {
         display: none;
     }
 
@@ -262,12 +262,13 @@ print {
 @media screen and (min-width: 1000px),
 print {
 
-    .mobile-tablet {
-        display: none;
-    }
-    
+    /* Desktop Viewport: Show desktop class, hide mobile-tablet class*/
     .desktop{
         display: block;
+    }
+
+    .mobile-tablet{
+        display:none;
     }
 
     /* Desktop Viewport: Style rules for nav area */
@@ -302,6 +303,37 @@ print {
         aside {
             grid-column: 1 / span 4;
             font-size: 3em;
+        }
+
+        /* Table partnership.html */
+        table{
+            border: 1px solid #2a1f14;
+            border-collapse: collapse;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 1%;
+        }
+
+        th, td {
+            border: 1px solid #2a1f14;
+            padding: 1%;
+        }
+
+        th{
+            background-color: #2a1f14;
+            color:#fff;
+            font-size: 1.15em;
+        }
+
+        tr:odd{
+            background-color: #deccba;
         }
 }
 
