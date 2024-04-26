@@ -1,7 +1,7 @@
 /*
 Author: Nora Hammons
 File Name: styles.css
-Date: 4/9/2024
+Date: 4/26/2024
 */
 
 /* CSS Reset */
@@ -35,11 +35,11 @@ img, video{
 /* Style rules for mobile viewport */
 
 /*Style rules to show mobile class and hide tab-desk class */
-.mobile {
+.mobile, .mobile-tablet {
     display: block;
 }
 
-.tab-desk {
+.tab-desk, .desktop {
     display: none;
 }
 
