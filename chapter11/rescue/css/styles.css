@@ -161,7 +161,7 @@ figcaption {
     margin-left: 10%;
 }
 
-#contact {
+#contact, #form h2 {
     text-align: center;
 }
 
@@ -191,6 +191,34 @@ figcaption {
 
 #answer h2 {
     display: none;
+}
+
+/* Style rules for form elements*/
+fieldset, input, textarea{
+    margin-bottom: 2%;
+}
+
+fieldset legend{
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label{
+    display: block;
+    padding-top: 2%;
+}
+
+#submit {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 2%;
+    background-color: #78593a;
+    color: #f6eee4;
+    font-size: 1.25em;
+    border-radius: 10px;
 }
 
 /* Style rules for footer content */
@@ -259,6 +287,15 @@ print {
     aside {
         grid-column: 1 / span 3;
         font-size: 2em;
+    }
+
+    /*  Tablet Viewport: Style rule for form element */
+    form{
+        width: 70%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
@@ -340,6 +377,22 @@ print {
     
         tr:odd {
             background-color: #deccba;
+        }
+
+        /* Desktop Viewport: Style rules for form elements */
+        form{
+            width: auto;
+        }
+
+        .form-grid{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+        }
+
+        .btn
+        {
+            grid-column: 1 / span 2;
         }
 }
 
