@@ -15,7 +15,6 @@ function hamburger(){
     if (navlinks.style.display === "block") {
         navlinks.style.display = "none";
         menuicon.style.color = "#2alf14";
-        return;
     }
     else {
         navlinks.style.display = "block";
@@ -23,10 +22,10 @@ function hamburger(){
         {
             menuicon.style.color = "#2alf14";
         }
-        else(menuicon.style.color === "#2alf14"){
+        else(menuicon.style.color === "#2alf14")
+        {
             menuicon.style.color = "#f6eee4";
         }
-        return;
     }
 }
 
