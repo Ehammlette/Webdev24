@@ -18,14 +18,7 @@ function hamburger(){
     }
     else {
         navlinks.style.display = "block";
-        if(menuicon.style.color === "#2alf14" )
-        {
-            menuicon.style.color = "#f6eee4"
-        }
-        else
-        {
-            menuicon.style.color = "#2alf14";
-        }
+        menuicon.style.color = "#f6eee4";
     }
 }
 
