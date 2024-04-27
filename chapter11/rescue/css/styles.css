@@ -252,6 +252,11 @@ footer a {
     text-decoration: none;
 }
 
+.social{
+    display: inline-block;
+    padding:4%;
+}
+
 /* Media Query for Tablet Viewport. */
 @media screen and (min-width: 620px),
 print {
