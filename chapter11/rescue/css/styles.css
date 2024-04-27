@@ -320,6 +320,21 @@ print {
         margin-right: auto;
     }
 
+    /* Tablet Viewport: Style rules for footer area */
+    footer{
+        overflow: auto;
+    }
+
+    .copyright{
+        float: left;
+        width: 65%;
+    }
+
+    .social {
+        float: right;
+        width: 25%;
+      }
+
 }
 
 /* Media Query for Desktop Viewport. */
