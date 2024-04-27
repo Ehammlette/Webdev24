@@ -34,6 +34,23 @@ video {
     display: block;
 }
 
+/* Style rules for skip navigation link */
+.skip {
+position: absolute;
+left: -999px;
+}
+
+.skip:focus{
+    color: #fff;
+    background-color:none;
+    text-decoration: none;
+    padding:0.5%;
+    top: auto;
+    left:auto;
+    right: 1px;
+    z-index: 1;
+}
+
 /* Style rules for mobile viewport */
 
 /*Style rules to show mobile class and hide tab-desk class */
