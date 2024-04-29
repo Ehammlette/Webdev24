@@ -4,8 +4,8 @@
       Project 06-04
 
       Project to turn a selection list into a selection of hypertext links
-      Author: 
-      Date:   
+      Author: Nora Hammons
+      Date:   4/29/2024
 
       Filename: project06-04.js
 */
