@@ -8,7 +8,12 @@
 
       Filename: project02-04.js
  */
- 
+   let CHICKEN_PRICE = 10.95  
+   let HALIBUT_PRICE = 13.95  
+   let BURGER_PRICE = 9.95  
+   let SALMON_PRICE = 18.95  
+   let SALAD_PRICE = 7.95
+   let SALES_TAX = 0.07
 
 
 
