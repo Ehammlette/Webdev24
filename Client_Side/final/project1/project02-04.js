@@ -15,7 +15,7 @@
    let SALAD_PRICE = 7.95
    let SALES_TAX = 0.07
 
-   window.addEventListener("load", test);
+
 
    function test(){
       calcTotal();
@@ -23,6 +23,11 @@
       document.getElementById("chicken").onchange=calcTotal;
    }
 
+   document.getElementById("chicken")
+   document.getElementById("halibut")
+   document.getElementById("burger")
+   document.getElementById("salmon")
+   document.getElementById("salad")
 
 //calculate cost
 function calcTotal(){
@@ -58,6 +63,9 @@ function calcTotal(){
 
    //setting element foodTax
    document.getElementById("foodTax")= formatCurrency(tax);
+
+   //total cost calculation
+   var totalCost = cost+tax;
 }
 
 
