@@ -3,8 +3,9 @@
       Project 04-04
 
       Application to determine change from a cash amount
-      Author: 
-      Date:   
+      Author: Nora Hammons
+      Date:   4/29/2024
+
 
       Filename: project04-04.js
 */
