@@ -50,6 +50,14 @@ function calcTotal(){
    //add the cost of the salad if purchased
    cost += buySalad ? SALAD_PRICE:0;
 
+   //setting final sales stuff
+   document.getElementById("foodTotal").innerHTML= formatCurrency(cost);
+
+   //sales tax
+   let tax= cost*SALES_TAX;
+
+   //setting element foodTax
+   document.getElementById("foodTax")= formatCurrency(tax);
 }
 
 
