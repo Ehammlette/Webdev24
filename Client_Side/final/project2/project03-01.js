@@ -13,21 +13,26 @@
 let menuItems=getElementsByClassName("menuItem");
 
 //for loop
-
 for(let i=0; i<menuItems.length; i++){
       menuItems[i].addEventListener("click", calcTotal);
 }
 
-document.getElementById("billTotal").innerHTML=formatCurrency(orderTotal);
-
 //function calcTotal
 function calcTotal(){
-      let orderTotal=0;
+      let orderTotal = 0;
 
-      if (menuItems[i].checked) {
-            // Increase orderTotal by the value of menuItems[i]
-            orderTotal += Number(menuItems[i].value);
-        }
+      // Loop through the menuItems collection
+      for (let i = 0; i < menuItems.length; i++) {
+          // Apply an if statement that tests whether the item has been checked
+          if (menuItems[i].checked) {
+              // Increase the value of the orderTotal variable by the value of menuItems[i]
+              orderTotal += Number(menuItems[i].value);
+          }
+      }
+  
+      // Change the innerHTML property of the element with the id "billTotal"
+      // to the value returned by the formatCurrency() function using orderTotal as the parameter value.
+      document.getElementById("billTotal").innerHTML = formatCurrency(orderTotal);
 }
 
  // Function to display a numeric value as a text string in the format $##.## 
