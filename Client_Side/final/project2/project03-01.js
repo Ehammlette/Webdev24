@@ -13,8 +13,9 @@
 let menuItems=getElementsByClassName("menuItem");
 
 //for loop
+
 for(let i=0; i<menuItems.length; i++){
-      menuItems[i].addEventListener('click', calcTotal());
+      menuItems[i].addEventListener("click", calcTotal);
 }
 
 document.getElementById("billTotal").innerHTML=formatCurrency(orderTotal);
