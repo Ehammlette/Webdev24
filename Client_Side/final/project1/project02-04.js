@@ -20,7 +20,7 @@
    function test(){
       calcTotal();
 
-      document.getElementById("number1").onchange=calcTotal;
+      document.getElementById("chicken").onchange=calcTotal;
    }
 
 
@@ -28,10 +28,10 @@
 function calcTotal(){
    let cost=0;
    var buyChicken = document.getElementById("chicken").checked;
-   if (buyChicken)
-   {
-      document.getElementById("totalBill")=buyChicken;
-   }
+   var buyHalibut = document.getElementById("halibut").checked;
+   var buyBurger = document.getElementById("burger").checked;
+   var buySalmon = document.getElementById("salmon").checked;
+   var buySalad = document.getElementById("salad").checked;
 
 }
 
