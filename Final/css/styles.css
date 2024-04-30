@@ -104,9 +104,6 @@ nav li a:hover {
 nav li a:hover::before{
   opacity: 1;
 }
-nav li a:hover::after{
-  
-}
 
 /*footer*/
 footer{
