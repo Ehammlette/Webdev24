@@ -16,6 +16,12 @@
    let SALES_TAX = 0.07
 
 
+//calculate cost
+function calcTotal(){
+   let cost=0;
+   var buyChicken = document.getElementById("chicken").ariaChecked;
+
+}
 
 
 // Function to display a numeric value as a text string in the format $##.## 
