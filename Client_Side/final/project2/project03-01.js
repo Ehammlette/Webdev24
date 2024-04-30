@@ -10,7 +10,7 @@
 */
 
 //declare menuItems
-let menuItems=getElementsByClassName("menuItem");
+let menuItems=document.getElementsByClassName("menuItem");
 
 //for loop
 for(let i=0; i<menuItems.length; i++){
