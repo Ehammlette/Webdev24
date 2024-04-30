@@ -43,6 +43,23 @@ body{
   }
 }
 
+/* Magic animation*/
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+
 /*nav*/
 
 nav ul {
@@ -81,7 +98,7 @@ nav li a:hover {
     , #5ddcff, #3c67e3 43%, #4e00c2);
     animation: spin 2.5s linear infinite;
     transition: animation 1s;
-    transition: all 1.7s;
+    transition: all 1s;
     
 }
 nav li a:hover::before{
