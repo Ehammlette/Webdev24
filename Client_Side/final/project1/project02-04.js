@@ -27,11 +27,28 @@
 //calculate cost
 function calcTotal(){
    let cost=0;
+
+   //Finding out if elements are checked marked
    var buyChicken = document.getElementById("chicken").checked;
    var buyHalibut = document.getElementById("halibut").checked;
    var buyBurger = document.getElementById("burger").checked;
    var buySalmon = document.getElementById("salmon").checked;
    var buySalad = document.getElementById("salad").checked;
+
+   //add the cost of the chicken if purchased
+   cost += buyChicken ? CHICKEN_PRICE :0;
+
+   //add the cost of the halibut if purchased
+   cost += buyHalibut ? HALIBUT_PRICE:0;
+
+   //add the cost of the burger if purchased
+   cost += buyBurger ? BURGER_PRICE:0;
+
+   //add the cost of the salmon if purchased
+   cost += buySalmon ? SALMON_PRICE:0;
+
+   //add the cost of the salad if purchased
+   cost += buySalad ? SALAD_PRICE:0;
 
 }
 
