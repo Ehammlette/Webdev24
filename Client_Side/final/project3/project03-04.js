@@ -50,8 +50,10 @@ function starImages(rating) {
       }
   
       // Add HTML code for table rows and data cells
-      reviewCode += "<tr><th>Review Titles[" + i + "]</th><td>" + reviewers[i] + "</td></tr>";
+      reviewCode +="<caption>"+reviewTitles[i]+"</caption>";
+      reviewCode += "<tr><th>By</th><td>" + reviewers[i] + "</td></tr>";
       reviewCode += "<tr><th>Review Date</th><td>" + reviewDates[i] + "</td></tr>";
+      reviewCode += "<tr><th>Rating</th><td>" + starImages(stars[i])+ "</td></tr>";
       reviewCode += "<tr><td colspan='2'>" + reviews[i] + "</td></tr>";
   
       // Add table closing tag
