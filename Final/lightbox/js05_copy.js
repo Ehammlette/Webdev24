@@ -22,7 +22,7 @@ function createLightbox(){
    let lbNext= document.createElement("div");
    let lbPlay= document.createElement("div");
    let lbImages= document.createElement("div");
-   let lbanchor= document.createAttribute("a");
+   let lbAnchor= document.createAttribute("div");
 
    //Design the lightbox title
    lightBox.appendChild(lbTitle);
@@ -73,10 +73,17 @@ function createLightbox(){
       let image = document.createElement("img");
       image.src = imgFiles[i];
       image.alt = imgCaptions[i];
-      //image.onclick = createOverlay;
-      //image.appendChild(lbanchor);
       lbImages.appendChild(image);
    }
+      //anchor
+      lightBox.appendChild(lbAnchor);
+      lbAnchor.id="lbAnchor";
+      
+      for (let i=0; i<imgCount;i++) {
+         let anchor = document.createElement("a");
+         anchor.href = overlayAnchor[i];
+         lbAnchor.appendChild(anchor);
+      }
 
    //Function to move forward through the image list
    function showNext() {
