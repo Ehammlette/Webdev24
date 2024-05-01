@@ -22,25 +22,7 @@ header{
   text-align: center;
 }
 
-
-.container
-{
-    margin: 50px;
-}
-
-.box{
-  align-content: center;
-  margin: 50px;
-  border-radius: 25px;
-  padding: 20px;
-  height: 150px;
-  background-color: #88d7fc;
-  border: dotted #923880;
-  background: radial-gradient(#061038,#061038 43%,#1C436A) ;
-}
-
 body{
-  color:#923880;
   color:white;
 }
 
@@ -96,6 +78,27 @@ nav li a:hover {
 }
 nav li a:hover::before{
   opacity: 1;
+}
+
+.container
+{
+    margin: 50px;
+}
+
+.box{
+  align-content: center;
+  margin: 50px;
+  border-radius: 25px;
+  padding: 20px;
+  height: 150px;
+  background-color: #88d7fc;
+  border: dotted #923880;
+  background: radial-gradient(#061038,#061038 43%,#1C436A) ;
+}
+
+/* box stuff */
+.box ul{
+  
 }
 
 /*footer*/
