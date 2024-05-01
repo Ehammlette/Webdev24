@@ -30,7 +30,10 @@ header{
 
 body{
   background:hsl(227, 22%, 17%);
-  background: url("option_1.jpg");
+  background-image: url('../../image/option_1.jpg');
+  background-repeat: no-repeat;
+  background-origin: border-box;
+  background-size: cover;
   color:hsl(225, 75%, 56%);
 }
 
