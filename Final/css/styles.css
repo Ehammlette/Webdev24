@@ -101,11 +101,28 @@ nav li a:hover::before{
 }
 
 /* box stuff */
+
+.box{
+  align-content: center;
+  margin: 50px;
+  border-radius: 25px;
+  padding: 20px;
+  background-color: #88d7fc;
+  border: dotted #923880;
+  background: radial-gradient(#061038,#061038 43%,#1C436A) ;
+}
+
 .box ul{
   margin-top: 10px;
 margin-left: 25px;
 }
+
 /* end box stuff */
+
+/* stuff*/
+#safe{
+  color: white;
+}
 
 /*footer*/
 footer{
