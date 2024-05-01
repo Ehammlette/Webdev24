@@ -5,7 +5,7 @@
 
       Application to generate a slide show
       Author: nora hammons
-      Date:   4/30/2024
+      Date:   3/21/2024
 
       Filename: js05.js
 */
@@ -22,7 +22,6 @@ function createLightbox(){
    let lbNext= document.createElement("div");
    let lbPlay= document.createElement("div");
    let lbImages= document.createElement("div");
-   let lbAnchor= document.createAttribute("div");
 
    //Design the lightbox title
    lightBox.appendChild(lbTitle);
@@ -33,7 +32,7 @@ function createLightbox(){
    lightBox.appendChild(lbCounter);
    lbCounter.id="lbCounter";
    let currentImg= 1;
-   lbCounter.textContent = currentImg + " / " + imgCount;   //shows as : 1 / 12
+   lbCounter.textContent = currentImg + " / " + imgCount;   //shows as : 1 / 8
 
    //Design the lightbox previous slide button
    lightBox.appendChild(lbPrev);
@@ -72,18 +71,11 @@ function createLightbox(){
    for (let i=0; i<imgCount;i++) {
       let image = document.createElement("img");
       image.src = imgFiles[i];
-      image.alt = imgCaptions[i];
+      image.alt = overlayAnchor[i];
+      image.id = imgCaptions[i]
+      image.onclick = createOverlay;
       lbImages.appendChild(image);
    }
-      //anchor
-      lightBox.appendChild(lbAnchor);
-      lbAnchor.id="lbAnchor";
-      
-      for (let i=0; i<imgCount;i++) {
-         let anchor = document.createElement("a");
-         anchor.href = overlayAnchor[i];
-         lbAnchor.appendChild(anchor);
-      }
 
    //Function to move forward through the image list
    function showNext() {
@@ -117,9 +109,10 @@ function createLightbox(){
          let overlayImage = this.cloneNode("true");
          figureBox.appendChild(overlayImage);
 
+
          //Add the caption to the figure box
          let overlayCaption= document.createElement("figcaption");
-         overlayCaption.textContent = this.alt;
+         overlayCaption.innerHTML="<a id='safe' href="+"'"+ this.alt +"'" + ">"+this.id +"</a>";
          figureBox.appendChild(overlayCaption);
 
          document.body.appendChild(overlay);

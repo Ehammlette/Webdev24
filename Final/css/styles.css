@@ -89,18 +89,8 @@ nav li a:hover::before{
 {
     margin: 50px;
     object-fit: contain;
+    overflow: auto;
 }
-
-.box{
-  align-content: center;
-  margin: 50px;
-  border-radius: 25px;
-  padding: 20px;
-  background-color: #88d7fc;
-  border: dotted #923880;
-  background: radial-gradient(#061038,#061038 43%,#1C436A) ;
-}
-
 /* box stuff */
 
 .box{
@@ -111,7 +101,6 @@ nav li a:hover::before{
   background-color: #88d7fc;
   border: dotted #923880;
   background: radial-gradient(#061038,#061038 43%,#1C436A) ;
-  object-fit: contain;
 }
 
 .box ul{
@@ -128,10 +117,13 @@ margin-left: 25px;
 
 /*footer*/
 footer{
-  margin-top: 30px;
+  border-top-left-radius: 100% 80px;
+  border-top-right-radius: 100% 80px;
+  background-color: rgba(28, 66, 105,0.85);
+  padding-top: 30px;
   text-decoration:none;
   text-align: center;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 footer p{

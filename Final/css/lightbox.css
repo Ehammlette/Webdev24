@@ -168,7 +168,7 @@ div#lbOverlay figure {
 div#lbOverlay figure img {
    display: block;
    margin: auto;
-   width: 100%;
+   width: 90%;
    height: auto;
    box-shadow: 5px 5px 20px black;
    animation-name: zoom;      /* animate the opening of the figure */
@@ -178,9 +178,9 @@ div#lbOverlay figure img {
 /* Styles for the caption within the overlay */
 div#lbOverlay figure figcaption {
    text-align: center;
-   font-size: 1.25em;
+   font-size: 1.40em;
    color: white;
-   margin-top: 10px;
+   margin-top: 30px;
    animation-name: zoom;      /* animate the opening of the figure */
    animation-duration: 1s;    /* over a 1-second interval */  
 }

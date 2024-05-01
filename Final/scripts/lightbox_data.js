@@ -9,7 +9,7 @@
 */
 
 // Title of the slideshow
-let lightboxTitle = "ShowCase";
+let lightboxTitle = "Client side";
 
 // Names of the image files shown in the slideshow
 let imgFiles = ["image/screenshot/Chapter2_temp.jpg","image/screenshot/Chapter3_analyze.jpg","image/screenshot/Chapter4_analyze.jpg","image/screenshot/Chapter5_extend.jpg","image/screenshot/Chapter6_extend.jpg","image/screenshot/Chapter7_analyze.jpg","image/screenshot/Chapter9_apply.jpg","image/screenshot/Chapter12_apply.jpg"]
