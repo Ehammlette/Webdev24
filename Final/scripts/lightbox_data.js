@@ -19,13 +19,13 @@ let overlayAnchor = ["https://ehammlette.github.io/Webdev24/chapter2/template.ht
 // Captions associated with each image
 let imgCaptions = new Array(8);
 imgCaptions[0]="Chapter 2 Template";
-imgCaptions[1]="Chapter 3 "; 
-imgCaptions[2]="Chapter 4"; 
-imgCaptions[3]="Chapter 5"; 
-imgCaptions[4]="Chapter 6";
-imgCaptions[5]="Chapter 7";
-imgCaptions[6]="Chapter 9";
-imgCaptions[7]="Chapter 12";
+imgCaptions[1]="Chapter 3 Analyze"; 
+imgCaptions[2]="Chapter 4 Analyze"; 
+imgCaptions[3]="Chapter 5 Extend"; 
+imgCaptions[4]="Chapter 6 Extend";
+imgCaptions[5]="Chapter 7 Analyze";
+imgCaptions[6]="Chapter 9 Apply";
+imgCaptions[7]="Chapter 12 Apply";
 
 // Count of images in the slideshow
 let imgCount = imgFiles.length;
