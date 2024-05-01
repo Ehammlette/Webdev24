@@ -32,7 +32,7 @@ div#lightbox div#lbPrev, div#lightbox div#lbNext {
    position: absolute;
    width: 5%;
    height: 30px;
-   color: #F3EF8F;
+   color: rgb(146, 56, 128);
    text-shadow: 2px 2px 2px black;
    font-size: 20px;
    font-weight: bold;
@@ -198,7 +198,7 @@ div#lbOverlay div#lbOverlayClose {
 
 /* Hovering styles for the modal window close button */
 div#lbOverlay div#lbOverlayClose:hover {
-   color: #F7F1A9;
+   color: rgb(150, 58, 154);
    text-shadow: 3px 3px 0px black;
 }
 
