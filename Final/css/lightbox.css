@@ -33,21 +33,21 @@ div#lightbox div#lbPrev, div#lightbox div#lbNext {
    width: 5%;
    height: 30px;
    color: rgb(146, 56, 128);
-   text-shadow: 2px 2px 2px black;
+   text-shadow: 2px 2px 2px #222635;
    font-size: 20px;
    font-weight: bold;
    top: 118px;
    line-height: 30px;
    text-align: center;
    z-index: 1;
-   background: rgba(0,0, 0, 0.0);
+   background: rgba(34, 38, 53, 0);
    cursor: pointer;
    user-select: none;
 }
 
 /* Hovering styles for the left and right arrows */
 div#lightbox div#lbPrev:hover, div#lightbox div#lbNext:hover {
-   background: rgba(0,0,0,0.5);
+   background: #00000080;
 }
 
 /* Horizontal position of the left arrow */
@@ -78,7 +78,7 @@ div#lightbox div#lbCounter {
    height: 26px;
    line-height: 20px;
    fonts-size: 20px;
-   background-color: rgba(0,0,0,0.5);
+   background-color: rgba(34, 38, 53, 0.5);
    border-radius: 4px;
    text-align: center;
    color: white;
@@ -98,7 +98,7 @@ div#lightbox div#lbPlay {
    font-size: 2.2em;
    width: 40px;
    margin: 0 auto;
-   text-shadow: 3px 3px 20px black;
+   text-shadow: 3px 3px 20px rgb(34, 38, 53);
    cursor: pointer;
    user-select: none;
    filter: grayscale(1);
@@ -113,7 +113,7 @@ div#lightbox div#lbPlay:hover {
    font-size: 2.2em;
    width: 40px;
    margin: 0 auto;
-   text-shadow: 3px 3px 20px black;
+   text-shadow: 3px 3px 20px #222635;
    cursor: pointer;
    user-select: none;
    filter: grayscale(0.6) hue-rotate(120deg);
@@ -127,8 +127,8 @@ div#lbImages img {
    margin-right: 13px;
    filter: opacity(0.8);
    cursor: pointer;
-   outline: 2px solid #9C6908;
-   box-shadow: 3px 3px 10px black;  
+   outline: 2px solid #88d7fc;
+   box-shadow: 3px 3px 10px #222635;  
    user-select: none;   
 }
 
@@ -170,7 +170,7 @@ div#lbOverlay figure img {
    margin: auto;
    width: 90%;
    height: auto;
-   box-shadow: 5px 5px 20px black;
+   box-shadow: 5px 5px 20px #222635;
    animation-name: zoom;      /* animate the opening of the figure */
    animation-duration: 1s;    /* over a 1-second interval */
 }
@@ -190,7 +190,7 @@ div#lbOverlay div#lbOverlayClose {
    position: absolute;
    top: 20px;
    right: 40px;
-   color: #f1f1f1;
+   color: white;
    font-size: 40px;
    cursor: pointer;
    user-select: none;
@@ -199,7 +199,7 @@ div#lbOverlay div#lbOverlayClose {
 /* Hovering styles for the modal window close button */
 div#lbOverlay div#lbOverlayClose:hover {
    color: rgb(150, 58, 154);
-   text-shadow: 3px 3px 0px black;
+   text-shadow: 3px 3px 0px #222635;
 }
 
 /* Keyframe animation for the opening of the modal window figure and caption */
