@@ -22,7 +22,7 @@ a{
 }
 
 header{
-  color: hsl(199, 95%, 76%);
+  color: #88d7fc;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -33,7 +33,7 @@ body{
 
 .background
 {
-  background:hsl(227, 22%, 17%);
+  background:#222635;
   background-image: url('../image/option_2.jpg');
   background-repeat: no-repeat;
   background-origin: border-box;
@@ -106,6 +106,7 @@ nav li a:hover::before{
 .box ul{
   margin-top: 10px;
 margin-left: 25px;
+color: hsl(199, 95%, 76%);
 }
 
 /* end box stuff */
@@ -117,9 +118,12 @@ margin-left: 25px;
 
 /*footer*/
 footer{
-  border-top-left-radius: 100% 80px;
-  border-top-right-radius: 100% 80px;
-  background-color: rgba(28, 66, 105,0.85);
+  border-top-left-radius: 200% 1450px;
+  border-top-right-radius: 200% 1450px;
+  vertical-align: middle;
+  border: dotted 2px #923880;
+  background: radial-gradient(rgba(28, 66, 105, 0.851),rgb(6, 16, 56, 0.5));
+  background-color: #1c4269d9;
   padding-top: 30px;
   text-decoration:none;
   text-align: center;
@@ -128,6 +132,10 @@ footer{
 
 footer p{
   margin-bottom:7px;
+}
+
+footer a{
+  color: white;
 }
 
 /*Animation*/
