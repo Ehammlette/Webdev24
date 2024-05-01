@@ -29,7 +29,7 @@ body{
 .background
 {
   background:hsl(227, 22%, 17%);
-  background-image: url('https://photos.app.goo.gl/fFk71fMocbwL1Mtr7');
+  background-image: url('https://ibb.co/2nbw7zy');
   background-repeat: no-repeat;
   background-origin: border-box;
   background-size: cover;
@@ -90,7 +90,6 @@ nav li a:hover::before{
   margin: 50px;
   border-radius: 25px;
   padding: 20px;
-  height: 150px;
   background-color: #88d7fc;
   border: dotted #923880;
   background: radial-gradient(#061038,#061038 43%,#1C436A) ;
@@ -98,7 +97,8 @@ nav li a:hover::before{
 
 /* box stuff */
 .box ul{
-
+  margin-top: 10px;
+margin-left: 25px;
 }
 
 /*footer*/
