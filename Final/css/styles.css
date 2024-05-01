@@ -88,6 +88,7 @@ nav li a:hover::before{
 .container
 {
     margin: 50px;
+    object-fit: contain;
 }
 
 .box{
@@ -127,6 +128,7 @@ margin-left: 25px;
 
 /*footer*/
 footer{
+  margin-top: 30px;
   text-decoration:none;
   text-align: center;
   margin-bottom: 40px;
