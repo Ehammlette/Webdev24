@@ -15,7 +15,7 @@ let lightboxTitle = "Client side";
 let imgFiles = [,"image/screenshot/Chapter3_analyze.jpg","image/screenshot/Chapter4_analyze.jpg","image/screenshot/Chapter5_extend.jpg","image/screenshot/Chapter6_extend.jpg","image/screenshot/Chapter7_analyze.jpg","image/screenshot/Chapter9_apply.jpg","image/screenshot/Chapter12_apply.jpg"]
 
 // Anchor
-let overlayAnchor = ["https://ehammlette.github.io/Webdev24/Client_Side/Chapter02/project02/project02-02.html","https://ehammlette.github.io/Webdev24/Client_Side/Chapter03/project02/project03-02.html","https://ehammlette.github.io/Webdev24/Client_Side/Chapter04/project02/project04-02.html","https://ehammlette.github.io/Webdev24/chapter5/extend/index.html","https://ehammlette.github.io/Webdev24/chapter06/extend/extend06.html","https://ehammlette.github.io/Webdev24/chapter07/analyze/analyze07.html","https://ehammlette.github.io/Webdev24/chapter09/apply/index.html"]
+let overlayAnchor = ["https://ehammlette.github.io/Webdev24/Client_Side/Chapter02/project02/project02-02.html","https://ehammlette.github.io/Webdev24/Client_Side/Chapter03/project02/project03-02.html","https://ehammlette.github.io/Webdev24/Client_Side/Chapter04/project02/project04-02.html","https://ehammlette.github.io/Webdev24/Client_Side/Chapter05/project02/project05-02.html","https://ehammlette.github.io/Webdev24/Client_Side/Chapter06/project01/project06-01.html","https://ehammlette.github.io/Webdev24/Client_Side/Chapter07/project01/project07-01.html","https://ehammlette.github.io/Webdev24/chapter09/apply/index.html"]
 // Captions associated with each image
 let imgCaptions = new Array(8);
 imgCaptions[0]="Chapter 2 Template";
